@@ -10,8 +10,7 @@ function Sample (){
       y:40,
       opacity:0,
       duration:1.5,
-      stagger:5,
-       autoAlpha: 0
+     
    
       
      
