@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+
+@layer base{
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+@font-face {
+font-family: "textfont";
+src: url("./BebasNeue-Regular.otf") format("truetype");
+
+}
+
+@font-face {
+font-family: "Second";
+src: url("./ponte.ttf") format("truetype");
+
+}
+
+@font-face {
+font-family: "Second";
+src: url("./ponte.ttf") format("truetype");
+
+}
+
+
+
+.text{
+    font-family: "textfont";
+}
+
+.word{
+    font-family: "Second";
+}
+
+.lamb{
+    font-family: "Second";
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.u{
+    font-family:"Second";
+}
+
+}
