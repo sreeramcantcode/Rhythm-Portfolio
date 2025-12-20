@@ -11,6 +11,8 @@ function Sample (){
       opacity:0,
       duration:1.5,
       stagger:5,
+       autoAlpha: 0
+   
       
      
     })
