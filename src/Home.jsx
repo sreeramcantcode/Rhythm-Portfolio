@@ -23,7 +23,7 @@ function Home(){
 
     return(
         <>
-        <div className="border border-black min-h-[130vh]  black bg-black">\
+        <div className=" min-h-[130vh]  black bg-black">\
             <div className="flex justify-center ">
                <img className="object-contain w-100 top-5 absolute transform scale-120 z-10 im" src={img} alt="" />
                
