@@ -17,7 +17,7 @@ function Home(){
     useGSAP(()=>{
         gsap.from(".black" , {
             y:40,
-            duration:1
+            duration:3
         })
     })
 
