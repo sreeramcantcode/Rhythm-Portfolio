@@ -11,7 +11,7 @@ body {
 
 @font-face {
 font-family: "textfont";
-src: url("./fonts/BebasNeue-Regular.otf") format("truetype");
+src: url("../public/fonts/BebasNeue-Regular.otf") format("truetype");
 font-display: block;
 font-style: normal;
 
@@ -19,7 +19,7 @@ font-style: normal;
 
 @font-face {
 font-family: "Second";
-src: url("./fonts/ponte.ttf") format("truetype");
+src: url("../public/fonts/ponte.ttf") format("truetype");
 
 }
 
