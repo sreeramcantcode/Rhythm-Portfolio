@@ -11,21 +11,18 @@ body {
 
 @font-face {
 font-family: "textfont";
-src: url("./BebasNeue-Regular.otf") format("truetype");
+src: url("./fonts/BebasNeue-Regular.otf") format("truetype");
+font-display: block;
+font-style: normal;
 
 }
 
 @font-face {
 font-family: "Second";
-src: url("./ponte.ttf") format("truetype");
+src: url("./fonts/ponte.ttf") format("truetype");
 
 }
 
-@font-face {
-font-family: "Second";
-src: url("./ponte.ttf") format("truetype");
-
-}
 
 
 
