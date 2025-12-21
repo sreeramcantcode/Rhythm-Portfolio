@@ -19,8 +19,8 @@ function Home(){
     const anref = useRef()
     useGSAP(()=>{
         gsap.from(anref.current , {
-            y:40,
-            duration:3
+            y:30,
+            duration:2
         })
     })
 
@@ -32,7 +32,7 @@ function Home(){
                
             </div>
              
-             <h1 className="text-white  w-full mt-15 text-[220px] lose flex justify-center items-center text z-0 hover:text-red-500 hover:text-[240px] cursor-pointer duration-300 whitespace-nowrap">meow</h1>
+             <h1 className="text-white  w-full mt-15 text-[220px] lose flex justify-center items-center text z-0 hover:text-red-500 hover:text-[240px] cursor-pointer duration-300 whitespace-nowrap">LOSE MY MIND</h1>
           
 
              <div className=" py-30 h-70 flex justify-center relative top-43 gap-20 ">
