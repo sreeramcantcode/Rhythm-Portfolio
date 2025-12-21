@@ -85,7 +85,7 @@ function Second (){
             </div>
 
           <div className=" w-165 h-100  p-1 mt-10 relative group cursor-pointer " >
-            <h1 className="inset-0 absolute text-6xl text-white z-10  top-50 opacity-0 group-hover:opacity-100 duration-1000 u">K9</h1>
+            <h1 className="inset-0 absolute text-6xl text-white z-10  top-50 opacity-0 group-hover:opacity-100 duration-1000 u">K9 SCHOOL</h1>
             <img src={k9} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
             </div>
             </div>
