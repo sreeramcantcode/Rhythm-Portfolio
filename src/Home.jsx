@@ -28,11 +28,11 @@ function Home(){
         <>
         <div ref={anref} className=" min-h-[130vh] bg-black">\
             <div className="flex justify-center ">
-               <img className="object-contain w-100 top-5 absolute transform scale-120 z-10 im" src={img} alt="" />
+               <img className="object-contain w-96 top-5 absolute transform scale-120 z-10 im" src={img} alt="" />
                
             </div>
              
-             <h1 className="text-white h-90 mt-20 text-[220px] lose flex justify-center items-center text z-0 hover:text-red-500 hover:text-[240px] cursor-pointer duration-300 whitespace-nowrap">LOSE MY MIND</h1>
+             <h1 className="text-white h-90 mt-15 text-[220px] lose flex justify-center items-center text z-0 hover:text-red-500 hover:text-[240px] cursor-pointer duration-300 whitespace-nowrap">LOSE MY MIND</h1>
 
              <div className=" py-30 h-70 flex justify-center mt-35 gap-20 ">
                 <img src={frame} className="w-20 h-20 object-contain relative scale-170 z-20 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
