@@ -32,12 +32,10 @@ function Home(){
                
             </div>
              
-             <h1 className="text-white h-90 mt-15 text-[220px] lose flex justify-center items-center text z-0 hover:text-red-500 hover:text-[240px] cursor-pointer duration-300 whitespace-nowrap">LOSE MY MIND</h1>
-             <h1 className="fixed top-2 left-2 z-[9999] text-red-500 text-xl">
-  UPDATED 🔥
-</h1>
+             <h1 className="text-white  w-full mt-15 text-[220px] lose flex justify-center items-center text z-0 hover:text-red-500 hover:text-[240px] cursor-pointer duration-300 whitespace-nowrap">meow</h1>
+          
 
-             <div className=" py-30 h-70 flex justify-center mt-35 gap-20 ">
+             <div className=" py-30 h-70 flex justify-center relative top-43 gap-20 ">
                 <img src={frame} className="w-20 h-20 object-contain relative scale-170 z-20 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
                 <img src={saint} className="w-20 h-20 object-contain relative  z-20 scale-170 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
                 <img src={k} className="w-20 h-20 object-contain relative  z-20 scale-170 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
