@@ -11,11 +11,14 @@ import sil from "./assets/Silent.png"
 import bth from "./assets/bth.png"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
+import { useRef } from "react"
 
 
 function Home(){
+
+    const anref = useRef()
     useGSAP(()=>{
-        gsap.from(".black" , {
+        gsap.from(anref.current , {
             y:40,
             duration:3
         })
@@ -23,7 +26,7 @@ function Home(){
 
     return(
         <>
-        <div className=" min-h-[130vh]  black bg-black">\
+        <div ref={anref} className=" min-h-[130vh] bg-black">\
             <div className="flex justify-center ">
                <img className="object-contain w-100 top-5 absolute transform scale-120 z-10 im" src={img} alt="" />
                
