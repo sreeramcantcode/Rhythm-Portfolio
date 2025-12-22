@@ -52,7 +52,7 @@ function Footer(){
 
             
 
-            <h1 className=" text-xl w-fit h-fit relative right-20 top-96">© 2025 Rhythm Nandi. All rights reserved.</h1>
+            <h1 className=" text-xl w-fit h-fit relative right-40 top-96">© 2025 Rhythm Nandi. All rights reserved.</h1>
 
             <div className="relative top-5 text-xl">
                 <h1 className="text-lg text-gray-300">Socials</h1>
