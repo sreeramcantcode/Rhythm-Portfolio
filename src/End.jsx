@@ -49,7 +49,7 @@ function End(){
              <h1>Creation</h1>
             <h1>Begins</h1>
         </div>
-        <div className="border border-red-500 relative top-10 h-160 text-2xl">
+        <div className=" relative top-10 h-160 text-2xl">
           <h1>Images Gallery</h1>
         </div>
         </div>

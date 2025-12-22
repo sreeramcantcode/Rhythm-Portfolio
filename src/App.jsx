@@ -5,6 +5,7 @@ import Home from "./Home"
 import Second from "./Second"
 import End from "./End"
 import Work from "./Work"
+import Footer from "./Footer"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <Second></Second>
     <End></End>
     <Work></Work>
+    <Footer></Footer>
     
   
     
