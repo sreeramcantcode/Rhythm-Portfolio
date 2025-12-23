@@ -7,7 +7,7 @@ function Footer(){
 
     return(
         <>
-         <div className="min-h-70  text-white bg-linear-to-r  from-black to-zinc-900 py-10  px-5 flex overflow-hidden">
+         <div className="min-h-70  text-gray-300 bg-linear-to-l footer  from-black to-red-950 py-10  px-5 flex overflow-hidden">
             
 
             <div className=" relative">
@@ -26,11 +26,11 @@ function Footer(){
               <div className="w-fit relative left-20 ">
                 <h1 className="text-gray-300">Contact Me </h1>
 
-                <div className="text-2xl mt-9">
-                <h1>E-mail : <span className="text-red-500"><a href="#">rhythm@gmail.com</a></span></h1>
+                <div className="text-lg text-gray-300 mt-9">
+                <h1>E-mail : <span className="text-white"><a href="#">rhythm@gmail.com</a></span></h1>
             </div>
-            <div className="Mobile text-2xl mt-2">
-                <h1>Mobile : <span className="text-red-500">+91 947902988</span></h1>
+            <div className="Mobile text-gray-300 text-lg mt-2">
+                <h1>Mobile : <span className="text-white">+91 947902988</span></h1>
             </div>
             </div>
             </div>
