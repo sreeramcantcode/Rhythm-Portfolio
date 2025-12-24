@@ -2,6 +2,8 @@ import img from "./assets/saint.png"
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap"
 
+import { Link } from "react-router-dom";
+
 function Sample (){
 
    useGSAP(()=>{
@@ -24,10 +26,10 @@ function Sample (){
             
             <ul className="ml-[1000px] justify-center gap-20 flex nav py-3 z-20">
 
-              <a className=" hover:text-red-400 hover:scale-130 duration-300" href="#">Home</a>
-              <a href="#" className=" hover:text-red-400 hover:scale-130 duration-300">Works</a>
-              <a href="#" className=" hover:text-red-400 hover:scale-130 duration-300">About</a>
-              <a href="#" className=" hover:text-red-400 hover:scale-130 duration-300">Contact</a>
+              <Link to="/" className=" hover:text-red-400 hover:scale-130 duration-300">Home</Link>
+               <Link to="/All" className=" hover:text-red-400 hover:scale-130 duration-300" >Works</Link>
+              <Link to="/About" className=" hover:text-red-400 hover:scale-130 duration-300" >About</Link>
+               <Link to="/" className=" hover:text-red-400 hover:scale-130 duration-300">Contact</Link>
             </ul>
 
             <a href="#">

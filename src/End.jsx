@@ -1,6 +1,8 @@
 import {gsap} from "gsap"
 import { useEffect , useRef } from "react"
 import { ScrollTrigger } from "gsap/all"
+import Work from "./Work"
+import Footer from "./Footer"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -53,6 +55,9 @@ function End(){
           <h1>Images Gallery</h1>
         </div>
         </div>
+
+        <Work />
+      <Footer />
 
         
         </>
