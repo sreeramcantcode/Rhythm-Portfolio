@@ -7,7 +7,7 @@ function Footer(){
 
     return(
         <>
-         <div className="min-h-70  text-gray-300 bg-linear-to-l footer  from-black to-red-950 py-10  px-5 flex overflow-hidden">
+         <div id="footer" className="min-h-70  text-gray-300 bg-linear-to-l footer  from-black to-red-950 py-10  px-5 flex overflow-hidden">
             
 
             <div className=" relative">

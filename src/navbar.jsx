@@ -1,23 +1,26 @@
 import img from "./assets/saint.png"
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap"
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollToPlugin)
 
 import { Link } from "react-router-dom";
 
 function Sample (){
 
-   useGSAP(()=>{
+   const { contextSafe } = useGSAP();
 
-    gsap.from(".nav " , {
-      y:40,
-      opacity:0,
-      duration:1.5,
-     
+  const handle = contextSafe((e) => {
+    e.preventDefault(); // stop Link navigation
+
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: "#footer",
+      ease: "power2.out",
+    });
+  });
    
-      
-     
-    })
-   },[])
     return (
         <>
 
@@ -29,7 +32,7 @@ function Sample (){
               <Link to="/" className=" hover:text-red-400 hover:scale-130 duration-300">Home</Link>
                <Link to="/All" className=" hover:text-red-400 hover:scale-130 duration-300" >Works</Link>
               <Link to="/About" className=" hover:text-red-400 hover:scale-130 duration-300" >About</Link>
-               <Link to="/" className=" hover:text-red-400 hover:scale-130 duration-300">Contact</Link>
+               <Link to="#" onClick={handle} className=" hover:text-red-400 hover:scale-130 duration-300">Contact</Link>
             </ul>
 
             <a href="#">
