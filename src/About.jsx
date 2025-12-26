@@ -23,14 +23,14 @@ function About (){
          stagger:0.5
       })
 
-      gsap.to(grave.current , {
+      gsap.from(grave.current , {
          
-         x:20,
-         opacity:1,
+         x:-20,
+         opacity:0,
          duration:3,
          scrollTrigger:{
           trigger:grave.current,
-          start: "top 60%"
+          start: "top 40%"
 
          }
       })
@@ -41,37 +41,35 @@ function About (){
 
     return(
         <>
-        <div className="min-h-[140vh] bg-black text-white relative pt-20 flex justify-center ">
+        <div className="min-h-[140vh] max-w-screen bg-black text-white relative pt-25 flex justify-center">
             
-         <div ref={quote}  className="min-w-[140vh] pt-10 mt-10 relative top-10 flex h-fit px-20  bg-linear-to-b from-black to bg-zinc-900">
-            <img ref={img} className="w-[400px] object-contain relative bottom-15 " src= {im} alt=""/>
-            <h1 className="text-6xl ml-15 relative lamb">Hi , I'm Rhythm Nandi</h1>
-
-         </div>
-         
-         
-         <div ref={designer} className="absolute top-60 ml-20 ">
-            <p className="px-20 relative py-5 text-xl left-10 top-10">Passionate Young Graphic Designer</p>
+         <div ref={quote}  className="w-full max-w-7xl max-h-[110vh] bg-linear-to-b from-black to bg-zinc-900">
+            <img ref={img} className="w-full ml-8 max-w-[400px] object-contain absolute " src= {im} alt=""/>
+            <h1 className="text-6xl flex justify-end p-16 max-w-7xl mr-10 lamb">Hi , I'm Rhythm Nandi</h1>
+            <div ref={designer} className="flex justify-end max-w-4xl ml-10 text-2xl ">
+            <p className="">Passionate Young Graphic Designer</p>
             
          </div>
-         <div className="absolute w-90 text-left">
-            <p ref={para} className="relative text-xl top-60 left-25 py-12 italic whitespace-nowrap">I’m a graphic designer who turns ideas into clear,
+         <div className=" justify-end max-w-6xl w-full mt-5 text-xl  transform flex text-left">
+            <p ref={para} className=" max-w-xl italic text-left mr-4">I’m a graphic designer who turns ideas into clear,
 until they’re missing.
-   <p>visually striking designs. I focus on balance, typography, and details that 
-      <p>make 
-        brands feel intentional—not accidental.</p></p>
-</p>
-         
-   
-
-        <div ref={grave} className="relative w-90 scale-160 top-90 left-60 text-center -translate-y-1/2 text-3xl word font-bold opacity-0 text-white/30 select-none">
-  " The Graveyard is full of People  who thought they  <span className="whitespace-nowrap"> had time</span>  "
-</div>
-
+   visually striking designs. I focus on balance, typography, and details that 
+      make 
+        brands feel intentional—not accidental.
+        </p>
 
          </div>
+
+         <div ref={grave} className=" max-w-7xl text-center h-80 flex word justify-end items-center">
+            
+            <h1 className="ml-10 max-w-3xl px-10 text-5xl transform  translate-y-12  text-white/30 ">" The Graveyard is full of People  who thought they had time "</h1>
+            
+         </div>
          
-        
+         
+         </div>
+         
+         
         </div>
         <Work />
         <Footer />
