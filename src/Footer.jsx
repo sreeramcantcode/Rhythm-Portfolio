@@ -7,7 +7,7 @@ function Footer(){
 
     return(
         <>
-         <div id="footer" className="min-h-70  text-gray-300 bg-linear-to-l footer  from-black to-red-950 py-10  px-5 flex overflow-hidden">
+         <div className="min-h-70  text-gray-300 bg-linear-to-l footer  from-black to-red-950 py-10  px-5 flex overflow-hidden">
             
 
             <div className=" relative">
@@ -41,7 +41,7 @@ function Footer(){
                 <h1 className="text-lg text-gray-300">Navigation</h1>
                 <div className="text-xl mt-5">
                 <ul className="relative top-5 space-y-3">
-                   <li> <a href="#" className="hover:text-red-500">Home</a></li>
+                   <li> <a href="" className="hover:text-red-500">Home</a></li>
                    <li> <a href="" className="hover:text-red-500 ">Works</a></li>
                    <li> <a href="" className="hover:text-red-500 ">About</a></li>
                    <li> <a href="" className="hover:text-red-500 ">Contact</a></li>
