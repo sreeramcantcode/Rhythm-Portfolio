@@ -32,10 +32,11 @@ function Home(){
                
             </div>
              
-             <h1 className="text-white  w-full mt-15 text-[220px] lose flex justify-center items-center text z-0 hover:text-red-500 hover:text-[240px] cursor-pointer duration-300 whitespace-nowrap">LOSE MY MIND</h1>
+             <h1 className="text-white  w-full mt-8 text-[220px] lose flex justify-center items-center text z-0 hover:text-red-500 hover:text-[240px] cursor-pointer duration-300 whitespace-nowrap">LOSE MY MIND</h1>
           
 
-             <div className=" py-30 h-70 flex justify-center relative top-43 gap-20 ">
+             <div className=" h-96 items-end justify-evenly mt-5 flex gap-5">
+                
                 <img src={frame} className="w-20 h-20 object-contain relative scale-170 z-20 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
                 <img src={saint} className="w-20 h-20 object-contain relative  z-20 scale-170 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
                 <img src={k} className="w-20 h-20 object-contain relative  z-20 scale-170 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
@@ -46,9 +47,9 @@ function Home(){
                 <img src={lb} className="w-20 h-20 object-contain scale-170 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
                 <img src={sil} className="w-20 h-20 object-contain scale-170 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
                 <img src={bth} className="w-20 h-20 object-contain scale-170 hover:scale-205 duration-300 cursor-pointer" alt="frame" />
-            
+                </div>
                </div>
-            </div>
+            
             <div className=""></div>
            
 

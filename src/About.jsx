@@ -62,7 +62,7 @@ until they’re missing.
 
          <div ref={grave} className=" max-w-7xl text-center h-80 flex word justify-end items-center">
             
-            <h1 className="ml-10 max-w-3xl px-10 text-5xl transform  translate-y-12  text-white/30 ">" The Graveyard is full of People  who thought they had time "</h1>
+            <h1 className="ml-10 max-w-3xl px-10 text-5xl transform translate-y-12  text-white/30 ">" The Graveyard is full of People  who thought they had time "</h1>
             
          </div>
          
