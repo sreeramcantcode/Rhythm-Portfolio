@@ -41,7 +41,7 @@ function Second (){
   useEffect(()=>{
     gsap.fromTo(
       textRef.current,
-      { x: -100, opacity: 0 },
+      { x: -200, opacity: 0 },
       {
         opacity: 1,
         x: 0,
@@ -68,23 +68,38 @@ function Second (){
         <>
           <div className="min-h-screen bg-black text-center z-20">
           
-          <div ref={scrollref} className="bg-white z-40">
-          <div   className="h-70">
-            </div>
-            
-            </div>
-          <h1 className=" text-black px-9 relative bottom-65 word font-medium text-[200px] m-0"> <span className="line-through decoration-black  decoration-4  text-black">Words</span> . Action</h1>
-          <h1  ref={textRef} className="text-white text-[200px] word relative bottom-50">Highlights</h1>
+          <div className="relative h-70 overflow-hidden">
+
+  
+  <div className="absolute inset-0 flex justify-center items-center z-20">
+    <h1 className="text-black word font-medium text-[200px]">
+      <span className="line-through decoration-black decoration-4">
+        Words
+      </span>{" "}
+      . Action
+    </h1>
+  </div>
+
+  
+  <div
+    ref={scrollref}
+    className="absolute inset-0 bg-white z-10"
+  />
+
+</div>
+
+          
+          <h1  ref={textRef} className="text-white text-[200px] word">Highlights</h1>
           
 
-          <div className="flex justify-center gap-1 relative bottom-30">
+          <div className="flex justify-center gap-1 mt-3">
 
-          <div className=" w-165 h-100 p-1  mt-10 relative group cursor-pointer " >
+          <div className=" w-165 h-100 p-1  relative group cursor-pointer " >
             <a href="#"><h1 className="inset-0 absolute text-6xl text-white z-10 top-50 opacity-0 group-hover:opacity-100 duration-1000 u">UNILIVER</h1></a>
             <img src={u} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
             </div>
 
-          <div className=" w-165 h-100  p-1 mt-10 relative group cursor-pointer " >
+          <div className=" w-165 h-100  p-1 relative group cursor-pointer " >
             <h1 className="inset-0 absolute text-6xl text-white z-10  top-50 opacity-0 group-hover:opacity-100 duration-1000 u">K9 SCHOOL</h1>
             <img src={k9} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
             </div>

@@ -10,14 +10,16 @@ import Home from "./Home"
 import Second from "./Second"
 import End from "./End"
 
-// ROUTED PAGES
+
 import About from "./About"
-import All from "./All"       
+import All from "./All"   
+import Top from "./top"    
 
 function App() {
   return (
     <BrowserRouter>
-
+      
+      <Top></Top>
      
       <Sample />
 

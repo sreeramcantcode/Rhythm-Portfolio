@@ -12,7 +12,7 @@ function Sample (){
    const { contextSafe } = useGSAP();
 
   const handle = contextSafe((e) => {
-    e.preventDefault(); // stop Link navigation
+    e.preventDefault(); 
 
     gsap.to(window, {
       duration: 1,
