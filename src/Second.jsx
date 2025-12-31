@@ -75,7 +75,7 @@ function Second (){
     <h1 className="text-black word font-medium text-[200px]">
       <span className="line-through decoration-black decoration-4">
         Words
-      </span>{" "}
+      </span>
       . Action
     </h1>
   </div>
@@ -95,25 +95,25 @@ function Second (){
           <div className="flex justify-center gap-1 mt-3">
 
           <div className=" w-165 h-100 p-1  relative group cursor-pointer " >
-            <a href="#"><h1 className="inset-0 absolute text-6xl text-white z-10 top-50 opacity-0 group-hover:opacity-100 duration-1000 u">UNILIVER</h1></a>
+            <a href="#"><h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2 opacity-0 group-hover:opacity-100 duration-1000 u">UNILIVER</h1></a>
             <img src={u} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
             </div>
 
           <div className=" w-165 h-100  p-1 relative group cursor-pointer " >
-            <h1 className="inset-0 absolute text-6xl text-white z-10  top-50 opacity-0 group-hover:opacity-100 duration-1000 u">K9 SCHOOL</h1>
+            <h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2 opacity-0 group-hover:opacity-100 duration-1000 u">K9 SCHOOL</h1>
             <img src={k9} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
             </div>
             </div>
 
-            <div className="flex justify-center gap-1 relative bottom-15">
+            <div className="flex justify-center gap-1 transform translate-y-12 mt-5 ">
 
-          <div className=" w-165 h-100 p-1  mt-10 relative group cursor-pointer " >
-            <h1 className="inset-0 absolute text-6xl text-white z-10 top-50 opacity-0 group-hover:opacity-100 duration-1000 u">SAINT FLAIRE</h1>
+          <div className=" w-165 h-100 p-1 border    mt-10 relative group cursor-pointer " >
+            <h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2  opacity-0 group-hover:opacity-100 duration-1000 u">SAINT FLAIRE</h1>
             <img src={sf} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
             </div>
 
           <div className=" w-165 h-100  p-1 mt-10 relative group cursor-pointer " >
-            <h1 className="inset-0 absolute text-6xl text-white z-10  top-50 opacity-0 group-hover:opacity-100 duration-1000 u">SILENT ARTERY</h1>
+            <h1 className="inset-0 absolute top-1/2 text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-1000 u">SILENT ARTERY</h1>
             <img src={sl} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
             </div>
             </div>

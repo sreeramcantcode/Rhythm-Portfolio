@@ -24,7 +24,7 @@ function Sample (){
     return (
         <>
 
-           <div className="backdrop-blur-2xl fixed z-30">
+           <div className="backdrop-blur-2xl fixed z-30 container mx-autox">
           <div className="bg-black py-3 h-20 w-screen text-white relative  border-b border-green-400 opacity-72">
             
             <div className=" flex max-w-8xl  text-md justify-end gap-16 mx-auto p-4 px-14 items-center">

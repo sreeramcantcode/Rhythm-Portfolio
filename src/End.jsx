@@ -29,7 +29,7 @@ function End(){
 
     scrollTrigger:{
       trigger:boxref.current,
-      start:"top bottom",
+      start:"top 80%",
       end:"top center",
       scrub:true
 
@@ -44,16 +44,12 @@ function End(){
         
         <>
 
-        <div  className="text-[100px]  min-h-screen text-white bg-black ">
-        <div ref={boxref} className="flex gap-5 u justify-center transform scale-y-110">
-            <h1>Vision</h1>
-            <h1>Halts .</h1>
-             <h1>Creation</h1>
-            <h1>Begins</h1>
+        <div  className="text-[150px] text-center min-h-[130VH] text-white bg-black ">
+        <div ref={boxref} className="flex py-5 gap-5 translate-y-7 u justify-center transform  text-center">
+            <h1>Imagine . Create</h1>
+             
         </div>
-        <div className=" relative top-10 h-160 text-2xl">
-          <h1>Images Gallery</h1>
-        </div>
+      
         </div>
 
         <Work />

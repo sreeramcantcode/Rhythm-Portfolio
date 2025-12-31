@@ -17,9 +17,9 @@ function About (){
    useGSAP(()=>{
 
       gsap.from([quote.current , designer.current , para.current ] , {
-         x:-20,
+         
          opacity:0,
-         duration:2,
+         duration:3,
          stagger:0.5
       })
 
