@@ -76,7 +76,7 @@ function Second (){
       <span className="line-through decoration-black decoration-4">
         Words
       </span>
-      . Action
+       <span> . </span>Action
     </h1>
   </div>
 

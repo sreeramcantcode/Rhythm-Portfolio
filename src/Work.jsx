@@ -30,7 +30,7 @@ function Work(){
             </div>
             
             </div>
-        <h1 className=" text-black px-3 relative bottom-45 flex justify-center word font-medium text-[100px] m-0  ">LET'S CONNECT</h1>
+        <h1 className=" text-black px-3 relative bottom-55 ml-3 text-center  word font-medium text-[150px] m-0  ">Let's Connect</h1>
          
            
             </div>
