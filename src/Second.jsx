@@ -108,7 +108,7 @@ function Second (){
             <div className="flex justify-center gap-1 transform translate-y-12 mt-5 ">
 
           <div className=" w-165 h-100 p-1 border    mt-10 relative group cursor-pointer " >
-            <h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2  opacity-0 group-hover:opacity-100 duration-1000 u">SAINT FLAIRE</h1>
+            <h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2  opacity-0 group-hover:opacity-100 duration-1000 u">SAINTFLAIRE</h1>
             <img src={sf} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
             </div>
 
