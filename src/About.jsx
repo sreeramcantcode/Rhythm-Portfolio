@@ -6,32 +6,20 @@ import { ScrollTrigger } from "gsap/all"
 import Footer from "./Footer";
 import Work from "./Work";
 
-
 gsap.registerPlugin(ScrollTrigger)
-
 function About (){
-
    const img = useRef()
     const quote = useRef()
     const grave = useRef()
     const designer = useRef()
     const para = useRef()
-
-
-    const finaltext = "Rhythm Nandi"
-    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*"
-    let obj = {progress:0}
    
    useGSAP(()=>{
 
-      gsap.to(obj , {
-         progress:finaltext.length
-      })
-
       gsap.from([quote.current , designer.current , para.current ] , {
-         
+         x:-20,
          opacity:0,
-         duration:3,
+         duration:2,
          stagger:0.5
       })
 

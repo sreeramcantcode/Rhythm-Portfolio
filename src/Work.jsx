@@ -11,7 +11,7 @@ function Work(){
     const work = useRef();
     useGSAP(()=>{
         gsap.from(work.current , {
-          x :"-200%",
+          xPercent :"-200",
           duration:2,
 
           scrollTrigger:{
@@ -24,18 +24,15 @@ function Work(){
    
    return(
         <>
-         <div className="h-60 bg-black">
-        <div  ref={work} className="bg-white z-40">
-          <div   className="h-60 border-4 border-b-red-400 ">
-            </div>
-            
-            </div>
-        <h1 className=" text-black  relative bottom-55 ml-3 text-center  word font-medium text-[140px] m-0  ">Let's Connect</h1>
          
-           
-            </div>
-            
-         
+        <div className="h-70 relative bg-black">
+
+          <div className="border absolute inset-0  flex justify-center items-center">
+            <h1 className="text-[140px] text-black z-20 word ">Let's Connect</h1>
+          </div>
+
+          <div ref={work} className=" inset-0 absolute bg-white  border-red-500 border-b-4"></div>
+        </div>
         </>
     )
 
