@@ -3,6 +3,7 @@ import { useEffect , useRef } from "react"
 import { ScrollTrigger } from "gsap/all"
 import Work from "./Work"
 import Footer from "./Footer"
+import Imagescroll from "./Imagescroll"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -44,13 +45,14 @@ function End(){
         
         <>
 
-        <div  className="text-[150px] text-center min-h-[130VH] text-white bg-black ">
+        <div  className="text-[150px] text-center h-[130vh] text-white bg-black ">
         <div ref={boxref} className="flex py-5 gap-5 translate-y-7 u justify-center transform  text-center">
             <h1>Imagine . Create</h1>
              
         </div>
-      
+            <Imagescroll></Imagescroll>
         </div>
+       
 
         <Work />
       <Footer />

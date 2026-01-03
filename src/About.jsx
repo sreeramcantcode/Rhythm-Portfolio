@@ -1,5 +1,5 @@
 import { useGSAP } from "@gsap/react"
-import im from "./assets/Chipmunk.png"
+import im from "./assets/rhythm.jpg"
 import gsap from "gsap"
 import { useRef } from "react"
 import { ScrollTrigger } from "gsap/all"
@@ -9,25 +9,45 @@ import Work from "./Work";
 gsap.registerPlugin(ScrollTrigger)
 function About (){
    const img = useRef()
-    const quote = useRef()
+   
     const grave = useRef()
     const designer = useRef()
     const para = useRef()
    
+    const textref = useRef(null)
+    const Text = "Hi , I'm Rhythm Nandi"
+   
    useGSAP(()=>{
 
-      gsap.from([quote.current , designer.current , para.current ] , {
-         x:-20,
+      
+
+      const obj = { count: 0 }
+
+    gsap.to(obj, {
+      count: Text.length,
+      duration: 2,
+      ease: "none",
+      onUpdate: () => {
+        textref.current.innerText =
+          Text.slice(0, Math.floor(obj.count))
+      }
+    })
+      
+      
+      
+      gsap.from([designer.current , para.current ] , {
+         
          opacity:0,
-         duration:2,
-         stagger:0.5
+         duration:5,
+         stagger:0.5,
+         delay:2
       })
 
       gsap.from(grave.current , {
          
-         x:-20,
+         
          opacity:0,
-         duration:3,
+         duration:2,
          scrollTrigger:{
           trigger:grave.current,
           start: "top 40%"
@@ -43,9 +63,11 @@ function About (){
         <>
         <div className="min-h-[140vh] max-w-screen bg-black text-white relative pt-25 flex justify-center">
             
-         <div ref={quote}  className="w-full max-w-7xl max-h-[110vh] bg-linear-to-b from-black to bg-zinc-900">
-            <img ref={img} className="w-full ml-8 max-w-[400px] object-contain absolute " src= {im} alt=""/>
-            <h1 className="text-6xl flex justify-end p-16 max-w-7xl mr-10 lamb">Hi , I'm Rhythm Nandi</h1>
+         <div  className="w-full max-w-7xl max-h-[105vh] bg-linear-to-b from-black to bg-zinc-900">
+            <img ref={img} className="w-full ml-8 max-w-[450px] translate-y-9 object-contain absolute" src= {im} alt=""/>
+            <div className="flex justify-end p-16 max-w-6xl ml-2 lamb">
+            <h1 ref={textref} className="text-6xl text-left w-[500px] max-w-full mr-9 whitespace-nowrap" ></h1>
+            </div>
             <div ref={designer} className="flex justify-end max-w-4xl ml-10 text-2xl ">
             <p className="">Passionate Young Graphic Designer</p>
             

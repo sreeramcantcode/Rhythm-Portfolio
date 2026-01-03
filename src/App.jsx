@@ -9,6 +9,7 @@ import Footer from "./Footer"
 import Home from "./Home"
 import Second from "./Second"
 import End from "./End"
+import Imagescroll from "./Imagescroll"
 
 
 import About from "./About"
@@ -34,6 +35,8 @@ function App() {
               <Home />
               <Second />
               <End />
+              
+              
             </>
           }
         />
