@@ -18,6 +18,14 @@ font-style: normal;
 }
 
 @font-face {
+font-family: "btntext";
+src: url("../public/fonts/aBlackLives.otf") format("truetype");
+font-display: block;
+font-style: normal;
+
+}
+
+@font-face {
 font-family: "Second";
 src: url("../public/fonts/ponte.ttf") format("truetype");
 
@@ -37,6 +45,10 @@ src: url("../public/fonts/ponte.ttf") format("truetype");
 .lamb{
     font-family: "Second";
     
+}
+
+.btn{
+    font-family:"btntext" ;
 }
 
 * {

@@ -45,7 +45,7 @@ function End(){
         
         <>
 
-        <div  className="text-[150px] text-center h-[130vh] text-white bg-black ">
+        <div  className="text-[150px] text-center h-[160vh] text-white bg-black ">
         <div ref={boxref} className="flex py-5 gap-5 translate-y-7 u justify-center transform  text-center">
             <h1>Imagine . Create</h1>
              

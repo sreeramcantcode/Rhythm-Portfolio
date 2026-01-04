@@ -6,6 +6,8 @@ import image2 from "./img2.jpg"
 import image3 from "./img3.jpg"
 import image4 from "./img4.jpg"
 
+import { useNavigate } from "react-router-dom"
+
 gsap.registerPlugin(useGSAP)
 
 const images = [
@@ -17,6 +19,8 @@ const images = [
 ]
 
 export default function Imagescroll() {
+
+  const navigate = useNavigate()
   const trackRef = useRef(null)
 
   useGSAP(
@@ -47,6 +51,9 @@ export default function Imagescroll() {
         
           </div>
         ))}
+      </div>
+      <div className="h-90 flex justify-center items-center">
+      <button onClick={()=> navigate("/All")} className=" rounded-lg h-40 text-6xl hover:bg-red-900 btn hover:text-white duration-200 bg-red-600 font-semibold text-black cursor-pointer border-white w-lg text-center btn">Explore</button>
       </div>
     </div>
   )
