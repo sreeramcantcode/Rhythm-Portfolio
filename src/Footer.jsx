@@ -1,9 +1,23 @@
+import { Link } from "react-router-dom"
 import logo from "./assets/saint.png"
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap"
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
+gsap.registerPlugin(ScrollToPlugin)
 
 function Footer(){
+    
+    const { contextSafe } = useGSAP();
+   const handle = contextSafe((e) => {
+    e.preventDefault(); 
 
-
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: "#footer",
+      ease: "power2.out",
+    });
+  });
 
     return(
         <>
@@ -45,10 +59,10 @@ function Footer(){
                 <h1 className="text-lg text-gray-300 w-40 ">Navigation</h1>
                 <div className="text-xl">
                 <ul className="relative top-5 space-y-3">
-                   <li> <a href="" className="hover:text-red-500">Home</a></li>
-                   <li> <a href="" className="hover:text-red-500 ">Works</a></li>
-                   <li> <a href="" className="hover:text-red-500 ">About</a></li>
-                   <li> <a href="" className="hover:text-red-500 ">Contact</a></li>
+                   <li><Link to="/" className="hover:text-red-500">Home</Link></li>
+                   <li> <Link to="/All" className="hover:text-red-500 ">Works</Link></li>
+                   <li> <Link to="/About" className="hover:text-red-500 ">About</Link></li>
+                   <li> <Link to="/" onClick={handle} className="hover:text-red-500 ">Contact</Link></li>
                     
                 </ul>
                 </div>

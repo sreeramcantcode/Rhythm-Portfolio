@@ -32,10 +32,16 @@ function About (){
           Text.slice(0, Math.floor(obj.count))
       }
     })
+      gsap.from([img.current] , {
+         
+         opacity:0,
+         duration:2,
+         stagger:0.5,
+         
+      })
       
       
-      
-      gsap.from([designer.current , para.current ] , {
+      gsap.from([designer.current , para.current] , {
          
          opacity:0,
          duration:5,
