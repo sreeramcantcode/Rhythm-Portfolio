@@ -39,7 +39,7 @@ export default function Imagescroll() {
   )
 
   return (
-    <div className="w-full overflow-hidden bg-black py-16">
+    <div className="w-full overflow-hidden bg-black py-16 mt-8">
       <div ref={trackRef} className="flex w-max gap-10">
         {[...images, ...images].map((img, i) => (
           <div key={i} className="flex flex-col items-center gap-4">
