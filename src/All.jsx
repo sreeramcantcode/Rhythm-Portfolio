@@ -42,7 +42,7 @@ function All(){
              <div ref={ref1} className="w-7xl max-w-full h flex border mt-9 translate-y-7">
                 
                  <img src={k9} className="w-xl p-5 " alt="" />
-                 <h1 className="text-[70px] u w-2xl flex justify-center p-3">K9 School</h1>
+                 <h1 className="text-[75px] u w-2xl flex justify-center p-3">K9 School</h1>
             </div>
             </div>
            
