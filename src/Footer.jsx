@@ -43,10 +43,10 @@ function Footer(){
                 <h1 className="text-gray-300 opacity-60">Contact Me </h1>
 
                 <div className=" text-gray-300 mt-5 text-2xl">
-                <h1>E-mail : <span  className=""><a href="#">rhythm@gmail.com</a></span></h1>
+                <h1>E-mail : <span  className=""><a href="mailto:rhymexmedia@gmail.com" target="_blank">rhymexmedia@gmail.com</a></span></h1>
             </div>
             <div className="Mobile text-gray-300 text-lg mt-2">
-                <h1>Mobile : <span className="text-white">+91 947902988</span></h1>
+                <h1>Mobile : <span className="text-white">+91 6002180752</span></h1>
             </div>
             </div>
             
@@ -75,9 +75,9 @@ function Footer(){
                 <h1 className="text-lg text-gray-300">Socials</h1>
                 <ul className="relative space-y-3 mt-4  ">
                     <li> <a href="#" className="hover:text-red-500">Linkedin</a></li>
-                   <li> <a href="" className="hover:text-red-500 ">Behance</a></li>
-                   <li> <a href="" className="hover:text-red-500 ">Instagram</a></li>
-                   <li> <a href="" className="hover:text-red-500 ">X</a></li>
+                   <li> <a href="https://www.behance.net/rhythmnandi1" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 ">Behance</a></li>
+                   <li> <a href="https://www.instagram.com/sreeram_xo?igsh=czAwcWIzd3diaWd2" target="_blank" className="hover:text-red-500 ">Instagram</a></li>
+                  
                     
                 </ul>
             </div>

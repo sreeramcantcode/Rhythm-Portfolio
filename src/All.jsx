@@ -9,6 +9,8 @@ import k9 from "./assets/k9p.jpg"
 import u from "./assets/uniliver.jpg"
 import sf from "./assets/SF.jpg"
 import sl from "./assets/silentart.jpg"
+import lambo from "./assets/lambo.jpg"
+import merc from "./assets/merc.jpg"
 
 
 
@@ -17,46 +19,83 @@ function All(){
     
     return(
         <>
-         <div className="min-h-[220vh] text-white  pt-25 bg-black">
-            <h1 className="text-white text-[150px] word text-center">All Works </h1>
-            <div className="max-w-full flex flex-col justify-center items-center ">
-                <div className="flex justify-center gap-1 mt-3">
+         <div className="min-h-screen text-white pt-25 bg-black relative">
+          <div className="pt-10">
+               <Work text="All Works"  ></Work>
+               </div>
+               <div className="px-25">
+               <div className="max-w-7xl grid grid-cols-2 gap-x-29 ml-12   gap-y-9 justify-items-end mt-12 pb-25"> 
+                <div className="w-2xl h-100 relative group cursor-pointer">
+                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  UNILIVER</h1>
+                  <img
+                  src={u}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  />
+</div>
+              <div className="w-2xl h-100 relative group cursor-pointer">
+                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  K9 SCHOOL</h1>
+                  <img
+                  src={k9}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  />
+</div>
+                <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  SAINTFLAIRE</h1>
+                  <img
+                  src={sf}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  />
+</div>
+                      <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  SILENT ARTERY</h1>
+                  <img
+                  src={sl}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  />
+</div>                 
+                     <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  LAMBORGHINI</h1>
+                  <img
+                  src={lambo}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  />
+</div>               <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  MERCEDES</h1>
+                  <img
+                  src={merc}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  />
+</div>   
+                 <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  UNILIVER</h1>
+                  <img
+                  src={merc}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  />
+</div>
 
-                    
-                
-                          <div className=" w-120 h-100 p-1  relative group cursor-pointer " >
-                            <a href="#"><h1 className="inset-0 absolute text-6xl text-white z-10 top-1/3 text-center opacity-0 group-hover:opacity-100 duration-1000 u">UNILIVER</h1></a>
-                            <img src={u} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
-                            </div>
-                
-                          <div className=" w-120 h-100  p-1 relative group cursor-pointer " >
-                            <h1 className="inset-0 absolute text-6xl text-center text-white z-10 top-1/3 opacity-0 group-hover:opacity-100 duration-1000 u">K9 SCHOOL</h1>
-                            <img src={k9} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
-                            </div>
-                            </div>
+               </div>
 
-                            <h3>Choose how we want it , cuz its not 4 tiles like in the highlights section</h3>
-                
-                            <div className="flex justify-center gap-1 transform translate-y-12 mt-5 ">
-                
-                          <div className=" w-165 h-100 p-1 mt-10 relative group cursor-pointer " >
-                            <h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2 text-center  opacity-0 group-hover:opacity-100 duration-1000 u">SAINTFLAIRE</h1>
-                            <img src={sf} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
-                            </div>
-                
-                          <div className=" w-165 h-100  p-1 mt-10 relative group cursor-pointer " >
-                            <h1 className="inset-0 absolute top-1/2 text-6xl text-center text-white z-10 opacity-0 group-hover:opacity-100 duration-1000 u">SILENT ARTERY</h1>
-                            <img src={sl} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
-                            </div>
-                            </div>
-                
-            
-            </div>
            
+        
           </div>
-
+</div>
           
-         <Work />
+         <Work text="Let's Connect"></Work>
 
      
       <Footer />

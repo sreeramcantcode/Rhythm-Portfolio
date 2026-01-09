@@ -1,5 +1,5 @@
 import {gsap} from "gsap"
-import { useEffect , useRef } from "react"
+import { useRef } from "react"
 import { ScrollTrigger } from "gsap/all"
 import Work from "./Work"
 import Footer from "./Footer"
@@ -35,8 +35,8 @@ function End(){
         
         <>
 
-        <div  className="text-[150px] text-center h-[160vh] text-white bg-black ">
-        <div className="flex gap-5 h-60 py-2 relative translate-y-7 u justify-center transform  text-center">
+        <div  className="text-[180px] text-center min-h-screen text-white bg-black ">
+        <div className="flex gap-5 h-70 py-2 relative translate-y-7 u justify-center transform  text-center">
           
             <div ref={boxref} className="inset-0 bg-white absolute ">
               
@@ -48,7 +48,7 @@ function End(){
         </div>
        
 
-        <Work />
+        <Work text="Let's Connect"></Work>
       <Footer />
 
         

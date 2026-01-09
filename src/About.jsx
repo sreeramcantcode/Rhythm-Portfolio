@@ -99,7 +99,7 @@ until they’re missing.
          
          
         </div>
-        <Work />
+        <Work text="Let's Connect" />
         <Footer />
 
         
