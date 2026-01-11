@@ -14,7 +14,13 @@ import Imagescroll from "./Imagescroll"
 
 import About from "./About"
 import All from "./All"   
-import Top from "./top"    
+import Top from "./top"   
+
+import Uniliver from "./Uniliver"
+import Knine from "./Knine"
+
+import Saintflaire from "./Saintflaire"
+import SL from "./SL"
 
 function App() {
   return (
@@ -43,9 +49,12 @@ function App() {
 
         
         <Route path="/all" element={<All />} />
-
-       
+        <Route path="/uniliver" element={<Uniliver />} />
+        <Route path="/k9" element={<Knine/>} />
+       <Route path="/saint" element={<Saintflaire></Saintflaire>} />
+        
         <Route path="/about" element={<About />} />
+        <Route path="/silent" element={<SL></SL>} />
 
       </Routes>
 

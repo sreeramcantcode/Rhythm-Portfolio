@@ -4,6 +4,10 @@ import u from "./assets/uniliver.jpg"
 import sf from "./assets/SF.jpg"
 import sl from "./assets/silentart.jpg"
 
+import { Link } from "react-router-dom"
+
+import Uniliver from "./Uniliver"
+
 import {gsap} from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useEffect , useRef } from "react"
@@ -95,26 +99,26 @@ function Second (){
           <div className="flex justify-center gap-1 mt-3">
 
           <div className=" w-165 h-100 p-1  relative group cursor-pointer " >
-            <a href="#"><h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2 opacity-0 group-hover:opacity-100 duration-1000 u">UNILIVER</h1></a>
-            <img src={u} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
+            <Link to="/uniliver"> <h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2 opacity-0 group-hover:opacity-100 duration-1000 u">UNILIVER</h1>
+            <img src={u} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" /> </Link>
             </div>
 
           <div className=" w-165 h-100  p-1 relative group cursor-pointer " >
-            <h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2 opacity-0 group-hover:opacity-100 duration-1000 u">K9 SCHOOL</h1>
-            <img src={k9} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
+           <Link to="/k9"> <h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2 opacity-0 group-hover:opacity-100 duration-1000 u pointer-events-none">K9 SCHOOL</h1>
+            <img src={k9} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" /></Link>
             </div>
             </div>
 
             <div className="flex justify-center gap-1 transform translate-y-12 mt-5 ">
 
           <div className=" w-165 h-100 p-1 border    mt-10 relative group cursor-pointer " >
-            <h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2  opacity-0 group-hover:opacity-100 duration-1000 u">SAINTFLAIRE</h1>
-            <img src={sf} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
+           <Link to="/saint"> <h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2  opacity-0 group-hover:opacity-100 duration-1000 u">SAINTFLAIRE</h1>
+            <img src={sf} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" /></Link>
             </div>
 
           <div className=" w-165 h-100  p-1 mt-10 relative group cursor-pointer " >
-            <h1 className="inset-0 absolute top-1/2 text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-1000 u">SILENT ARTERY</h1>
-            <img src={sl} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" />
+           <Link to="/silent"> <h1 className="inset-0 absolute top-1/2 text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-1000 u">SILENT ARTERY</h1>
+            <img src={sl} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" /></Link>
             </div>
             </div>
 

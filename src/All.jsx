@@ -88,6 +88,37 @@ function All(){
   />
 </div>
 
+
+          <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  UNILIVER</h1>
+                  <img
+                  src={merc}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  />
+</div>
+
+
+          <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  UNILIVER</h1>
+                  <img
+                  src={merc}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  />
+</div>
+          <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  UNILIVER</h1>
+                  <img
+                  src={merc}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  />
+</div>
+
                </div>
 
            
