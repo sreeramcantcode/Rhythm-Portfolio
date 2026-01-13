@@ -43,8 +43,10 @@ function About (){
       
       gsap.from([designer.current , para.current] , {
          
+         y:20,
          opacity:0,
-         duration:5,
+         filter:"blur(20px)",
+         duration:2,
          stagger:0.5,
          delay:2
       })

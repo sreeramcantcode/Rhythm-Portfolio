@@ -3,6 +3,8 @@ import image1 from "./img1.jpg"
 import image2 from "./img2.jpg"
 import image3 from "./img3.jpg"
 
+import Foldercard from "./Foldercard"
+
 
 function Uniliver(){
     return(
@@ -40,6 +42,9 @@ function Uniliver(){
 
 
 
+            </div>
+            <div className="flex justify-center ">
+            <Foldercard></Foldercard>
             </div>
 
         </div>

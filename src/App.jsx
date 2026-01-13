@@ -19,8 +19,11 @@ import Top from "./top"
 import Uniliver from "./Uniliver"
 import Knine from "./Knine"
 
+
+
 import Saintflaire from "./Saintflaire"
 import SL from "./SL"
+import LB from "./LB"
 
 function App() {
   return (
@@ -55,6 +58,10 @@ function App() {
         
         <Route path="/about" element={<About />} />
         <Route path="/silent" element={<SL></SL>} />
+        <Route path="/lb" element={<LB></LB>} />
+
+        
+        
 
       </Routes>
 

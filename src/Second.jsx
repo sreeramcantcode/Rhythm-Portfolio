@@ -117,7 +117,7 @@ function Second (){
             </div>
 
           <div className=" w-165 h-100  p-1 mt-10 relative group cursor-pointer " >
-           <Link to="/silent"> <h1 className="inset-0 absolute top-1/2 text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-1000 u">SILENT ARTERY</h1>
+           <Link to="/lb"> <h1 className="inset-0 absolute top-1/2 text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-1000 u">SILENT ARTERY</h1>
             <img src={sl} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" /></Link>
             </div>
             </div>
