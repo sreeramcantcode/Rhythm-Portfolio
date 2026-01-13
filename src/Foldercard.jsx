@@ -104,7 +104,7 @@ function Foldercard(){
       <img
         src={item.img}
         alt={item.name}
-        className="w-20 h-20 object-contain mb-4"
+        className="w-20 h-20 object-contain mb-3"
       />
       <span className="text-sm">{item.name}</span>
     </div>
