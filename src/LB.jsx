@@ -1,7 +1,7 @@
 
 import Lb1 from "./assets/Lb1.jpg"
-import Lb2 from "./assets/Lb2.jpg"
-import Lb3 from "./assets/Lb3.jpg"
+import Lb2 from "./assets/LB2.jpg"
+import Lb3 from "./assets/LB3.jpg"
 import lb from "./assets/lb.png"
 
 import gsap from "gsap"
