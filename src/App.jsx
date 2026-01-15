@@ -24,6 +24,10 @@ import Knine from "./Knine"
 import Saintflaire from "./Saintflaire"
 import SL from "./SL"
 import LB from "./LB"
+import Bth from "./Bth"
+import Frameflash from "./Frameflash"
+import Mercedes from "./Mercedes"
+
 
 function App() {
   return (
@@ -52,14 +56,17 @@ function App() {
 
         
         <Route path="/all" element={<All />} />
-        <Route path="/uniliver" element={<Uniliver />} />
+        <Route path="/uniliver" element={<Uniliver></Uniliver>} />
         <Route path="/k9" element={<Knine/>} />
        <Route path="/saint" element={<Saintflaire></Saintflaire>} />
         
         <Route path="/about" element={<About />} />
         <Route path="/silent" element={<SL></SL>} />
         <Route path="/lb" element={<LB></LB>} />
-
+        <Route path="/bth" element={<Bth></Bth>} />
+         <Route path="/frameflash" element={<Frameflash></Frameflash>} />
+         <Route path="/mercedes" element={<Mercedes></Mercedes>} />
+        
         
         
 

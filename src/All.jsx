@@ -12,6 +12,7 @@ import sl from "./assets/silentart.jpg"
 import lambo from "./assets/lambo.jpg"
 import merc from "./assets/merc.jpg"
 
+import { Link } from "react-router-dom";
 
 
 function All(){
@@ -26,66 +27,66 @@ function All(){
                <div className="px-25">
                <div className="max-w-7xl grid grid-cols-2 gap-x-29 ml-12   gap-y-9 justify-items-end mt-12 pb-25"> 
                 <div className="w-2xl h-100 relative group cursor-pointer">
-                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                <Link to="/uniliver"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   UNILIVER</h1>
                   <img
                   src={u}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
     alt=""
-  />
+  /></Link>
 </div>
               <div className="w-2xl h-100 relative group cursor-pointer">
-                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                <Link to="/k9"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   K9 SCHOOL</h1>
                   <img
                   src={k9}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
     alt=""
-  />
+  /></Link>
 </div>
                 <div className="w-2xl h-100 p-1 relative group cursor-pointer">
-                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                <Link to="/saint"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   SAINTFLAIRE</h1>
                   <img
                   src={sf}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
     alt=""
-  />
+  /> </Link> 
 </div>
                       <div className="w-2xl h-100 p-1 relative group cursor-pointer">
-                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+             <Link to="/silent"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   SILENT ARTERY</h1>
                   <img
                   src={sl}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
     alt=""
-  />
+  /></Link>
 </div>                 
                      <div className="w-2xl h-100 p-1 relative group cursor-pointer">
-                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
-                  LAMBORGHINI</h1>
+                <Link to="/bth"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  Beat The Heat</h1>
                   <img
                   src={lambo}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
     alt=""
-  />
+  /></Link>
 </div>               <div className="w-2xl h-100 p-1 relative group cursor-pointer">
-                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
-                  MERCEDES</h1>
+              <Link to="/frameflash"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  Frameflash</h1>
                   <img
                   src={merc}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
     alt=""
-  />
+  /></Link>  
 </div>   
                  <div className="w-2xl h-100 p-1 relative group cursor-pointer">
-                <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
-                  UNILIVER</h1>
+               <Link to="/mercedes"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  Mercedes</h1>
                   <img
                   src={merc}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
     alt=""
-  />
+  /> </Link> 
 </div>
 
 

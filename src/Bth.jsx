@@ -1,9 +1,9 @@
 import Foldercard from "./Foldercard"
 import { useRef } from "react"
-
-import saint1 from "./assets/saint.png"
-import saint3 from "./assets/saint2.jpg"
-import saint2 from "./assets/saint1.jpg"
+import bth from "./assets/bth.png"
+import bth1 from "./assets/bth1.png"
+import bth2 from "./assets/bth2.jpg"
+import bth3 from "./assets/bth3.jpg"
 
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
@@ -66,7 +66,7 @@ function Bth(){
                  </div>
                 <div className=" flex gap-3  ">
                 <div ref={logosaint} className="border-r border-white w-35 h-23 relative">
-                  <img src={saint1} alt="" className="translate scale-120 w-25 translate-x-6" /> </div>
+                  <img src={bth} alt="" className="translate scale-120 w-25 translate-x-6" /> </div>
                   <div className="text-white text-xl  items-center flex px-10 ">
                       <ul className="space-y-4">
                           <li  ref={maintext} >Role : <span className="opacity-60">Graphic Designer (Club Member)</span></li>
@@ -74,7 +74,41 @@ function Bth(){
                       </ul>
                       </div>
                       </div>
+
+            <div ref={mainimg} className="flex justify-center pt-10">
+                <div  className=" flex justify-center w-screen  relative">
+            
+                  <div className="w-60 ">
+                    <img src={bth1} alt="" />
+                  </div>
+                  <div className="max-w-3xl">
+                        <img src={bth2} alt="" className="p-4" />
+                        <div className="flex justify-center relative pt-3 ">
+                        <h3 className="text-white text-md opacity-70 text-center">Worked as a graphic designer for BeatTheHeat, a creative club at VIT-AP, responsible for designing event posters, promotional banners, and custom club merchandise. Managed all supporting graphics for both physical events and digital outreach, ensuring consistent visual identity across platforms </h3>
+                        
+                    </div>
+                    
+                    </div>
+            
+                    <div className="w-70 mb-5  relative">
+                    <img src={bth3} alt="" className="" />
+                  </div>
+                     
+                    </div>
+                    
+                    </div>
+                   <div className="flex justify-center pb-20">
+            <Foldercard></Foldercard>
+            </div> 
+
+            <div>
+         <Work text="Let's Connect"></Work>
+     <Footer></Footer>
+     </div>
+                   
+
        </div>
+       
 
        </>
        
