@@ -49,10 +49,7 @@ function LB (){
         duration:1,
         y:20,
         filter:"blur(20px)",
-        scrollTrigger:{
-            trigger:car.current,
-            start:"top 50%"
-        }
+        
       })
     })
 
@@ -70,16 +67,9 @@ function LB (){
         <div className=" flex gap-3  ">
         
         <div ref={img} className="border-r z-10 border-white w-30 relative    ">
-            <img src={lb} alt="" className="absolute inset-0 w-30" />
-
-          
+            <img src={lb} alt="" className="absolute inset-0 w-30" /> </div>
             
-            
-            
-        </div>
-        
-
-        <div className="text-white text-xl  items-center flex px-5 pt-5 ">
+            <div className="text-white text-xl  items-center flex px-5 pt-5 ">
             <ul className="space-y-4">
                 <li  ref={maintext}>Role : <span className="opacity-60">Automotive  Digital Artist </span></li>
                 <li ref={maintext2} >Project : <span className="opacity-60">LBWK R35 GTR Graphic Artwork </span></li>
@@ -91,7 +81,7 @@ function LB (){
 
       
 
-    <div className="flex justify-center pt-7 ">
+    <div className="flex justify-center pt-7">
     <div ref={car} className=" flex justify-center w-screen  relative">
 
       <div className="w-60 ">

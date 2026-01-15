@@ -34,7 +34,7 @@ function About (){
     })
       gsap.from([img.current] , {
          
-         opacity:0,
+         y:10,
          duration:2,
          stagger:0.5,
          
