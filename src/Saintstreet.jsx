@@ -1,18 +1,11 @@
 
-import saintpdf from "./assets/SaintFlairecatalogue.pdf"
 
-
-function Saintstreet(){
-    return(
-        <>
-         <div className="min-h-screen bg-black">
-            <iframe 
-  src={saintpdf}
-  width="100%" 
-  height="600px"> </iframe>
-
-         </div>
-        </>
-    )
+function Saintstreet() {
+  return (
+    <div className="min-h-screen bg-black">
+      
+    </div>
+  );
 }
-export default Saintstreet
+
+export default Saintstreet;

@@ -28,6 +28,8 @@ import Bth from "./Bth"
 import Frameflash from "./Frameflash"
 import Mercedes from "./Mercedes"
 import Saintstreet from "./Saintstreet"
+import Koeniggseg from "./koeniggseg"
+import Lamborghini from "./Lamborghini"
 
 
 function App() {
@@ -68,7 +70,8 @@ function App() {
          <Route path="/frameflash" element={<Frameflash></Frameflash>} />
          <Route path="/mercedes" element={<Mercedes></Mercedes>} />
         <Route path="/Saintstreet" element={<Saintstreet></Saintstreet>} />
-        
+        <Route path="/koeniggseg" element={<Koeniggseg></Koeniggseg>} />
+         <Route path="/lambo" element={<Koeniggseg></Koeniggseg>} />
         
 
       </Routes>
