@@ -27,6 +27,7 @@ import LB from "./LB"
 import Bth from "./Bth"
 import Frameflash from "./Frameflash"
 import Mercedes from "./Mercedes"
+import Saintstreet from "./Saintstreet"
 
 
 function App() {
@@ -66,7 +67,7 @@ function App() {
         <Route path="/bth" element={<Bth></Bth>} />
          <Route path="/frameflash" element={<Frameflash></Frameflash>} />
          <Route path="/mercedes" element={<Mercedes></Mercedes>} />
-        
+        <Route path="/Saintstreet" element={<Saintstreet></Saintstreet>} />
         
         
 
