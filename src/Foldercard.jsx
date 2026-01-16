@@ -67,11 +67,11 @@ function Foldercard(){
 
     return(
         <>
-        <div className="min-h-fit pt-30 bg-black">
+        <div className="min-h-fit pt-30">
 
             <button
         onClick={() => setIsOpen(true)}
-        className="px-20 py-10  bg-red-600 text-white rounded-md cursor-pointer text-3xl hover:bg-red-900 "
+        className="px-15 py-6 bg-red-600 text-white rounded-md cursor-pointer text-3xl hover:bg-red-900 "
       >
         View more
       </button>
