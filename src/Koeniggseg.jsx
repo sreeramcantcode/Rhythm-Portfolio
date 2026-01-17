@@ -1,4 +1,4 @@
-import koe from "./assets/koeniggseg.jpg"
+
 import koe1 from "./assets/koeniggseg1.jpg"
 import koe2 from "./assets/koeniggseg2.jpg"
 import logo from "./assets/koelogo1.png"
