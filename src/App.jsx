@@ -70,7 +70,7 @@ function App() {
          <Route path="/frameflash" element={<Frameflash></Frameflash>} />
          <Route path="/mercedes" element={<Mercedes></Mercedes>} />
         <Route path="/Saintstreet" element={<Saintstreet></Saintstreet>} />
-        <Route path="/koeniggseg" element={<Koeniggseg></Koeniggseg>} />
+        <Route path="/koeniggseg" element={<Koenigseg></Koenigseg>} />
          <Route path="/lambo" element={<Lamborghini></Lamborghini>} />
         
 

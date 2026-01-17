@@ -1,4 +1,4 @@
-import lambo1 from "./assets/lambo1.jpg"
+import lambo1 from "./assets/lambo1.png"
 import lambo2 from "./assets/lambo2.jpg"
 import logo from "./assets/lambologo.png"
 import gsap from "gsap"
@@ -65,7 +65,7 @@ function Lamborghini(){
                     </div>
 
                   
-                 <div ref={car} className="flex  justify-center border relative w-screen ">
+                 <div ref={car} className="flex pb-25  justify-center border relative w-screen ">
                     <div className="w-3xl  ">
                         <img src={lambo1} alt="" className=""/>
                         <div className="text-white pt-4 text-center">
@@ -78,10 +78,7 @@ function Lamborghini(){
                     </div>
                     </div>  
 
-                    <div className="flex justify-center h-92 pb-20">
-        <Foldercard></Foldercard>
-        
-        </div>
+                  
         <div>
          <Work text="Let's Connect"></Work>
      <Footer></Footer>
