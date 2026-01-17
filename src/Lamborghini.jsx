@@ -1,5 +1,5 @@
-import koe from "./assets/koeniggseg.jpg"
-import koe1 from "./assets/koeniggseg1.jpg"
+import koe from "./assets/lambo1.jpg"
+import koe1 from "./assets/lambo2.jpg"
 import logo from "./assets/lambologo.png"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
@@ -53,8 +53,8 @@ function Lamborghini(){
 
             <div className=" flex gap-3 pt-25  ">
                     
-                    <div ref={img} className="border-r z-10 border-white w-30 relative    ">
-                        <img src={logo} alt="" className="absolute inset-0 w-30" /> </div>
+                    <div ref={img} className="border-r z-10 border-white w-30 relative     ">
+                        <img src={logo} alt="" className="absolute inset-0 w-30 pt-4" /> </div>
                         
                         <div className="text-white text-xl  items-center flex px-5 pt-5 ">
                         <ul className="space-y-4 pb-3">

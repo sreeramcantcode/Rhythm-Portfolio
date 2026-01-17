@@ -71,7 +71,7 @@ function App() {
          <Route path="/mercedes" element={<Mercedes></Mercedes>} />
         <Route path="/Saintstreet" element={<Saintstreet></Saintstreet>} />
         <Route path="/koeniggseg" element={<Koeniggseg></Koeniggseg>} />
-         <Route path="/lambo" element={<Koeniggseg></Koeniggseg>} />
+         <Route path="/lambo" element={<Lamborghini></Lamborghini>} />
         
 
       </Routes>
