@@ -9,7 +9,7 @@ import Work from "./Work"
 import Footer from "./Footer"
 import Foldercard from "./Foldercard"
 
-function Koeniggseg(){
+function Koenigseg(){
 
     const car = useRef()
     const maintext = useRef()
@@ -93,4 +93,4 @@ function Koeniggseg(){
         </>
      )
 }
-export default Koeniggseg
+export default Koenigseg
