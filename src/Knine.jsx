@@ -9,9 +9,9 @@ import k3 from "./assets/K9img3.jpg"
 import k4 from "./assets/K9img4.jpg"
 import k5 from "./assets/K9img5.jpg"
 import k6 from "./assets/K9img6.jpg"
-import k7 from "./assets/K9img7.jpg"
-import k8 from "./assets/K9img8.jpg"
-import kimg9 from "./assets/K9img9.jpg"
+import k7 from "./assets/k9img7.jpg"
+import k8 from "./assets/k9img8.jpg"
+import kimg9 from "./assets/k9img9.jpg"
 
 
 import gsap from "gsap"
