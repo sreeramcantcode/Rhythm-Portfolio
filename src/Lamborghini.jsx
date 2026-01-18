@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react"
 import { useRef } from "react"
 import Work from "./Work"
 import Footer from "./Footer"
-import Foldercard from "./Foldercard"
+
 
 function Lamborghini(){
 

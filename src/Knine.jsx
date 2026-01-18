@@ -1,4 +1,4 @@
-import Foldercard from "./Foldercard"
+import FolderPopup from "./FolderPopup"
 import k9 from "./assets/k9.png"
 import Work from "./Work"
 import Footer from "./Footer"
@@ -6,12 +6,24 @@ import Footer from "./Footer"
 import k1 from "./assets/K9img1.jpg"
 import k2 from "./assets/K9img2.jpg"
 import k3 from "./assets/K9img3.jpg"
+import k4 from "./assets/K9img4.jpg"
+import k5 from "./assets/K9img5.jpg"
+import k6 from "./assets/K9img6.jpg"
+import k7 from "./assets/K9img7.jpg"
+import k8 from "./assets/K9img8.jpg"
+import kimg9 from "./assets/K9img9.jpg"
+
+
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
-import { useRef } from "react"
+import { useRef, useState } from "react"
 
 
 function Knine(){
+
+     const [open, setOpen] = useState(false)
+      
+          const pageAImages = [k1, k2 , k3 , k4, k5 , k6 , k7 , k8 , kimg9]
 
     const maintext = useRef()
     const maintext2 = useRef()
@@ -102,13 +114,28 @@ Contributing to brand visuals, campaigns, and digital design for over six months
 
                    
 
-              <div className="flex justify-center pb-30">
-             <Foldercard></Foldercard>
-             </div>
+      <div className="flex justify-center pb-60 pt-15">
+       <button
+  onClick={() => setOpen(true)}
+  className=" w-72 h-20 text-3xl cursor-pointer  bg-red-500 border px-4 py-2 rounded-lg hover:bg-red-900 hover:text-black transition"
+>
+  View More
+</button>
+</div>
+
+       
+        {open && (
+  <FolderPopup
+    images={pageAImages}
+    onClose={() => setOpen(false)}></FolderPopup>
+  
+)}
+        
+        </div>
                <Work text="Let's Connect"></Work>   
                <Footer></Footer>
 
-            </div>
+            
         
         </>
     )

@@ -2,20 +2,27 @@
 import Lb1 from "./assets/Lb1.jpg"
 import Lb2 from "./assets/LB2.jpg"
 import Lb3 from "./assets/LB3.jpg"
+import Lb4 from "./assets/Lb4.jpg"
+import Lb5 from "./assets/LB5.jpg"
+import Lb6 from "./assets/Lb6.jpg"
 import lb from "./assets/lb.png"
 
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import Work from "./Work"
 import Footer from "./Footer"
-import Foldercard from "./Foldercard"
+import FolderPopup from "./FolderPopup"
 
 import { ScrollTrigger } from "gsap/all"
 
 gsap.registerPlugin(ScrollTrigger)
 
 function LB (){
+
+  const [open, setOpen] = useState(false)
+        
+            const pageAImages = [ Lb3, Lb4 , Lb5 , Lb6 , Lb1 , Lb2]
     
     const car = useRef()
     const maintext = useRef()
@@ -103,11 +110,27 @@ function LB (){
         </div>
         
         </div>
+
+      <div className="flex justify-center pb-60 pt-15">
+       <button
+  onClick={() => setOpen(true)}
+  className=" w-72 h-20 text-3xl cursor-pointer  bg-red-500 border px-4 py-2 rounded-lg hover:bg-red-900 hover:text-black transition"
+>
+  View More
+</button>
+</div>
+
        
+        {open && (
+  <FolderPopup
+    images={pageAImages}
+    onClose={() => setOpen(false)}></FolderPopup>
+  
+)}   
 
 
-        <div className="flex justify-center h-92 pb-20">
-        <Foldercard></Foldercard>
+    
+       
         
         </div>
         <div>
@@ -121,7 +144,7 @@ function LB (){
 
         
 
-    </div>
+    
     </>
 
 )

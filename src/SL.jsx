@@ -1,5 +1,5 @@
 
-import Foldercard from "./Foldercard"
+
 import Work from "./Work"
 import Footer from "./Footer"
 
@@ -92,9 +92,7 @@ health-tech innovation.
                     </div>
                     </div>  
 
-                 <div className="flex justify-center pb-20">
-            <Foldercard></Foldercard>
-            </div> 
+                 
 
             <div>
          <Work text="Let's Connect"></Work>

@@ -1,9 +1,12 @@
-import Foldercard from "./Foldercard"
-import { useRef } from "react"
+
+import { useRef, useState } from "react"
 import bth from "./assets/bth.png"
 import bth1 from "./assets/bth1.png"
 import bth2 from "./assets/bth2.jpg"
 import bth3 from "./assets/bth3.jpg"
+import bth4 from "./assets/bth4.jpg"
+import FolderPopup from "./FolderPopup"
+
 
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
@@ -14,6 +17,10 @@ import Footer from "./Footer"
 
 
 function Bth(){
+
+   const [open, setOpen] = useState(false)
+    
+        const pageAImages = [bth3, bth2 , bth4]
 
      const maintext = useRef()
         const maintext2 = useRef()
@@ -97,9 +104,25 @@ function Bth(){
                     </div>
                     
                     </div>
-                   <div className="flex justify-center pb-20">
-            <Foldercard></Foldercard>
-            </div> 
+
+            <div className="flex justify-center pb-60 pt-15">
+       <button
+  onClick={() => setOpen(true)}
+  className=" w-72 h-20 text-3xl cursor-pointer  bg-red-500 border px-4 py-2 rounded-lg hover:bg-red-900 hover:text-black transition"
+>
+  View More
+</button>
+</div>
+
+       
+        {open && (
+  <FolderPopup
+    images={pageAImages}
+    onClose={() => setOpen(false)}></FolderPopup>
+  
+)}
+   
+                  
 
             <div>
          <Work text="Let's Connect"></Work>

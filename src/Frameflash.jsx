@@ -2,20 +2,27 @@
 import Lb1 from "./assets/ff1.png"
 import Lb2 from "./assets/ff6.jpg"
 import Lb3 from "./assets/ff3.jpg"
+import Lb4 from "./assets/ff4.jpg"
+import Lb5 from "./assets/ff5.jpg"
+import Lb6 from "./assets/ff6.jpg"
 import lb from "./assets/frameflash.png"
 
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import Work from "./Work"
 import Footer from "./Footer"
-import Foldercard from "./Foldercard"
+import FolderPopup from "./FolderPopup"
 
 import { ScrollTrigger } from "gsap/all"
 
 gsap.registerPlugin(ScrollTrigger)
 
 function Frameflash (){
+
+   const [open, setOpen] = useState(false)
+  
+      const pageAImages = [Lb1, Lb2 , Lb3 , Lb4 , Lb5 , Lb6]
     
     const car = useRef()
     const maintext = useRef()
@@ -81,7 +88,7 @@ function Frameflash (){
 
       
 
-    <div className="flex justify-center pt-7">
+    <div className="flex justify-center pt-7 ">
     <div ref={car} className=" flex justify-center w-screen  relative">
 
       <div className="w-82 mt-10">
@@ -105,12 +112,24 @@ I have been the sole graphic designer at Frameflash Productions, responsible for
         
         </div>
        
+    <div className="flex justify-center pb-60 pt-15">
+       <button
+  onClick={() => setOpen(true)}
+  className=" w-72 h-20 text-3xl cursor-pointer  bg-red-500 border px-4 py-2 rounded-lg hover:bg-red-900 hover:text-black transition"
+>
+  View More
+</button>
+</div>
 
-
-        <div className="flex justify-center h-92 pb-20">
-        <Foldercard></Foldercard>
+       
+        {open && (
+  <FolderPopup
+    images={pageAImages}
+    onClose={() => setOpen(false)}></FolderPopup>
+  
+)}
         
-        </div>
+        
         <div>
          <Work text="Let's Connect"></Work>
      <Footer></Footer>

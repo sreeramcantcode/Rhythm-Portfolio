@@ -8,16 +8,22 @@ import img5 from "./assets/merc5.jpg"
 import img6 from "./assets/merc6.jpg"
 import img7 from "./assets/merc7.jpg"
 import img8 from "./assets/merc8.jpg"
+import img9 from "./assets/merc9.jpg"
+import img10 from "./assets/merc10.jpg"
 
 import Work from "./Work"
 import Footer from "./Footer"
-import Foldercard from "./Foldercard"
+import FolderPopup from "./FolderPopup"
 
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
-import { useRef } from "react"
+import { useRef , useState } from "react"
 
 function Mercedes (){
+
+    const [open, setOpen] = useState(false)
+          
+              const pageAImages = [img1,img2,img3,img4,img5,img6,img7 ,img9,img10 ]
 
     const mainimg = useRef()
     const maintext = useRef()
@@ -78,7 +84,7 @@ function Mercedes (){
                     
                     
 
-                    <div ref={mainimg} className="flex justify-evenly relative gap-3 pt-5 mb-20">
+                    <div ref={mainimg} className="flex justify-evenly relative gap-3 pt-2 mb-40">
                         <div className="w-30 flex flex-col gap-3 pt-5 ml-5">
                             <div>
                                 <img src={img2} alt="" />
@@ -102,11 +108,23 @@ function Mercedes (){
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi, earum officia numquam quidem, culpa non fuga assumenda vitae nam, ipsa soluta quo veritatis obcaecati eius reprehenderit dolores nemo sit?
                                 
                             </h3>
-                           <div className="flex justify-center translate-y-10 w-96 h-fit top-1/2 absolute">
-        <Foldercard></Foldercard>
-        
-        </div>
-                            
+                           
+                             <div className="flex justify-center pb-60 pt-15">
+       <button
+  onClick={() => setOpen(true)}
+  className=" w-72 h-20 text-3xl cursor-pointer  bg-red-500 border px-4 py-2 rounded-lg hover:bg-red-900 hover:text-black transition"
+>
+  View More
+</button>
+</div>
+
+       
+        {open && (
+  <FolderPopup
+    images={pageAImages}
+    onClose={() => setOpen(false)}></FolderPopup>
+  
+)}
                         </div>
                         
 

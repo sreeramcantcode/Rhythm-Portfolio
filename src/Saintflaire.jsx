@@ -1,9 +1,10 @@
-import Foldercard from "./Foldercard"
-import { useRef } from "react"
+import { useRef} from "react"
 
 import saint1 from "./assets/saint.png"
 import saint3 from "./assets/saint2.jpg"
 import saint2 from "./assets/saint1.jpg"
+
+import stpdf from "./assets/Saintflaire Catalogue.pdf"
 
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
@@ -14,6 +15,8 @@ import Footer from "./Footer"
 
 
 function Saintflaire(){
+
+    
 
      const maintext = useRef()
         const maintext2 = useRef()
@@ -77,7 +80,7 @@ function Saintflaire(){
             </div>
            
         
-        <div ref={mainimg} className="flex justify-end gap-3 px-4 pt-9 mr-7 ">
+        <div ref={mainimg} className="flex justify-end gap-3 px-4 pt-9 mr-7 pb-30 ">
 
             <div className="w-md relative">
                 <img src={saint3} alt="" />
@@ -85,22 +88,31 @@ function Saintflaire(){
             </div>
             <div className="w-5xl relative">
 
+                
+
                 <div className="text-white absolute bottom-1/3  text-left">
                 <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita aut qui delectus ea voluptatibus vitae. Porro perspiciatis corrupti nostrum maxime sed accusamus. Quia enim provident voluptatum fuga inventore, impedit blanditiis.</h3>
+                <div className="flex justify-center pb-60 pt-15 absolute top-1/2 left-1/3">
+       <h3
+  onClick={()=> window.open(stpdf , "_blank")}
+  className=" w-72 h-20 text-3xl cursor-pointer px-8 py-4 hover:text-red-600 underline rounded-lg text-white"
+>
+  View SaintStreet
+</h3>
+</div>  
             </div> 
 
                 <img src={saint2} alt="" />
+
+                
             </div>
+
+
+            
+
 
             
         </div>
-
-        <div className="flex justify-center mb-20">
-
-            <Foldercard></Foldercard>
-
-        </div>
-
         <Work text="Let's Connect"></Work>
         <Footer></Footer>
 
