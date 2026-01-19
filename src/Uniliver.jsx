@@ -98,13 +98,11 @@ function Uniliver(){
                      
                     
 
-                     <div className="w-96 px-3 ml-3">
+                     <div className="w-96 px-3  ml-3">
                         <img src={image5} alt=""  />
                     </div>
-                     <div className="w-82 px-3 pt-3">
-                        <img src={image1} className="mb-6" alt="" />
-                    </div>
-                     <div className="w-96 absolute right-4 top-1/4 p-3 ">
+                     
+                     <div className="w-96 absolute right-3 top-1/4 p-3 py-11 ">
                         <img src={image4} alt="" className="ml-6 mt-2" />
                     </div>
                     
