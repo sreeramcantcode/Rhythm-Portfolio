@@ -82,7 +82,7 @@ function Comic(){
                         <img src={comic} className="w-xl border group-hover:opacity-20 duration-500" alt="" />
                         </div>
                         <div className="text-white text-xl p-4 w-70">
-                          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis libero dolorum maxime tempore deleniti molestias nulla fuga nam suscipit voluptatum. Libero enim nihil tempore maiores obcaecati minus accusantium rem quam.</h3>
+                          <h3>An original detective comic developed in a noir-cyberpunk setting. The narrative follows Victor, a detective drawn into a complex investigation centered on memory, identity, and concealed conspiracies. The project features hand-drawn artwork, structured narrative panels, and atmospheric visual direction to build a cohesive and immersive world.</h3>
                         </div>
                         
                     </div>

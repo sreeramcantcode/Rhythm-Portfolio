@@ -105,7 +105,7 @@ function Mercedes (){
                           
                           <div className="text-white text-center p-10 text-xl h-fit mr-4 absolute top-1/5">
                             <h3 className="w-96">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi, earum officia numquam quidem, culpa non fuga assumenda vitae nam, ipsa soluta quo veritatis obcaecati eius reprehenderit dolores nemo sit?
+                                Developed a magazine-style editorial layout centered on the Mercedes 190E Evo II, highlighting its heritage and engineering legacy. Created original illustrations, custom graphics, and layout compositions to present the car in a collector-style feature format.
                                 
                             </h3>
                            

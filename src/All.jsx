@@ -11,9 +11,11 @@ import sf from "./assets/SF.jpg"
 import sl from "./assets/silentart.jpg"
 import lambo from "./assets/lambo.jpg"
 import merc from "./assets/merc.jpg"
+import frame from "./assets/FrameFlashtile.jpg"
 import koe from "./assets/koeniggsegtile.jpg"
 import comic from "./assets/comic.jpg"
-
+import bth from "./assets/bthtile.jpg"
+import lbwk from "./assets/lbwk.jpg"
 import { Link } from "react-router-dom";
 
 
@@ -68,7 +70,7 @@ function All(){
                 <Link to="/bth"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   Beat The Heat</h1>
                   <img
-                  src={lambo}
+                  src={bth}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
     alt=""
   /></Link>
@@ -76,7 +78,7 @@ function All(){
               <Link to="/frameflash"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   Frameflash</h1>
                   <img
-                  src={merc}
+                  src={frame}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
     alt=""
   /></Link>  
@@ -115,6 +117,24 @@ function All(){
           <div className="w-2xl h-100 p-1 relative group cursor-pointer">
               <Link to="/lambo"> <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   Lamborghini</h1>
+                  <img
+                  src={lambo}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  /> </Link> 
+</div>
+ <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+              <Link to="/lambo"> <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  Liberty Walk</h1>
+                  <img
+                  src={lbwk}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  /> </Link> 
+</div>
+<div className="w-2xl h-100 p-1 relative group cursor-pointer">
+              <Link to="/lambo"> <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  Sketches</h1>
                   <img
                   src={lambo}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"

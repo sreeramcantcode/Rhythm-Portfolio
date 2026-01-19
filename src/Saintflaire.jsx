@@ -5,6 +5,7 @@ import saint3 from "./assets/saint2.jpg"
 import saint2 from "./assets/saint1.jpg"
 
 import stpdf from "./assets/Saintflaire Catalogue.pdf"
+import stpdf1 from "./assets/Saintstreet.pdf"
 
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
@@ -90,11 +91,13 @@ function Saintflaire(){
 
                 
 
-                <div className="text-white absolute bottom-1/3  text-left">
-                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita aut qui delectus ea voluptatibus vitae. Porro perspiciatis corrupti nostrum maxime sed accusamus. Quia enim provident voluptatum fuga inventore, impedit blanditiis.</h3>
+                <div className="text-white absolute bottom-1/4 pb-2 text-left">
+                <h3 className="" >Founder and creative director of Saintflaire, an independent clothing brand developed from concept to execution. Led the complete design direction, including brand identity, logo development, garment graphics, and digital visuals. All creative outputs — from packaging to social content and product imagery — were designed in-house to establish a consistent and distinctive brand language. <br />
+                    <span  onClick={()=> window.open(stpdf , "_blank")} className="italic text-red-500 cursor-pointer"> Visit Catalogue</span>
+                </h3>
                 <div className="flex justify-center pb-60 pt-15 absolute top-1/2 left-1/3">
        <h3
-  onClick={()=> window.open(stpdf , "_blank")}
+  onClick={()=> window.open(stpdf1 , "_blank")}
   className=" w-72 h-20 text-3xl cursor-pointer px-8 py-4 hover:text-red-600 underline rounded-lg text-white"
 >
   View SaintStreet

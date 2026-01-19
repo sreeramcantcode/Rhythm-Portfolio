@@ -70,7 +70,7 @@ function Koenigseg(){
                     <div className="w-6xl mr-5 pt-6">
                         <img src={koe2} alt="" className=""/>
                         <div className="text-white pt-4 text-center">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi, unde maiores at et suscipit sit praesentium officiis minus fuga assumenda quaerat id, quos omnis accusantium itaque velit numquam alias!</h3>
+                            <h3>Hand-sketched automotive artwork acknowledged by the official Koenigsegg page and recognized for its execution.</h3>
                         </div>
                     </div>
 
@@ -79,7 +79,7 @@ function Koenigseg(){
                     </div>
                     </div>  
 
-                    <div className="flex justify-center h-92 pb-20">
+                    <div className="flex justify-center pb-30">
         
         
         </div>
