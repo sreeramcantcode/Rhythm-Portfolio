@@ -5,7 +5,7 @@ import saint3 from "./assets/saint2.jpg"
 import saint2 from "./assets/saint1.jpg"
 
 import stpdf from "./assets/Saintflaire Catalogue.pdf"
-import stpdf1 from "./assets/Saintstreet.pdf"
+import stpdf1 from "./assets/saintstreet.pdf"
 
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
