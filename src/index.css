@@ -38,6 +38,12 @@ src: url("../public/fonts/ponte.ttf") format("truetype");
     font-family: "textfont";
 }
 
+.button{
+    font-family: 'GT Walsheim Trial';
+    
+    
+}
+
 .word{
     font-family: "Second";
 }

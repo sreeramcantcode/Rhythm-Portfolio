@@ -10,28 +10,21 @@ gsap.registerPlugin(ScrollTrigger)
 function About (){
    const img = useRef()
    
-    const grave = useRef()
+    
     const designer = useRef()
-    const para = useRef()
+    const para1 = useRef()
+    const para2 = useRef()
+    const para3 = useRef()
+    const para4 = useRef()
    
     const textref = useRef(null)
-    const Text = "Hi , I'm Rhythm Nandi"
+  
    
    useGSAP(()=>{
 
       
 
-      const obj = { count: 0 }
-
-    gsap.to(obj, {
-      count: Text.length,
-      duration: 2,
-      ease: "none",
-      onUpdate: () => {
-        textref.current.innerText =
-          Text.slice(0, Math.floor(obj.count))
-      }
-    })
+    
       gsap.from([img.current] , {
          
          y:10,
@@ -41,27 +34,42 @@ function About (){
       })
       
       
-      gsap.from([designer.current , para.current] , {
+      gsap.from([designer.current] , {
          
          y:20,
          opacity:0,
          filter:"blur(20px)",
-         duration:2,
+         duration:1,
          stagger:0.5,
-         delay:2
-      })
+         delay:0.5
 
-      gsap.from(grave.current , {
+      })
+      
+
+       gsap.from([textref.current] , {
          
-         
+         xPercent:"-5",
          opacity:0,
-         duration:2,
-         scrollTrigger:{
-          trigger:grave.current,
-          start: "top 40%"
+         filter:"blur(20px)",
+         duration:1,
+         stagger:0.5,
+         
+      }) , 
 
-         }
+      gsap.from([para1.current , para2.current , para3.current , para4.current] , {
+         
+         xPercent:"-5",
+         opacity:0,
+         filter:"blur(20px)",
+         duration:1,
+         delay:1,
+         stagger:0.5,
+         
       })
+
+
+
+     
       
     
    
@@ -69,38 +77,49 @@ function About (){
 
     return(
         <>
-        <div className="min-h-[140vh] max-w-screen bg-black text-white relative pt-25 flex justify-center">
-            
-         <div  className="w-full max-w-7xl max-h-[105vh] bg-linear-to-b from-black to bg-zinc-900">
-            <img ref={img} className="w-full ml-8 max-w-[450px] translate-y-9 object-contain absolute" src= {im} alt=""/>
-            <div className="flex justify-end p-16 max-w-6xl ml-2 lamb">
-            <h1 ref={textref} className="text-6xl text-left w-[500px] max-w-full mr-9 whitespace-nowrap" ></h1>
+        <div className="min-h-[140vh] max-w-screen bg-black text-white relative pt-35 flex justify-center ">
+         
+         <div  className="w-full max-w-7xl rounded-2xl h-[85vh] bg-zinc-900 relative">
+
+            <div className="absolute w-[415px] top-0  ">
+               <img ref={img} src={im} alt="" />
             </div>
-            <div ref={designer} className="flex justify-end max-w-4xl ml-10 text-2xl ">
-            <p className="">Passionate Young Graphic Designer</p>
-            
-         </div>
-         <div className=" justify-end max-w-6xl w-full mt-5 text-xl  transform flex text-left">
-            <p ref={para} className=" max-w-xl italic text-left mr-4">I’m a graphic designer who turns ideas into clear,
-until they’re missing.
-   visually striking designs. I focus on balance, typography, and details that 
-      make 
-        brands feel intentional—not accidental.
-        </p>
+           
+            <div className="flex justify-end p-16 ml-9 w-7xl lamb relative">
+            <h1 ref={textref} className="text-7xl mr-12 whitespace-nowrap" >Hi , I'm Rhythm Nandi</h1>
+            <div className="border border-white absolute h-[410px] opacity-40 mt-23 left-1/3 ml-3">
 
-         </div>
+            </div>
+            </div>
+            <div className="px-5 relative bottom-5">
+            <div ref={designer} className="flex justify-end w-6xl ">
+               <div className="w-2xl relative">
+            <p className="text-md ">A 22-year-old designer focused on crafting visual experiences that actually mean something. I work at the intersection of strategy and aesthetics, turning ideas into design systems that leave a lasting impression.</p>
+            </div>
 
-         <div ref={grave} className=" max-w-7xl text-center h-80 flex word justify-end items-center">
-            
-            <h1 className="ml-10 max-w-3xl px-10 text-5xl transform translate-y-12  text-white/30 ">" The Graveyard is full of People  who thought they had time "</h1>
             
          </div>
+         <div className="flex justify-end w-5xl ml-7 mt-10">
+               <ul className="list-disc text-md" >
+            
+                  <li ref={para1}>Worked with established brands like Hindustan Unilever Limited and K9 School</li>
+                   <li ref={para2}>Strong focus on concept-driven design, not just visuals for the sake of it</li>
+                    <li ref={para3}>Designs with story, structure, and purpose</li>
+                     <li ref={para4}>Constantly pushing boundaries to create work that stands out and performs</li>
+                  
+               </ul>
+            </div>
+            </div>
+         
+
+        
          
          
          </div>
+         </div>    
          
          
-        </div>
+      
         <Work text="Let's Connect" />
         <Footer />
 

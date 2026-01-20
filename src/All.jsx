@@ -16,6 +16,7 @@ import koe from "./assets/koeniggsegtile.jpg"
 import comic from "./assets/comic.jpg"
 import bth from "./assets/bthtile.jpg"
 import lbwk from "./assets/lbwk.jpg"
+import sketch from "./assets/sketch.jpg"
 import { Link } from "react-router-dom";
 
 
@@ -32,7 +33,7 @@ function All(){
                <div className="max-w-7xl grid grid-cols-2 gap-x-29 ml-12   gap-y-9 justify-items-end mt-12 pb-25"> 
                 <div className="w-2xl h-100 relative group cursor-pointer">
                 <Link to="/uniliver"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
-                  UNILIVER</h1>
+                  UNILEVER</h1>
                   <img
                   src={u}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
@@ -65,27 +66,27 @@ function All(){
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
     alt=""
   /></Link>
-</div>                 
-                     <div className="w-2xl h-100 p-1 relative group cursor-pointer">
-                <Link to="/bth"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
-                  Beat The Heat</h1>
-                  <img
-                  src={bth}
-    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
-    alt=""
-  /></Link>
-</div>               <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+</div>      <div className="w-2xl h-100 p-1 relative group cursor-pointer">
               <Link to="/frameflash"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
-                  Frameflash</h1>
+                  FRAMEFLASH</h1>
                   <img
                   src={frame}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
     alt=""
   /></Link>  
-</div>   
+</div>               
+                     <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                <Link to="/bth"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  BEAT THE HEAT</h1>
+                  <img
+                  src={bth}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  /></Link>
+</div>              
                  <div className="w-2xl h-100 p-1 relative group cursor-pointer">
                <Link to="/mercedes"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
-                  Mercedes</h1>
+                  MERCEDES</h1>
                   <img
                   src={merc}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
@@ -93,10 +94,50 @@ function All(){
   /> </Link> 
 </div>
 
+<div className="w-2xl h-100 p-1 relative group cursor-pointer">
+              <Link to="/lb"> <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  LIBERTY WALK</h1>
+                  <img
+                  src={lbwk}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  /> </Link> 
+</div>
+   
+   <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                <Link to="/koeniggseg"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  KOENIGSEGG</h1>
+                  <img
+                  src={koe}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  /> </Link>
+</div>
+
+     <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+              <Link to="/lambo"> <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  LAMBORGHINI</h1>
+                  <img
+                  src={lambo}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  /> </Link> 
+</div>
+
+
+<div className="w-2xl h-100 p-1 relative group cursor-pointer">
+              <Link to="/sketches"> <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                  SKETCHES</h1>
+                  <img
+                  src={sketch}
+    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+    alt=""
+  /> </Link> 
+</div>
 
          <div className="w-2xl h-100 p-1 relative group cursor-pointer">
              <Link to="/comic"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
-                  Comic</h1>
+                  COMIC</h1>
                   <img
                   src={comic}
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
@@ -105,42 +146,10 @@ function All(){
 </div>
 
 
-          <div className="w-2xl h-100 p-1 relative group cursor-pointer">
-                <Link to="/koeniggseg"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
-                  Koenigsegg</h1>
-                  <img
-                  src={koe}
-    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
-    alt=""
-  /> </Link>
-</div>
-          <div className="w-2xl h-100 p-1 relative group cursor-pointer">
-              <Link to="/lambo"> <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
-                  Lamborghini</h1>
-                  <img
-                  src={lambo}
-    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
-    alt=""
-  /> </Link> 
-</div>
- <div className="w-2xl h-100 p-1 relative group cursor-pointer">
-              <Link to="/lambo"> <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
-                  Liberty Walk</h1>
-                  <img
-                  src={lbwk}
-    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
-    alt=""
-  /> </Link> 
-</div>
-<div className="w-2xl h-100 p-1 relative group cursor-pointer">
-              <Link to="/lambo"> <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
-                  Sketches</h1>
-                  <img
-                  src={lambo}
-    className="w-full h-full object-cover group-hover:opacity-20 duration-500"
-    alt=""
-  /> </Link> 
-</div>
+          
+          
+ 
+
 
                </div>
 

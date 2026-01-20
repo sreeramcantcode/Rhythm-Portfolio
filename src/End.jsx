@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/all"
 import Work from "./Work"
 import Footer from "./Footer"
 import Imagescroll from "./Imagescroll"
+import Imagescroll2 from "./Imagescroll2"
 import { useGSAP } from "@gsap/react"
 gsap.registerPlugin(ScrollTrigger)
 
@@ -45,8 +46,13 @@ function End(){
             <h1 className="z-20 text-black">Imagine . Create</h1>
           </div>
             <Imagescroll></Imagescroll>
+            <div className="relative bottom-2">
+            <Imagescroll2></Imagescroll2>
         </div>
        
+        </div>
+
+        
 
         <Work text="Let's Connect"></Work>
       <Footer />

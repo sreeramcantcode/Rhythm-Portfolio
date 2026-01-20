@@ -117,9 +117,9 @@ Contributing to brand visuals, campaigns, and digital design for over six months
       <div className="flex justify-center pb-60 pt-15">
        <button
   onClick={() => setOpen(true)}
-  className=" w-72 h-20 text-3xl cursor-pointer  bg-red-500 border px-4 py-2 rounded-lg hover:bg-red-900 hover:text-black transition"
+  className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
 >
-  View More
+  Explore More 
 </button>
 </div>
 
