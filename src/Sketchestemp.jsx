@@ -22,10 +22,6 @@ import p6 from "./assets/p6.jpg"
 import p7 from "./assets/p7.jpg"
 import p8 from "./assets/p8.jpg"
 import p9 from "./assets/p9.jpg"
-import p10 from "./assets/p10.jpg"
-
-
-
 
 
 
@@ -64,14 +60,18 @@ function Sketches (){
     {open && (
   <FolderPopup
     images={pageAImages}
-    onClose={() => setOpen(false)}></FolderPopup>
+    onClose={() => setOpen(false)}>
+
+    </FolderPopup>
   
 )}
 
   {open1 && (
   <FolderPopup
     images={pageAImages2}
-    onClose={() => setOpen1(false)}></FolderPopup>
+    onClose={() => setOpen1(false)}>
+
+    </FolderPopup>
   
 )}
         
@@ -86,4 +86,5 @@ function Sketches (){
 
 
 }
+
 export default Sketches
