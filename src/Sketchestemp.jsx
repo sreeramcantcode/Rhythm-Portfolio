@@ -28,7 +28,7 @@ import p9 from "./assets/p9.jpg"
 import FolderPopup from "./FolderPopup"
 import { useState } from "react"
 
-function Sketches (){
+function Sketchestemp (){
 
      const [open, setOpen] = useState(false)
      const [open1, setOpen1] = useState(false)
@@ -87,4 +87,4 @@ function Sketches (){
 
 }
 
-export default Sketches
+export default Sketchestemp
