@@ -31,7 +31,7 @@ import Saintstreet from "./Saintstreet"
 import Koenigseg from "./Koenigseg"
 import Lamborghini from "./Lamborghini"
 import Comic from "./Comic"
-import Sketches from "./Sketchestemp"
+import Sketches from "./Sketches"
 
 
 function App() {
@@ -75,8 +75,7 @@ function App() {
         <Route path="/koeniggseg" element={<Koenigseg></Koenigseg>} />
          <Route path="/lambo" element={<Lamborghini></Lamborghini>} />
          <Route path="/comic" element={<Comic></Comic>} />
-         <Route path="/sketches" element={<Sketchestemp></Sketchestemp>} />
-         
+         <Route path="/sketches" element={<Sketches></Sketches>} />
         
 
       </Routes>
