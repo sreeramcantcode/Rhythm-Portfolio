@@ -32,7 +32,7 @@ function Home(){
                
             </div>
              
-             <h1 className="text-white w-full mt-4 text-[200px] lose flex justify-center items-center text translate-x-10  hover:text-red-500 hover:text-[210px] cursor-pointer duration-300 transform translate-y-6"><span className="">ENVISION </span> CREATE</h1>
+             <h1 className="text-white w-full mt-4 text-[200px] lose flex justify-center items-center text translate-x-10  hover:text-red-500 hover:text-[210px] cursor-pointer duration-300 transform translate-y-6"><span className="pr-42 scale-110 hindi tracking-wider">कला</span> <span className="relative left-10 leading-relaxed scale-105">CREATE</span></h1>
           
 
              <div className=" h-96 items-end justify-evenly mt-8 flex gap-5">

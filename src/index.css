@@ -18,6 +18,14 @@ font-style: normal;
 }
 
 @font-face {
+font-family: "hindifont";
+src: url("./assets/Khand-SemiBold.woff") format("truetype");
+font-display: block;
+font-style: normal;
+
+}
+
+@font-face {
 font-family: "btntext";
 src: url("../public/fonts/aBlackLives.otf") format("truetype");
 font-display: block;
@@ -42,6 +50,10 @@ src: url("../public/fonts/ponte.ttf") format("truetype");
     font-family: 'GT Walsheim Trial';
     
     
+}
+
+.hindi {
+    font-family: "hindifont";
 }
 
 .word{
