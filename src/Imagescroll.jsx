@@ -2,7 +2,7 @@ import { useRef } from "react"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import image1 from "./img1.jpg"
-import image2 from "./assets/Lb3.jpg"
+import image2 from "./assets/LB3.jpg"
 import image3 from "./assets/merc2.jpg"
 import image4 from "./assets/saint1.jpg"
 
