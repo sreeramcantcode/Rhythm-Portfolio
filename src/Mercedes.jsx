@@ -99,7 +99,7 @@ function Mercedes (){
                             </div>
                         </div>
 
-                        <div className="pt-5 w-sm">
+                        <div className="pt-3 w-sm">
                             <img src={img3} alt="" />
                         </div>
                           
@@ -129,7 +129,7 @@ function Mercedes (){
                         
 
                         <div className="flex justify-end w-5xl gap-3  mr-5">
-                            <div className=" w-sm pt-3">
+                            <div className=" w-94 pt-1">
                             <img src={img4} alt="" />
                         </div>
                         <div className="w-30 flex flex-col gap-3">
