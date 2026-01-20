@@ -79,7 +79,7 @@ function About (){
         <>
         <div className="min-h-[140vh] max-w-screen bg-black text-white relative pt-35 flex justify-center ">
          
-         <div  className="w-full max-w-7xl rounded-2xl h-[85vh] bg-zinc-900 relative">
+         <div  className="w-full max-w-7xl rounded-2xl h-[85vh] bg-linear-to-r from-black to-red-500/30 relative">
 
             <div className="absolute w-[415px] top-0  ">
                <img ref={img} src={im} alt="" />
