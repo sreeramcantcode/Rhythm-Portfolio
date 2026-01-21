@@ -1,7 +1,7 @@
 import { useRef} from "react"
 
 import saint1 from "./assets/saint.png"
-import saint3 from "./assets/saint2.jpg"
+import saint3 from "./assets/saint2.webp"
 import saint2 from "./assets/saint1.jpg"
 import saintstreet from "./assets/Street.png"
 
