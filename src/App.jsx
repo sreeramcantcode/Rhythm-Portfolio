@@ -27,7 +27,7 @@ import LB from "./LB"
 import Bth from "./Bth"
 import Frameflash from "./Frameflash"
 import Mercedes from "./Mercedes"
-import Saintstreet from "./Saintstreet"
+
 import Koenigseg from "./Koenigseg"
 import Lamborghini from "./Lamborghini"
 import Comic from "./Comic"
