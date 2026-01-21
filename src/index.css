@@ -11,7 +11,7 @@ body {
 
 @font-face {
 font-family: "textfont";
-src: url("../public/fonts/BebasNeue-Regular.otf") format("truetype");
+src: url("./assets/BebasNeue-Regular.woff") format("truetype");
 font-display: block;
 font-style: normal;
 

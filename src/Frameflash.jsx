@@ -13,12 +13,21 @@ import { useRef, useState } from "react"
 import Work from "./Work"
 import Footer from "./Footer"
 import FolderPopup from "./FolderPopup"
+import { useEffect } from "react"
+import { cacheImages } from "./imagecache"
+
 
 import { ScrollTrigger } from "gsap/all"
 
 gsap.registerPlugin(ScrollTrigger)
 
 function Frameflash (){
+
+  useEffect(() => {
+  const imgs = Array.from(document.images).map(img => img.src)
+  cacheImages(imgs)
+}, [])
+
 
    const [open, setOpen] = useState(false)
   

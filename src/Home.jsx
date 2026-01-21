@@ -12,9 +12,15 @@ import bth from "./assets/bth.png"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { useRef } from "react"
+import { useEffect } from "react"
+import { cacheImages } from "./imagecache"
+
 
 
 function Home(){
+
+  
+
 
     const anref = useRef()
     useGSAP(()=>{

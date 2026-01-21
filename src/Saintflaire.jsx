@@ -2,7 +2,7 @@ import { useRef} from "react"
 
 import saint1 from "./assets/saint.png"
 import saint3 from "./assets/saint2.webp"
-import saint2 from "./assets/saint1.jpg"
+import saint2 from "./assets/saint1.webp"
 import saintstreet from "./assets/Street.png"
 
 import stpdf from "./assets/Saintflaire Catalogue.pdf"
@@ -16,9 +16,19 @@ import Work from "./Work"
 import Footer from "./Footer"
 import { ScrollTrigger } from "gsap/all"
 
+import { useEffect } from "react"
+import { cacheImages } from "./imagecache"
+
+
 gsap.registerPlugin(ScrollTrigger)
 
 function Saintflaire(){
+
+    useEffect(() => {
+  const imgs = Array.from(document.images).map(img => img.src)
+  cacheImages(imgs)
+}, [])
+
     
 
     
