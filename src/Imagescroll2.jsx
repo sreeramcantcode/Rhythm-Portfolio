@@ -18,8 +18,9 @@ export default function Imagescroll2() {
 
   useGSAP(
     () => {
-      const track = trackRef.current
-      const width = track.scrollWidth / 2
+      requestAnimationFrame(() => {
+    const track = trackRef.current
+    const width = track.scrollWidth / 2
 
      
       gsap.fromTo(
@@ -32,8 +33,8 @@ export default function Imagescroll2() {
           repeat: -1,
         }
       )
-    },
-    { scope: trackRef }
+    })
+  },{ scope: trackRef }
   )
 
   return (

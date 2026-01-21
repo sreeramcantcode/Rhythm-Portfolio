@@ -1,7 +1,7 @@
 
 import koe1 from "./assets/koeniggseg1.jpg"
-import koe2 from "./assets/koeniggseg2.jpg"
-import logo from "./assets/koelogo1.png"
+import koe2 from "./assets/koeniggseg.webp"
+import logo from "./assets/koelogo.webp"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { useRef } from "react"
@@ -70,7 +70,7 @@ function Koenigseg(){
                     <div className="w-6xl mr-5 pt-6">
                         <img src={koe2} alt="" className=""/>
                         <div className="text-white pt-4 text-center">
-                            <h3>Hand-sketched automotive artwork acknowledged by the official Koenigsegg page and recognized for its execution.</h3>
+                            <h3>Hand-sketched automotive artwork acknowledged by the official KoenigseggUSA page and recognized for its execution.</h3>
                         </div>
                     </div>
 

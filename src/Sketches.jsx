@@ -33,8 +33,8 @@ function Sketches (){
      const [open, setOpen] = useState(false)
      const [open1, setOpen1] = useState(false)
               
-                  const pageAImages = [auto1 , auto2 , auto3 ,  auto4 , auto5 , auto6 , auto7 , auto8 , auto9 ]
-                  const pageAImages2 = [p1,p2,p3,p4,p5,p6,p7,p8,p9]
+                  const pageAImages = [auto3 ,  auto4, auto9 ,auto6 , auto7 , auto8 ,auto5 , auto1 , auto2 ,  ]
+                  const pageAImages2 = [p5,p4,p6,p1,p2,p3,p7,p8,p9]
 
     return(
     <>

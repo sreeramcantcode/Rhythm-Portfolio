@@ -1,10 +1,10 @@
 
-import Lb1 from "./assets/ff1.png"
-import Lb2 from "./assets/ff6.jpg"
+import Lb1 from "./assets/ff1.webp"
+import Lb2 from "./assets/ff6.webp"
 import Lb3 from "./assets/ff3.jpg"
-import Lb4 from "./assets/ff4.jpg"
-import Lb5 from "./assets/ff5.jpg"
-import Lb6 from "./assets/ff6.jpg"
+import Lb4 from "./assets/ff4.webp"
+import Lb5 from "./assets/ff5.webp"
+import Lb6 from "./assets/ff2.webp"
 import lb from "./assets/frameflash.png"
 
 import gsap from "gsap"

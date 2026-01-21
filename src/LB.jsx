@@ -1,7 +1,7 @@
 
-import Lb1 from "./assets/Lb1.jpg"
+import Lb1 from "./assets/Lb1.webp"
 import Lb2 from "./assets/LB2.jpg"
-import Lb3 from "./assets/LB3.jpg"
+import Lb3 from "./assets/LB3.webp"
 import Lb4 from "./assets/Lb4.jpg"
 import Lb5 from "./assets/LB5.jpg"
 import Lb6 from "./assets/Lb6.jpg"
@@ -22,7 +22,7 @@ function LB (){
 
   const [open, setOpen] = useState(false)
         
-            const pageAImages = [ Lb3, Lb4 , Lb5 , Lb6 , Lb1 , Lb2]
+            const pageAImages = [ Lb3, Lb4 , Lb5 , Lb6 ]
     
     const car = useRef()
     const maintext = useRef()
@@ -100,7 +100,14 @@ function LB (){
             <h3 className="text-white text-sm opacity-70 text-center">Officially recognised by Liberty Walk An independent automotive graphic design developed as a personal project <span><br /> focused </span>on visual identity and form.</h3>
             
         </div>
-        
+        <div className="flex justify-center pb-60 pt-10 ">
+       <button
+  onClick={() => setOpen(true)}
+  className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
+>
+   View More
+</button>
+</div>
         </div>
 
         <div className="w-60 mb-5 bottom-2 relative">
@@ -111,14 +118,7 @@ function LB (){
         
         </div>
 
-      <div className="flex justify-center pb-60 pt-15">
-       <button
-  onClick={() => setOpen(true)}
-  className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
->
-   View More
-</button>
-</div>
+      
 
        
         {open && (

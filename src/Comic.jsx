@@ -4,7 +4,7 @@ import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { useRef} from "react"
 import lb from "./assets/frameflash.png"
-import comic from "./assets/comic.jpg"
+import comic from "./assets/comic2.jpg"
 import Work from "./Work"
 import Footer from "./Footer"
 import comicpdf from "./assets/portfolio_finalwork.pdf"
@@ -73,17 +73,25 @@ function Comic(){
                 </div>
                 </div>
 
-                    <div className="pb-30">
-                    <div ref={comicimg} className="p-7 top-1/2 flex justify-start relative group w-fit  ">
+                    <div className="pb-30 flex justify-center">
+                    <div ref={comicimg} className="p-7 top-1/2  relative group  ">
                     <div className=" cursor-pointer" onClick={()=> window.open(comicpdf , "_blank")}>
-                    <div  className="absolute items-center w-xl inset-0 flex justify-center  u ">
-                        <h3 className="text-white text-6xl opacity-0 group-hover:opacity-100 duration-700">Read Comic</h3>
+                   
+                        <img src={comic} className="w-8xl border duration-500" alt="" />
                         </div>
-                        <img src={comic} className="w-xl border group-hover:opacity-20 duration-500" alt="" />
+
+                        <div className="pt-4 flex justify-center text-sm ">
+                            <h3 className="text-white text-center leading-relaxed w-7xl"> An original detective comic developed in a noir-cyberpunk setting. The narrative follows Victor, a detective drawn into a complex investigation centered on memory, identity, and concealed conspiracies. The project features hand-drawn artwork, structured narrative panels, and atmospheric visual direction to build a cohesive and immersive world.</h3>
                         </div>
-                        <div className="text-white text-xl p-4 w-70">
-                          <h3>An original detective comic developed in a noir-cyberpunk setting. The narrative follows Victor, a detective drawn into a complex investigation centered on memory, identity, and concealed conspiracies. The project features hand-drawn artwork, structured narrative panels, and atmospheric visual direction to build a cohesive and immersive world.</h3>
-                        </div>
+                       
+                    <div className="flex justify-center pt-10">
+                         <button
+   onClick={()=> window.open(comicpdf , "_blank")}
+  className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
+>
+   View Comic
+</button>
+                    </div>
                         
                     </div>
                     </div>

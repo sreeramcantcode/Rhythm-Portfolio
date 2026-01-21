@@ -1,10 +1,11 @@
 
 import { useRef, useState } from "react"
 import bth from "./assets/bth.png"
-import bth1 from "./assets/bth1.png"
-import bth2 from "./assets/bth2.jpg"
-import bth3 from "./assets/bth3.jpg"
-import bth4 from "./assets/bth4.jpg"
+
+import bth2 from "./assets/bth2.webp"
+import bth3 from "./assets/bth3.webp"
+import bth4 from "./assets/bth4.webp"
+import bth5 from "./assets/bth5.webp"
 import FolderPopup from "./FolderPopup"
 
 
@@ -85,13 +86,13 @@ function Bth(){
             <div ref={mainimg} className="flex justify-center pt-10">
                 <div  className=" flex justify-center w-screen  relative">
             
-                  <div className="w-60 ">
-                    <img src={bth1} alt="" />
+                  <div className="w-70 ">
+                    <img src={bth5} alt="" />
                   </div>
                   <div className="max-w-3xl">
                         <img src={bth2} alt="" className="p-4" />
-                        <div className="flex justify-center relative pt-3 ">
-                        <h3 className="text-white text-md opacity-70 text-center">Worked as a graphic designer for BeatTheHeat, a creative club at VIT-AP, responsible for designing event posters, promotional banners, and custom club merchandise. Managed all supporting graphics for both physical events and digital outreach, ensuring consistent visual identity across platforms </h3>
+                        <div className="flex justify-center relative p-5 ">
+                        <h3 className="text-white text-md opacity-70 text-center ">Worked as a graphic designer for BeatTheHeat, a creative club at VIT-AP, responsible for designing event posters, promotional banners, and custom club merchandise. Managed all supporting graphics for both physical events and digital outreach, ensuring consistent visual identity across platforms </h3>
                         
                     </div>
                     
