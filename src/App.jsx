@@ -71,7 +71,7 @@ function App() {
         <Route path="/bth" element={<Bth></Bth>} />
          <Route path="/frameflash" element={<Frameflash></Frameflash>} />
          <Route path="/mercedes" element={<Mercedes></Mercedes>} />
-        <Route path="/Saintstreet" element={<Saintstreet></Saintstreet>} />
+  
         <Route path="/koeniggseg" element={<Koenigseg></Koenigseg>} />
          <Route path="/lambo" element={<Lamborghini></Lamborghini>} />
          <Route path="/comic" element={<Comic></Comic>} />
