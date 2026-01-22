@@ -64,6 +64,7 @@ import auto6 from "./assets/auto6.jpg"
 import auto7 from "./assets/auto7.jpg"
 import auto8 from "./assets/auto8.jpg"
 import auto9 from "./assets/auto9.jpg"
+import im from "./assets/rhythm.webp"
 
 import p1 from "./assets/p1.jpg"
 import p2 from "./assets/p2.jpg"
@@ -194,6 +195,8 @@ image7,
 image8,
 image9,
 i,
+im
+
 
 
 
