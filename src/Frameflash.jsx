@@ -106,7 +106,7 @@ function Frameflash (){
       <div className="max-w-3xl">
             <img src={Lb1} alt="" className="p-4" />
             <div className="flex justify-center relative bottom-3 ">
-            <h3 className="text-white text-sm opacity-70 mt-4 text-center w-xl">
+            <h3 className="text-white text-md opacity-70 mt-4 text-center w-xl">
 I have been the sole graphic designer at Frameflash Productions, responsible for building and maintaining the studio's entire visual presence. From designing the brand's official logo</h3>
             
         </div>

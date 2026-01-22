@@ -1,11 +1,11 @@
 import { useGSAP } from "@gsap/react"
-import im from "./assets/rhythm.jpg"
+import im from "./assets/rhythm.webp"
 import gsap from "gsap"
 import { useRef } from "react"
 import { ScrollTrigger } from "gsap/all"
 import Footer from "./Footer";
 import Work from "./Work";
-
+import resume from "./assets/Rhythm_Nandi_Graphic_Designer_Resume.pdf"
 gsap.registerPlugin(ScrollTrigger)
 function About (){
    const img = useRef()
@@ -108,8 +108,22 @@ function About (){
                      <li ref={para4}>Constantly pushing boundaries to create work that stands out and performs</li>
                   
                </ul>
+
+               
             </div>
             </div>
+            <div className="absolute left-1/2 bottom-1/9 ">
+                    <div className="">
+                                            <button
+                      onClick={()=> window.open(resume, "_blank")}
+                     className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
+                   >
+                      View Resume
+                   </button>
+                                       </div>
+                    
+                  
+                </div>
          
 
         

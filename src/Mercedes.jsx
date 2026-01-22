@@ -103,7 +103,7 @@ function Mercedes (){
                             <img src={img3} alt="" />
                         </div>
                           
-                          <div className="text-white text-center p-10 text-xl h-fit mr-4 absolute top-1/5">
+                          <div className="text-white text-center p-10 text-lg h-fit mr-4 absolute top-1/5">
                             <h3 className="w-96">
                                 Developed a magazine-style editorial layout centered on the Mercedes 190E Evo II, highlighting its heritage and engineering legacy. Created original illustrations, custom graphics, and layout compositions to present the car in a collector-style feature format.
                                 

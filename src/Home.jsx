@@ -14,12 +14,35 @@ import gsap from "gsap"
 import { useRef } from "react"
 import { useEffect } from "react"
 import { cacheImages } from "./imagecache"
+import { ALL_IMAGES } from "./allimages"
+
+
+
+
+
 
 
 
 function Home(){
 
+   useEffect(() => {
+  if (window.innerWidth > 768) {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(() => {
+        cacheImages(ALL_IMAGES)
+      })
+    } else {
+      // fallback for unsupported browsers
+      setTimeout(() => {
+        cacheImages(ALL_IMAGES)
+      }, 200)
+    }
+  }
+}, [])
+
+
   
+
 
 
     const anref = useRef()
@@ -32,7 +55,7 @@ function Home(){
 
     return(
         <>
-        <div ref={anref} className=" min-h-[130vh] bg-black">\
+        <div ref={anref} className=" min-h-[130vh] bg-black">
             <div className="flex justify-center relative pt-10 ">
                <img className="object-cover w-2xl absolute transform top-7 z-10 im" src={img} alt="" />
                

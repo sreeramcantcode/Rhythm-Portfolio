@@ -108,7 +108,7 @@ function Uniliver(){
                     
                     </div>
 
-                   <div className="text-white w-2xl relative text-2xl p-4 mt-7  ">
+                   <div className="text-white w-2xl text-center relative text-md p-4 mt-7  ">
                         <h3>
                         Selected by Hindustan Unilever to design the official logo, T-shirt, and cap for Team Northeast at the Eastern India branch conference. The designs reflected the team’s identity and were well received for their visual consistency, becoming key elements of the event’s branding.
                         </h3>

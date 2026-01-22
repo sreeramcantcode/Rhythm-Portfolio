@@ -2,9 +2,12 @@
 
 import Work from "./Work"
 import Footer from "./Footer"
+import slcert from "./assets/slcert.pdf"
 
-import ff from "./assets/Silent.png"
-import sl from "./assets/sl1.jpg"
+import sl2 from "./assets/sl2.webp"
+import sl3 from "./assets/sl3.webp"
+import sl4 from "./assets/sl4.webp"
+import sil from "./assets/Silent.png"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { useRef } from "react"
@@ -58,7 +61,7 @@ function SL(){
                     </div>
                     <div className=" flex gap-3  ">
                         <div ref={logo} className="border-r border-white w-35 h-23 relative">
-                        <img src={ff} alt="" className="translate scale-120 w-25 translate-x-6" /> 
+                        <img src={sil} alt="" className="translate scale-120 w-25 translate-x-6" /> 
                         </div>
                         <div className="text-white text-xl  items-center flex px-10 ">
                                 <ul className="space-y-4">
@@ -67,16 +70,13 @@ function SL(){
                                 </ul>
                             </div>
                         </div>
-
-                <div ref={mainimg} className="flex justify-start p-10 gap-5">
-                    <div className="w-xl pt-10">
-                        <img src={sl} alt="" />
-                    </div>
-
-                    <div className="text-white ">
-                        <h3 className="w-60">
-                            
-Silent Artery is an academic ECS hardware project focused on non-invasive
+              
+              <div className="pt-10 pb-30 flex justify-center gap-5">
+                <div className="w-80">
+                    <img src={sl4} alt="" />
+                    <div className=" text-white text-center w-5xl pt-6">
+                        <h3 className="">
+                            Silent Artery is an academic ECS hardware project focused on non-invasive
 pulse and oxygen monitoring. As the product designer, I crafted
 the complete
 visual identity- including user interface
@@ -89,12 +89,39 @@ a clean aesthetic
 tailored for
 health-tech innovation.
                         </h3>
-                    </div>
-                    </div>  
+                        <div className="flex justify-center">
+                    <div className="pt-10">
+                                            <button
+                      onClick={()=> window.open(slcert , "_blank")}
+                     className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
+                   >
+                      View Certificate
+                   </button>
+                                       </div>
+                    
+                  
+                </div>
+        
+                   </div>
+                   
+                </div>
 
+                <div className="w-80 ">
+                    <img src={sl3} alt="" />
+                     
+                     
+                   
+                </div>
+
+                <div className="w-80">
+                    <img src={sl2} alt="" />
+                    
+                </div>
+              </div>
                  
-
+             
             <div>
+
          <Work text="Let's Connect"></Work>
      <Footer></Footer>
      </div>   

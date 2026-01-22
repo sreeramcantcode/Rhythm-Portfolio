@@ -96,7 +96,7 @@ function Knine(){
 
                 <div className="w-4xl">
                     <img src={k1} alt="" />
-                    <div className="text-white text-center text-sm opacity-70 pt-4">
+                    <div className="text-white text-center text-md opacity-70 pt-4">
 
                         <h3>Currently working as a graphic designer with K9 School.
 Contributing to brand visuals, campaigns, and digital design for over six months.</h3>

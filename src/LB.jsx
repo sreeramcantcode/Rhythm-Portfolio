@@ -96,8 +96,8 @@ function LB (){
       </div>
       <div className="max-w-3xl">
             <img src={Lb3} alt="" className="p-4" />
-            <div className="flex justify-center relative bottom-3 ">
-            <h3 className="text-white text-sm opacity-70 text-center">Officially recognised by Liberty Walk An independent automotive graphic design developed as a personal project <span><br /> focused </span>on visual identity and form.</h3>
+            <div className="flex justify-center relative bottom-3 p-5 ">
+            <h3 className="text-white text-md opacity-70 text-center">Officially recognised by Liberty Walk An independent automotive graphic design developed as a personal project <span>focused </span>on visual identity and form.</h3>
             
         </div>
         <div className="flex justify-center pb-60 pt-10 ">

@@ -16,7 +16,7 @@ import koe from "./assets/koeniggsegtile.jpg"
 import comic from "./assets/comic.jpg"
 import bth from "./assets/bthtile.webp"
 import lbwk from "./assets/lbwk.jpg"
-import sketch from "./assets/sketch.jpg"
+import sketch from "./assets/sketch.webp"
 import { Link } from "react-router-dom";
 
 
