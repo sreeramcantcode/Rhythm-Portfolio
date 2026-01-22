@@ -89,18 +89,6 @@ a clean aesthetic
 tailored for
 health-tech innovation.
                         </h3>
-                        <div className="flex justify-center">
-                    <div className="pt-10">
-                    <button
-                      onClick={()=> window.open(slcert , "_blank")}
-                     className=" rounded-lg h-20 text-4xl cursor-pointer hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
-                   >
-                      View Certificate
-                   </button>
-                                       </div>
-                    
-                  
-                </div>
         
                    </div>
                    
@@ -115,11 +103,21 @@ health-tech innovation.
 
                 <div className="w-80">
                     <img src={sl2} alt="" />
-                    
                 </div>
               </div>
                  
-             
+             <div className="flex justify-center">
+                    <div className="pt-10 ">
+                    <button
+                      onClick={()=> window.open(slcert , "_blank")}
+                     className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
+                   >
+                      View Certificate
+                   </button>
+                                       </div>
+                    
+                  
+                </div>
             <div>
 
          <Work text="Let's Connect"></Work>
