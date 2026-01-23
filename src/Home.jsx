@@ -43,28 +43,47 @@ const anref = useRef()
 
     return(
         <>
-        <div ref={anref} className=" min-h-[130vh] bg-black">
-            <div className="flex justify-center relative pt-15 ">
-               <img className="object-cover w-2xl absolute transform top-12 z-10 im" src={img} alt="" />
+        <div ref={anref} className=" lg:min-h-[130vh] min-h-screen  bg-black">
+            <div className="flex justify-center relative pt-15 md:pt-20 ">
+               <img className="object-cover w-2xl absolute transform opacity-95 lg:opacity-100  translate-y-5 lg:top-6 z-10 im" src={img} alt="" />
                
             </div>
              
-             <h1 className="text-white w-full mt-4 text-[200px] lose flex justify-center items-center text translate-x-10  hover:text-red-500 hover:text-[210px] cursor-pointer duration-300 transform translate-y-6"><span className="pr-42 scale-110 hindi tracking-wider">कला</span> <span className="relative left-10 leading-relaxed scale-105">CREATE</span></h1>
-          
+             <div className="w-full h-fit">
+             <h1 className="text-white hidden mt-4 text-[200px] lose lg:flex justify-center items-center text translate-x-10  hover:text-red-500 hover:text-[210px] cursor-pointer duration-300 transform translate-y-6"><span className="pr-42 scale-110 hindi tracking-wider">कला</span> <span className="relative left-10 leading-relaxed scale-105">CREATE</span></h1>
+          </div>
 
-             <div className=" h-96 items-end justify-evenly mt-8 flex gap-5">
+           {/*Mobile text*/}
+         <h1 className="
+  lg:hidden
+  text-white
+  text-center
+  
+  text-[100px] absolute top-1/6 left-1/7
+  
+  leading-tight
+">
+  <span className="block hindi tracking-wider">कला</span>
+  <span className="block hindi">CREATE</span>
+</h1>
+
+             <div className=" lg:h-80 lg:items-end grid grid-cols-5 lg:relative absolute bottom-1/12  lg:justify-evenly lg:flex lg:gap-5">
                 
-                <img src={frame} className="w-20 h-20 object-contain relative scale-190 z-20 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
-                <img src={saint} className="w-20 h-20 object-contain relative  z-20 scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
-                <img src={k} className="w-20 h-20 object-contain relative  z-20 scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
-                <img src={mer} className="w-20 h-20 transform  object-contain relative z-20 scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
+                <img src={frame} className="lg:w-20 w-10 h-20 object-contain relative lg:scale-190 z-20 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
+                <img src={saint} className="lg:w-20 w-10 h-20 object-contain relative  z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
+                <img src={k} className="lg:w-20 w-10 h-20 object-contain relative  z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
+                <img src={mer} className="lg:w-20 w-10 h-20 transform  object-contain relative z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
                 
-                <img src={uni} className="w-20 h-20 object-contain scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
-                <img src={street} className="w-20 h-20 object-contain scale-190 hover:scale-240 duration-300 cursor-pointer " alt="frame" />
-                <img src={lb} className="w-20 h-20 object-contain scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
-                <img src={sil} className="w-20 h-20 object-contain scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
-                <img src={bth} className="w-20 h-20 object-contain scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
+                <img src={uni} className="lg:w-20 w-10 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
+
+                <div className="flex lg:gap-25  justify-evenly w-screen lg:w-fit">
+                <img src={street} className="lg:w-20 w-10 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer " alt="frame" />
+                <img src={lb} className="lg:w-20 w-10 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
+                <img src={sil} className="lg:w-20 w-10 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
+                <img src={bth} className="lg:w-20 w-10 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
                 </div>
+                </div>
+              
                </div>
             
             <div className=""></div>

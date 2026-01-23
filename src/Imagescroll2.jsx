@@ -44,13 +44,13 @@ export default function Imagescroll2() {
           <div key={i} className="flex flex-col items-center gap-4">
             <img
               src={img}
-              className="h-96 object-cover rounded-xl "
+              className="h-96 rounded-xl "
             />
           </div>
         ))}
       </div>
-        <div className="h-90 flex justify-center items-center">
-      <button onClick={()=> navigate("/All")} className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  ">Explore Projects</button>
+        <div className="h-90  flex justify-center items-center">
+      <button onClick={()=> navigate("/All")} className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-md p-3 text-center hover:scale-105  ">Explore Projects</button>
       </div>
     </div>
   )

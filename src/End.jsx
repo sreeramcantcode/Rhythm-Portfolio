@@ -36,8 +36,8 @@ function End(){
         
         <>
 
-        <div  className="text-[180px] text-center min-h-screen text-white bg-black ">
-        <div className="flex gap-5 h-70 py-2 relative translate-y-7 u justify-center transform  text-center">
+        <div  className="lg:text-[180px] text-[43px] whitespace-nowrap text-center min-h-screen text-white bg-black ">
+        <div className="flex gap-5 h-30 lg:h-70 items-center  relative translate-y-7 u justify-center  transform  text-center">
           
             <div ref={boxref} className="inset-0 bg-white absolute ">
               

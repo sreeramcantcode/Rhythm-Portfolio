@@ -2,7 +2,7 @@ import img from "./assets/saint.png"
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap"
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-
+import { useRef } from "react";
 gsap.registerPlugin(ScrollToPlugin)
 
 import { Link } from "react-router-dom";
@@ -18,6 +18,7 @@ function Sample (){
 
   const { contextSafe } = useGSAP()
   const [open, setOpen] = useState(false)
+  const nav = useRef()
 
   const handle = contextSafe((e) => {
     e.preventDefault()
@@ -28,18 +29,31 @@ function Sample (){
       scrollTo: "#footer",
       ease: "power2.out",
     })
+
+    
   })
+
+  useGSAP(() => {
+  if (!nav.current) return
+
+  gsap.fromTo(
+    nav.current,
+    { x: -100, opacity: 0 },
+    { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" }
+  )
+}, [open])
+
 
   return (
     <>
       <div className="backdrop-blur-2xl fixed z-30 w-full">
-        <div className="bg-black py-3 h-20 text-white relative border-b border-green-400 opacity-72">
+        <div className="bg-black py-3 h-20 text-white relative border-b border-green-400 lg:opacity-72">
 
           {/* logo */}
           <a href="#">
             <img
               src={img}
-              className="w-20 absolute top-0 left-4 hover:scale-110 duration-300"
+              className="w-20 absolute top-0 lg:left-4 right-0 hover:scale-110 duration-300"
               alt=""
             />
           </a>
@@ -53,7 +67,7 @@ function Sample (){
           </div>
 
           
-          <div className="md:hidden flex justify-end items-center h-full px-6 mr-10">
+          <div className="md:hidden flex lg:justify-end items-center h-full px-6 mr-10">
             <button
               onClick={() => setOpen(!open)}
               className="text-2xl focus:outline-none cursor-pointer"
@@ -64,20 +78,24 @@ function Sample (){
 
          
           {open && (
-            <div className="
-              md:hidden
-              absolute top-20 right-4
-              bg-black border border-green-400
+            <div ref={nav}  className="
+              md:hidden 
+              absolute top-20 left-0
+              bg-linear-to-l from-black to-red-950 
+              h-[400px] w-40 flex justify-center text-center flex-col gap-10
               rounded-lg
-              px-6 py-4
+              
               space-y-4
-              text-md
+              text-lg 
               z-40
+              
             ">
+              
               <Link onClick={() => setOpen(false)} to="/" className="block hover:text-red-400">Home</Link>
               <Link onClick={() => setOpen(false)} to="/All" className="block hover:text-red-400">Works</Link>
               <Link onClick={() => setOpen(false)} to="/About" className="block hover:text-red-400">About</Link>
               <Link to="#" onClick={handle} className="block hover:text-red-400">Contact</Link>
+              
             </div>
           )}
 

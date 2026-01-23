@@ -88,7 +88,7 @@ gsap.registerPlugin(ScrollToPlugin)
 
             {/* nav + socials */}
             <div className="
-            navi flex flex-col sm:flex-row
+            navi flex  sm:flex-row
             justify-evenly
             max-w-2xl w-full
             ml-0 md:ml-9
