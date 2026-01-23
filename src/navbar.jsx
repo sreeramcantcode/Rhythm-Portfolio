@@ -53,7 +53,7 @@ function Sample (){
           <a href="#">
             <img
               src={img}
-              className="w-20 absolute top-0 lg:left-4 right-0 hover:scale-110 duration-300"
+              className="w-20 absolute top-0 md:left-4 lg:left-4 right-0 hover:scale-110 duration-300"
               alt=""
             />
           </a>

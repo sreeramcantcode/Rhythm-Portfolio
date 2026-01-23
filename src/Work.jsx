@@ -27,8 +27,8 @@ function Work(props){
 
         <div className="absolute inset-0 flex justify-center items-center">
           <h1
-            className="
-              text-[48px] sm:text-[80px] md:text-[140px]
+            className=" whitespace-nowrap
+              text-[48px] sm:text-[80px] md:text-[110px]
               text-black z-20 word
               text-center
               px-4
