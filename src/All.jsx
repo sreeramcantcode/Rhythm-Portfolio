@@ -29,9 +29,18 @@ function All(){
           <div className="pt-10">
                <Work text="All Works"  ></Work>
                </div>
-               <div className="px-25">
-               <div className="max-w-7xl grid grid-cols-2 gap-x-29 ml-12   gap-y-9 justify-items-end mt-12 pb-25"> 
-                <div className="w-2xl h-100 relative group cursor-pointer">
+               <div className="px-4 sm:px-10 md:px-25">
+              <div className="max-w-7xl grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2
+    gap-x-6 md:gap-x-29
+    gap-y-6 sm:gap-y-9
+    ml-0 sm:ml-12
+    justify-items-center sm:justify-items-end
+    mt-8 sm:mt-12
+    pb-20
+  "
+>
+
+                <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
                 <Link to="/uniliver"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   UNILEVER</h1>
                   <img
@@ -40,7 +49,7 @@ function All(){
     alt=""
   /></Link>
 </div>
-              <div className="w-2xl h-100 relative group cursor-pointer">
+              <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
                 <Link to="/k9"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   K9 SCHOOL</h1>
                   <img
@@ -49,7 +58,7 @@ function All(){
     alt=""
   /></Link>
 </div>
-                <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
                 <Link to="/saint"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   SAINTFLAIRE</h1>
                   <img
@@ -58,7 +67,7 @@ function All(){
     alt=""
   /> </Link> 
 </div>
-                      <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                      <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
              <Link to="/silent"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   SILENT ARTERY</h1>
                   <img
@@ -66,7 +75,7 @@ function All(){
     className="w-full h-full object-cover group-hover:opacity-20 duration-500"
     alt=""
   /></Link>
-</div>      <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+</div>      <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
               <Link to="/frameflash"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   FRAMEFLASH</h1>
                   <img
@@ -75,7 +84,7 @@ function All(){
     alt=""
   /></Link>  
 </div>               
-                     <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                     <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
                 <Link to="/bth"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   BEAT THE HEAT</h1>
                   <img
@@ -84,7 +93,7 @@ function All(){
     alt=""
   /></Link>
 </div>              
-                 <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+                 <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
                <Link to="/mercedes"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   MERCEDES</h1>
                   <img
@@ -94,7 +103,7 @@ function All(){
   /> </Link> 
 </div>
 
-<div className="w-2xl h-100 p-1 relative group cursor-pointer">
+<div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
               <Link to="/lb"> <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   LIBERTY WALK</h1>
                   <img
@@ -104,7 +113,7 @@ function All(){
   /> </Link> 
 </div>
    
-   <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+   <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
                 <Link to="/koeniggseg"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   KOENIGSEGG</h1>
                   <img
@@ -114,7 +123,7 @@ function All(){
   /> </Link>
 </div>
 
-     <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+     <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
               <Link to="/lambo"> <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   LAMBORGHINI</h1>
                   <img
@@ -125,7 +134,7 @@ function All(){
 </div>
 
 
-<div className="w-2xl h-100 p-1 relative group cursor-pointer">
+<div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
               <Link to="/sketches"> <h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   SKETCHES</h1>
                   <img
@@ -135,7 +144,7 @@ function All(){
   /> </Link> 
 </div>
 
-         <div className="w-2xl h-100 p-1 relative group cursor-pointer">
+         <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
              <Link to="/comic"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
                   COMIC</h1>
                   <img

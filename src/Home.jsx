@@ -17,12 +17,6 @@ import { cacheImages } from "./imagecache"
 import { ALL_IMAGES } from "./allimages"
 
 
-
-
-
-
-
-
 function Home(){
 
    useEffect(() => {
@@ -39,13 +33,7 @@ function Home(){
     }
   }
 }, [])
-
-
-  
-
-
-
-    const anref = useRef()
+const anref = useRef()
     useGSAP(()=>{
         gsap.from(anref.current , {
             y:30,
@@ -56,8 +44,8 @@ function Home(){
     return(
         <>
         <div ref={anref} className=" min-h-[130vh] bg-black">
-            <div className="flex justify-center relative pt-10 ">
-               <img className="object-cover w-2xl absolute transform top-7 z-10 im" src={img} alt="" />
+            <div className="flex justify-center relative pt-15 ">
+               <img className="object-cover w-2xl absolute transform top-12 z-10 im" src={img} alt="" />
                
             </div>
              
