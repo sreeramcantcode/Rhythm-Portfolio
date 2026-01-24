@@ -46,12 +46,12 @@ const anref = useRef()
         <div ref={anref} className="bg-black  ">
 
           <div className="w-screen pt-20 relative text-white ">
-            <div className="flex justify-center">
-            <div className="lg:flex lg:text-[220px] lg:gap-24 text-[130px] lg:pt-20  absolute justify-center  hover:text-red-500 hover:text-[230px] cursor-pointer duration-300 ">
-            <h3 className="hindi text-center translate-x-2">
+            <div className="flex justify-center relative pb-7 -top-10 lg:top-10">
+            <div className="lg:flex lg:text-[220px] lg:gap-24 text-[135px] lg:pt-20  sm:*: absolute justify-center  hover:text-red-500 hover:text-[230px] cursor-pointer duration-300">
+            <h3 className="hindi text-[200px] lg:text-[220px] text-center translate-x-2 tracking-wide flex py-0 lg:tracking-tight">
                 कला
             </h3>
-            <h3 className="text z-10 lg:translate-x-28">
+            <h3 className="text z-10  text-center lg:translate-x-28 relative bottom-20 lg:bottom-0">
               CREATE
             </h3>
             </div>

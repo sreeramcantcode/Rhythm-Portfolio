@@ -2,23 +2,40 @@ import img from "./assets/saint.png"
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap"
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import { useRef } from "react";
+
 gsap.registerPlugin(ScrollToPlugin)
 
 import { Link } from "react-router-dom";
 
 
 
+import { useEffect, useRef , useState } from "react";
 
-import { useState } from "react"
 
 gsap.registerPlugin(ScrollToPlugin)
 
 function Sample (){
+  const [open, setOpen] = useState(false);
+
 
   const { contextSafe } = useGSAP()
-  const [open, setOpen] = useState(false)
+  
   const nav = useRef()
+
+  useEffect(() => {
+  function handleClickOutside(e) {
+    if (open && nav.current && !nav.current.contains(e.target)) {
+      setOpen(false);
+    }
+  }
+
+  document.addEventListener("mousedown", handleClickOutside);
+
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, [open]);
+
 
   const handle = contextSafe((e) => {
     e.preventDefault()
@@ -82,7 +99,7 @@ function Sample (){
               md:hidden 
               absolute top-20 left-0
               bg-linear-to-l from-black to-red-950 
-              h-screen w-40 flex justify-center text-center flex-col gap-10
+              h-screen w-40 flex justify-start pt-20 text-center flex-col gap-10
               rounded-lg
               
               space-y-4
