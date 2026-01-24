@@ -54,9 +54,9 @@ function Lamborghini(){
             <div className=" flex gap-3 pt-25  ">
                     
                     <div ref={img} className="border-r z-10 border-white w-30 relative     ">
-                        <img src={logo} alt="" className="absolute inset-0 w-30 pt-4" /> </div>
+                        <img src={logo} alt="" className="absolute lg:w-30 w-30 pt-4" /> </div>
                         
-                        <div className="text-white text-xl  items-center flex px-5 pt-5 ">
+                        <div className="text-white lg:text-xl text-[12px]  items-center flex px-5 pt-5  ">
                         <ul className="space-y-4 pb-3">
                             <li  ref={maintext}>Role : <span className="opacity-60">Sketch Artist</span></li>
                             <li ref={maintext2} >Project : <span className="opacity-60">Personal Project</span></li>
@@ -65,15 +65,15 @@ function Lamborghini(){
                     </div>
 
                   
-                 <div ref={car} className="flex pb-25  justify-center border relative w-screen ">
+                 <div ref={car} className="flex pb-25 lg:pt-0 pt-10  justify-center border relative w-screen ">
                     <div className="w-3xl  ">
                         <img src={lambo1} alt="" className=""/>
                         <div className="text-white pt-4 text-center ">
-                            <h3>A hand-sketched Lamborghini artwork acknowledged by the Lamborghini Mumbai. The work received recognition for its execution and visual quality.</h3>
+                            <h3 className="text-md">A hand-sketched Lamborghini artwork acknowledged by the Lamborghini Mumbai. The work received recognition for its execution and visual quality.</h3>
                         </div>
                     </div>
 
-                    <div className="w-45 border absolute right-1/6 top-0 border-yellow-300">
+                    <div className="lg:w-45 w-24 border absolute right-0 lg:right-1/6 top-4 border-yellow-300">
                         <img src={lambo2} alt="" />
                     </div>
                     </div>  
