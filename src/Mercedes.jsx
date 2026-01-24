@@ -150,7 +150,7 @@ function Mercedes (){
                     </div>
                     </div>
                     <div className="flex justify-center">
-                    <h3 className="w-96 text-white lg:hidden absolute bottom-1/12 translate-y-5 text-center p-2 text-sm ">
+                    <h3 className="w-96 text-white lg:hidden absolute bottom-1/12 translate-y-5 text-center p-4 text-sm ">
                                 Developed a magazine-style editorial layout centered on the Mercedes 190E Evo II, highlighting its heritage and engineering legacy. Created original illustrations, custom graphics, and layout compositions to present the car in a collector-style feature format.
                                 
                             </h3>

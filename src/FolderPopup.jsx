@@ -18,7 +18,7 @@ function FolderPopup({ images, onClose }) {
           </button>
 
           {/* grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-3 place-items-center gap-4 lg:gap-5 px-4 lg:px-30 py-6">
+          <div className="grid grid-cols-2 z-20 lg:grid-cols-3 place-items-center gap-4 lg:gap-5 px-4 lg:px-30 py-6">
   {images.map((img, i) => (
     <img
       key={i}
