@@ -43,13 +43,23 @@ function FolderPopup({ images, onClose }) {
 
       {/* full image preview */}
       {activeImage && (
-        <div
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
-          onClick={() => setActiveImage(null)}
-        >
-          
-        </div>
-      )}
+  <div
+    className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+    onClick={() => setActiveImage(null)}
+  >
+    <img
+      src={activeImage}
+      className="
+        max-h-[85%] max-w-[90%]
+        lg:max-h-[50%] lg:max-w-[50%]
+        rounded-xl
+        object-contain
+      "
+      alt=""
+    />
+  </div>
+)}
+
     </>
   )
 }

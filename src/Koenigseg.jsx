@@ -54,10 +54,10 @@ function Koenigseg(){
 
             <div className=" flex gap-3 pt-25 mr-6">
                     
-                    <div ref={img} className="border-r z-10 border-white w-30 relative    ">
-                        <img src={logo} alt="" className="absolute w-25" /> </div>
+                     <div ref={img} className="border-r border-white lg:w-30 w-24 relative     ">
+                        <img src={logo} alt="" className="absolute lg:w-25 w-20 " /> </div>
                         
-                        <div className="text-white text-xl  items-center flex px-5  ">
+                        <div className="text-white lg:text-xl text-[12px] items-center flex px-5  ">
                         <ul className="space-y-4 pb-3 pt-2">
                             <li  ref={maintext}>Role : <span className="opacity-60">Sketch Artist</span></li>
                             <li ref={maintext2} >Project : <span className="opacity-60">Personal Project</span></li>
@@ -66,20 +66,20 @@ function Koenigseg(){
                     </div>
 
                   
-                 <div ref={car} className="flex  justify-center border relative w-screen ">
+                 <div ref={car} className="flex pt-10  justify-center border relative w-screen ">
                     <div className="w-6xl mr-5 pt-6">
                         <img src={koe2} alt="" className=""/>
-                        <div className="text-white pt-4 text-center">
-                            <h3>Hand-sketched automotive artwork acknowledged by the official KoenigseggUSA page and recognized for its execution.</h3>
+                        <div className="text-white lg:pt-4 pt-6 lg:text-lg text-center">
+                            <h3 className=" text-sm">Hand-sketched automotive artwork acknowledged by the official KoenigseggUSA page and recognized for its execution.</h3>
                         </div>
                     </div>
 
-                    <div className="w-50  border absolute right-1/9 top-0 border-yellow-300 ">
+                    <div className="lg:w-50 w-24 right-0  border absolute lg:right-1/12 top-3 border-yellow-300 ">
                         <img src={koe1} alt="" />
                     </div>
                     </div>  
 
-                    <div className="flex justify-center pb-30">
+                    <div className="flex justify-center lg:pb-30 pb-14">
         
         
         </div>
