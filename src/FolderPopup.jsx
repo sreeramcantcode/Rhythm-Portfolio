@@ -18,16 +18,26 @@ function FolderPopup({ images, onClose }) {
           </button>
 
           {/* grid */}
-          <div className="grid grid-cols-3 place-items-center gap-5 px-30 py-6">
-            {images.map((img, i) => (
-              <img
-                key={i}
-                src={img}
-                onClick={() => setActiveImage(img)}
-                className="cursor-pointer rounded-lg hover:scale-105 w-32 h-32 border object-cover transition"
-              />
-            ))}
-          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-3 place-items-center gap-4 lg:gap-5 px-4 lg:px-30 py-6">
+  {images.map((img, i) => (
+    <img
+      key={i}
+      src={img}
+      onClick={() => setActiveImage(img)}
+      className="
+        cursor-pointer
+        rounded-lg
+        hover:scale-105
+        w-full aspect-square
+        lg:w-32 lg:h-32
+        border
+        object-cover
+        transition
+      "
+    />
+  ))}
+</div>
+
         </div>
       </div>
 
@@ -38,9 +48,14 @@ function FolderPopup({ images, onClose }) {
           onClick={() => setActiveImage(null)}
         >
           <img
-            src={activeImage}
-            className="max-h-[50%] max-w-[50%] rounded-xl"
-          />
+  src={activeImage}
+  className="
+    max-h-[85%] max-w-[90%]
+    lg:max-h-[50%] lg:max-w-[50%]
+    rounded-xl
+  "
+/>
+
         </div>
       )}
     </>
