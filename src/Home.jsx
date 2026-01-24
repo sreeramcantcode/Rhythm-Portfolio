@@ -5,7 +5,7 @@ import frame from "./assets/frameflash.png"
 import k from "./assets/k9.png"
 import mer from "./assets/mercedes.png"
 import uni from "./assets/Uni.png"
-import street from "./assets/Street.png"
+
 import lb from "./assets/lb.png"
 import sil from "./assets/Silent.png"
 import bth from "./assets/bth.png"
@@ -51,7 +51,7 @@ const anref = useRef()
             <h3 className="hindi text-[200px] lg:text-[220px] text-center translate-x-2 tracking-wide flex py-0 lg:tracking-tight">
                 कला
             </h3>
-            <h3 className="text z-10  text-center lg:translate-x-28 relative bottom-20 lg:bottom-0">
+            <h3 className="text z-10  text-center lg:translate-x-28 relative bottom-30 lg:bottom-0">
               CREATE
             </h3>
             </div>
@@ -61,7 +61,7 @@ const anref = useRef()
             <img src={img} className="w-2xl z-20 opacity-95 " alt="" />
             </div>
         
-             <div className="lg:flex justify-evenly grid  grid-cols-5 w-screen  ">
+             <div className="lg:flex justify-evenly grid  grid-cols-4 w-screen  ">
               
               
               <img src={frame} className="lg:w-20 w-40  h-20 object-contain relative lg:scale-190 z-20 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
@@ -69,10 +69,10 @@ const anref = useRef()
                 <img src={k} className="w-20  h-20 object-contain relative  z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
                 <img src={mer} className="w-20 h-20 transform  object-contain relative z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
                 
-                <img src={uni} className="w-20 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
+               
    
                 <div className="flex justify-evenly lg:gap-24 w-screen  lg:pl-0 lg:w-xl lg:pt-0">
-                <img src={street} className="w-20 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer " alt="frame" />
+                 <img src={uni} className="w-20 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
                 <img src={lb} className="w-20 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
                 <img src={sil} className="w-20 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
                 <img src={bth} className="w-20  h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />

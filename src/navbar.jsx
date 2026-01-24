@@ -99,7 +99,7 @@ function Sample (){
               md:hidden 
               absolute top-20 left-0
               bg-linear-to-l from-black to-red-950 
-              h-screen w-40 flex justify-start pt-20 text-center flex-col gap-10
+              h-screen w-40 flex pt-20 text-right p-5 opacity-75 flex-col gap-10
               rounded-lg
               
               space-y-4
@@ -108,10 +108,10 @@ function Sample (){
               
             ">
               
-              <Link onClick={() => setOpen(false)} to="/" className="block hover:text-red-400">Home</Link>
-              <Link onClick={() => setOpen(false)} to="/All" className="block hover:text-red-400">Works</Link>
-              <Link onClick={() => setOpen(false)} to="/About" className="block hover:text-red-400">About</Link>
-              <Link to="#" onClick={handle} className="block hover:text-red-400">Contact</Link>
+              <Link onClick={() => setOpen(false)} to="/" className="block opacity-70 hover:text-red-400">Home</Link>
+              <Link onClick={() => setOpen(false)} to="/All" className="block opacity-70 hover:text-red-400">Works</Link>
+              <Link onClick={() => setOpen(false)} to="/About" className="block opacity-70 hover:text-red-400">About</Link>
+              <Link to="#" onClick={handle} className="block opacity-70 hover:text-red-400">Contact</Link>
               
             </div>
           )}

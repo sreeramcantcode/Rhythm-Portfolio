@@ -89,7 +89,7 @@ function Saintflaire(){
 
     return(
         <>
-        <div className="min-h-screen bg-black">
+        <div className=" bg-black">
        
        <div className="w-50  flex ml-3 pt-25  justify-center">
 
@@ -97,9 +97,9 @@ function Saintflaire(){
        
        </div>
       <div className=" flex gap-3  relative  ">
-      <div ref={logosaint} className="border-r border-white w-35 h-23 relative">
-        <img src={saint1} alt="" className="translate scale-120 w-25 translate-x-6" /> </div>
-        <div className="text-white text-xl  items-center flex px-10 ">
+      <div ref={logosaint} className="border-r border-white lg:w-35 h-23  relative">
+        <img src={saint1} alt="" className=" lg:scale-120 w-25 lg:translate-x-6" /> </div>
+        <div className="text-white lg:text-xl text-[12px]   items-center flex lg:px-5 ">
             <ul className="space-y-4">
                 <li  ref={maintext} >Role : <span className="opacity-60">Founder & Sole Graphic Designer</span></li>
                 <li ref={maintext2} >Project : <span className="opacity-60">Complete Brand & Apparel Design</span></li>
@@ -109,19 +109,31 @@ function Saintflaire(){
             
             </div>
             
-           
-        
-        <div ref={mainimg} className="flex justify-end gap-3 px-4 pt-9 mr-7 pb-30 ">
+           <div className="flex flex-col gap-1 lg:hidden">
+          <img className="w-screen pt-7" src={saint2} alt="" />
+          <div className="lg:hidden flex ">
+          <img src={saint3} className=" w-40 " alt="" />
+           <p className="text-white w-screen text-left px-1 text-[10px] py-1 " >Founder and creative director of Saintflaire, an independent clothing brand developed from concept to execution. Led the complete design direction, including brand identity, logo development, garment graphics, and digital visuals. All creative outputs — from packaging to social content and product imagery — were designed in-house to establish a consistent and distinctive brand language. <br />
+                    <span  onClick={()=> window.open(stpdf , "_blank")} className="italic text-red-500 cursor-pointer "> <br /> Visit Catalogue</span>
+                </p>
+                </div>
+          </div>
+        <div ref={mainimg} className="flex justify-end gap-3 px-4 pt-9 mr-7 lg:pb-30 pb-10 ">
 
-            <div className="w-md relative">
-                <img src={saint3} alt="" />
+            <div className="lg:w-md relative ">
+
+            
+               
+                <img src={saint3} className="hidden lg:block lg:relative" alt="" />
+                
+                
                 
             </div>
             <div className="w-5xl relative">
 
                 
 
-                <div className="text-white absolute bottom-1/4 pb-2 text-left">
+                <div className=" hidden lg:block text-white lg:absolute bottom-1/4 pb-2 text-left">
                 <h3 className="" >Founder and creative director of Saintflaire, an independent clothing brand developed from concept to execution. Led the complete design direction, including brand identity, logo development, garment graphics, and digital visuals. All creative outputs — from packaging to social content and product imagery — were designed in-house to establish a consistent and distinctive brand language. <br />
                     <span  onClick={()=> window.open(stpdf , "_blank")} className="italic text-red-500 cursor-pointer"> Visit Catalogue</span>
                 </h3>
@@ -130,16 +142,17 @@ function Saintflaire(){
             
 
            
-                <img src={saint2} alt="" />
+                <img
+  className="hidden lg:block lg:relative"
+  src={saint2}
+  alt=""
+/>
 
-                 <div className="flex items-center text-white absolute bottom-0">
-                
 
-                
-            </div>
+                 
 
-            <div ref={saint} onClick={()=> window.open(stpdf1 , "_blank")} className=" cursor-pointer bg-linear-to-l from-black to-red-500/50 w-55 flex justify-center  items-center h-20 absolute  right-0 bottom-2  rounded-lg ">
-                    <img className="pt-3 " src={saintstreet} alt="" />
+            <div ref={saint} onClick={()=> window.open(stpdf1 , "_blank")} className=" cursor-pointer bg-linear-to-l from-black to-red-500/50 lg:w-55 w-30 flex justify-center  items-center lg:h-20 h-15 absolute  right-0 bottom-2  rounded-lg ">
+                    <img className="pt-5" src={saintstreet} alt="" />
                 </div>
 
 

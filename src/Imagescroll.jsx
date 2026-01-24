@@ -45,7 +45,7 @@ export default function Imagescroll() {
           <div key={i} className="flex flex-col items-center gap-4">
             <img
               src={img}
-              className=" lg:w-xl w-72 h-96 object-cover rounded-xl"
+              className=" lg:w-xl w-60 h-96 object-cover rounded-xl"
             />
         
         
