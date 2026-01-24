@@ -70,7 +70,7 @@ function Mercedes (){
             
                     <div className=" flex gap-3  ">
                     
-                    <div ref={logo}  className="border-r z-10 border-white w-30 relative    ">
+                    <div ref={logo}  className="border-r  border-white w-30 relative    ">
                         <img src={img} alt="" className="absolute inset-0 w-30" /> </div>
                         
                         <div className="text-white lg:text-xl text-[12px]   items-center flex px-5 pt-5 ">
@@ -84,7 +84,7 @@ function Mercedes (){
                     
                     
                     <div className="flex flex-col relative">
-                    <div ref={mainimg} className="lg:flex flex justify-start lg:justify-evenly relative lg:gap-3 gap-1 pt-2 mb-40">
+                    <div ref={mainimg} className="lg:flex flex justify-start lg:justify-evenly relative lg:gap-3 gap-1 lg:pt-10  lg:mb-40">
                         <div className="w-30 flex flex-col gap-3 lg:pt-5 pt-3 lg:ml-5 ml-1">
                             <div>
                                 <img src={img2} alt="" />
@@ -144,28 +144,30 @@ function Mercedes (){
                             <div>
                                 <img src={img7} alt="" />
                             </div>
-                        </div>
 
+                            
+                        </div>
+                        
                         
                     </div>
                     </div>
-                    <div className="flex justify-center">
-                    <h3 className="w-96 text-white lg:hidden absolute bottom-1/12 translate-y-5 text-center p-4 text-sm ">
+                    
+                     <div className="flex flex-col items-center pt-3">
+                                <h3 className="w-96 text-white lg:hidden text-center p-2 text-sm ">
                                 Developed a magazine-style editorial layout centered on the Mercedes 190E Evo II, highlighting its heritage and engineering legacy. Created original illustrations, custom graphics, and layout compositions to present the car in a collector-style feature format.
                                 
                             </h3>
-                            </div>
-
-                            </div>
-                            <div className="flex justify-center">
        <button
   onClick={() => setOpen(true)}
-  className=" lg:hidden  rounded-lg lg:h-20 lg:text-4xl text-lg mb-10 hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-40 p-3 text-center hover:scale-105"
+  className=" lg:hidden translate-y-3   rounded-lg lg:h-20 lg:text-4xl text-lg mb-15 hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-40 p-3 text-center hover:scale-105"
 >
   View More
 </button>
-</div>       
+</div>      
 
+                            </div>
+                            
+                     
                      
                     </div>
 
