@@ -76,7 +76,7 @@ function Second (){
 
   
   <div className="absolute inset-0 flex justify-center items-center z-20  ">
-    <h1 className="text-black word font-medium lg:text-[200px] text-[50px] whitespace-nowrap ">
+    <h1 className="text-black word font-medium lg:text-[200px] text-[43px] whitespace-nowrap ">
       <span className="line-through decoration-black decoration-4">
         Words
       </span>

@@ -23,12 +23,12 @@ function Work(props){
 
   return(
     <>
-      <div className="h-48 sm:h-60 md:h-70 relative max-w-screen bg-black overflow-hidden">
+      <div className="h-30 sm:h-60 md:h-70 relative max-w-screen bg-black overflow-hidden">
 
         <div className="absolute inset-0 flex justify-center items-center">
           <h1
             className=" whitespace-nowrap
-              text-[48px] sm:text-[80px] md:text-[110px]
+              text-[40px] sm:text-[80px] md:text-[110px]
               text-black z-20 word
               text-center
               px-4
