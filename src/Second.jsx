@@ -76,7 +76,7 @@ function Second (){
 
   
   <div className="absolute inset-0 flex justify-center items-center z-20  ">
-    <h1 className="text-black word font-medium lg:text-[200px] text-[50px] ">
+    <h1 className="text-black word font-medium lg:text-[200px] text-[50px] whitespace-nowrap ">
       <span className="line-through decoration-black decoration-4">
         Words
       </span>
@@ -94,48 +94,70 @@ function Second (){
 
           
           <h1  ref={textRef} className="text-white lg:text-[200px] text-[50px] pt-4 lg:pt-0 word">Highlights</h1>
+
+           <div className="max-w-7xl grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:max-w-screen md:justify-items-center  lg:justify-items-center
+              gap-x-6 lg:gap-x-0 md:gap-x-29
+              lg:px-13
+              gap-y-6 lg:gap-y-4 sm:gap-y-9
+              ml-0 sm:ml-12
+              justify-items-center sm:justify-items-end
+              mt-8 sm:mt-12
+              pb-20
+            "
+          >
+          
+                          <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
+                          <Link to="/uniliver"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                            UNILEVER</h1>
+                            <img
+                            src={u}
+              className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+              alt=""
+            /></Link>
+          </div>
+                        <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
+                          <Link to="/k9"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                            K9 SCHOOL</h1>
+                            <img
+                            src={k9}
+              className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+              alt=""
+            /></Link>
+          </div>
+                          <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
+                          <Link to="/saint"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                            SAINTFLAIRE</h1>
+                            <img
+                            src={sf}
+              className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+              alt=""
+            /> </Link> 
+          </div>
+                                <div className="w-full sm:w-2xl h-64 sm:h-100 relative group cursor-pointer">
+                       <Link to="/silent"><h1 className="absolute inset-0 flex items-center justify-center text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-700 u">
+                            SILENT ARTERY</h1>
+                            <img
+                            src={sl}
+              className="w-full h-full object-cover group-hover:opacity-20 duration-500"
+              alt=""
+            /></Link>
+          </div>     
+
+          </div>
           
        
           
 
-            <div className="flex justify-center">
-            <div className=" w-165 lg:h-100 h-28 p-1 pb-2 relative group cursor-pointer " >
-            <Link to="/uniliver"> <h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2 opacity-0 group-hover:opacity-100 duration-1000 u">UNILEVER</h1>
-            <img src={u} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" /> </Link>
-            </div>
-
-               <div className=" w-165 lg:h-100 h-28 p-1 relative group cursor-pointer " >
-           <Link to="/k9"> <h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2 opacity-0 group-hover:opacity-100 duration-1000 u pointer-events-none">K9 SCHOOL</h1>
-            <img src={k9} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" /></Link>
-            </div>
-
-            </div>
-
-
-            <div className="flex justify-center lg:pt-16 pb-3 lg:pb-0">
-            <div className=" w-165 lg:h-100 h-28 p-1 border    mt-10 relative group cursor-pointer " >
-           <Link to="/saint"> <h1 className="inset-0 absolute text-6xl text-white z-10 top-1/2  opacity-0 group-hover:opacity-100 duration-1000 u">SAINTFLAIRE</h1>
-            <img src={sf} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" /></Link>
-            </div>
-
-
-             <div className=" w-165 lg:h-100 h-28 p-1 mt-10 relative group cursor-pointer " >
-           <Link to="/silent"> <h1 className="inset-0 absolute top-1/2 text-6xl text-white z-10 opacity-0 group-hover:opacity-100 duration-1000 u">SILENT ARTERY</h1>
-            <img src={sl} className=" object-cover cursor-pointer relative group-hover:opacity-20 duration-500 " alt="" /></Link>
-            </div>
-
-            </div>
+      </div>
 
             
-          </div>
-            
-            
+          
+         
 
         
           
           
 
-          <div className="lg:h-50 bg-black"></div>
 
           
           

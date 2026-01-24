@@ -36,7 +36,7 @@ function End(){
         
         <>
 
-        <div  className="lg:text-[180px] text-[43px] whitespace-nowrap text-center pt-16 lg:pt-0 text-white bg-black ">
+        <div  className="lg:text-[180px] text-[43px] whitespace-nowrap text-center lg:pt-0 text-white bg-black ">
         <div className="flex gap-5 h-30 lg:h-70 items-center  relative translate-y-7 u justify-center  transform  text-center">
           
             <div ref={boxref} className="inset-0 bg-white absolute ">
