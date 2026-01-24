@@ -82,7 +82,7 @@ function About (){
         <>
         <div className="min-h-[140vh] max-w-screen bg-black text-white relative pt-35 flex justify-center ">
          
-         <div  className="w-full max-w-7xl rounded-2xl h-[85vh] bg-linear-to-r from-black to-red-500/30 relative">
+         <div  className="w-full max-w-7xl  rounded-2xl h-[85vh] bg-linear-to-r from-black to-red-500/30 relative">
               <ul className="pr-7 pt-6 z-20 bottom-1/4 left-1/3 w-xl translate-x-10 py-3 translate-y-3 p-8 absolute ">
                     <span className="list-none"><li ref={para5}>★ 5th year Fine Arts Qualified</li></span> 
                   <span className="list-none"><li ref={para6}>★ Professionally trained under BRDS Guwahati</li></span> 

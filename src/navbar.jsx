@@ -82,7 +82,7 @@ function Sample (){
               md:hidden 
               absolute top-20 left-0
               bg-linear-to-l from-black to-red-950 
-              h-[400px] w-40 flex justify-center text-center flex-col gap-10
+              h-screen w-40 flex justify-center text-center flex-col gap-10
               rounded-lg
               
               space-y-4
