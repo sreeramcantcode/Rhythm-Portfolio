@@ -74,8 +74,8 @@ function Bth(){
                  </div>
                 <div className=" flex gap-3  ">
                 <div ref={logosaint} className="border-r border-white w-35 h-23 relative">
-                  <img src={bth} alt="" className="translate scale-120 w-25 translate-x-6" /> </div>
-                  <div className="text-white text-xl  items-center flex px-10 ">
+                  <img src={bth} alt="" className="translate scale-120 w-25 lg:translate-x-6" /> </div>
+                  <div className="text-white lg:text-xl text-[12px] items-center flex lg:px-10 px-3 ">
                       <ul className="space-y-4">
                           <li  ref={maintext} >Role : <span className="opacity-60">Graphic Designer (Club Member)</span></li>
                           <li ref={maintext2} >Project : <span className="opacity-60">Visual Content and Merch Designer for club events</span></li>
