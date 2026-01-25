@@ -80,68 +80,78 @@ function About (){
 
     return(
         <>
-        <div className="min-h-[140vh] max-w-screen bg-black text-white relative pt-35 flex justify-center ">
-         
-         <div  className="w-full max-w-7xl  rounded-2xl h-[85vh] bg-linear-to-r from-black to-red-500/30 relative">
-              <ul className="pr-7 pt-6 z-20 bottom-1/4 left-1/3 w-xl translate-x-10 py-3 translate-y-3 p-8 absolute ">
-                    <span className="list-none"><li ref={para5}>★ 5th year Fine Arts Qualified</li></span> 
-                  <span className="list-none"><li ref={para6}>★ Professionally trained under BRDS Guwahati</li></span> 
-                  <span className="list-none"><li ref={para7}>★ 4+ years of experience</li></span>
-                  </ul>
-              
+        <div className="min-h-screen w-full bg-black text-white px-4 lg:px-0 lg:pb-40 flex justify-center pt-24">
+  <div className="w-full max-w-7xl bg-linear-to-r from-black to-red-500/30 rounded-2xl overflow-hidden">
 
-            <div className="absolute w-[415px] top-0  ">
-               <img ref={img} src={im} alt="" />
-            </div>
-           
-            <div className="flex justify-end p-16 ml-9 w-7xl lamb relative">
-            <h1 ref={textref} className="text-7xl mr-12 whitespace-nowrap" >Hi , I'm Rhythm Nandi</h1>
-            <div className="border border-white absolute h-[410px] opacity-40 mt-23 left-1/3 ml-3">
+    
+    <div className="flex flex-col lg:flex-row relative">
 
-            </div>
-            </div>
-            <div className="px-5 relative bottom-9">
-            <div ref={designer} className="flex justify-end w-6xl ">
-               <div className="w-2xl relative">
-            <p className="text-md ">A 22-year-old designer focused on crafting visual experiences that actually mean something. I work at the intersection of strategy and aesthetics, turning ideas into design systems that leave a lasting impression.</p>
-             
-            </div>
+     
+      <div className="w-full lg:w-[40%]">
+        <img
+          ref={img}
+          src={im}
+          alt="Rhythm Nandi"
+          className="w-full h-auto object-cover"
+        />
+      </div>
 
-            
-         </div>
-         <div className="flex justify-end w-5xl ml-7 mt-5">
-               <ul className="list-disc text-md" >
-            
-                  <li ref={para1}>Worked with established brands like Hindustan Unilever Limited and K9 School</li>
-                   <li ref={para2}>Strong focus on concept-driven design, not just visuals for the sake of it</li>
-                    <li ref={para3}>Designs with story, structure, and purpose</li>
-                     <li ref={para4}>Constantly pushing boundaries to create work that stands out and performs</li>
-                   
-               </ul>
+      
+      <div className="w-full lg:w-[60%] grid-cols-1 grid px-6 lg:px-16 py-10 relative">
 
+        <h1
+          ref={textref}
+          className="text-4xl lg:text-6xl u mb-6"
+        >
+          Hi, I’m Rhythm Nandi
+        </h1>
 
-               
-            </div>
-            </div>
-            <div className="absolute right-1/4 mr-6 bottom-1/9 ">
-                    <div className="">
-                                            <button
-                      onClick={()=> window.open(resume, "_blank")}
-                     className=" rounded-lg h-15 text-2xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-60 text-center hover:scale-105  "
-                   >
-                      View Resume
-                   </button>
-                                       </div>
-                    
-                  
-                </div>
-         
+        <p
+          ref={designer}
+          className="text-sm lg:text-md max-w-xl mb-6 opacity-90"
+        >
+          A 22-year-old designer focused on crafting visual experiences that
+          actually mean something. I work at the intersection of strategy and
+          aesthetics, turning ideas into design systems that leave a lasting
+          impression.
+        </p>
+
+        {/* BULLETS */}
+        <ul className="list-disc pl-5 space-y-2 text-sm lg:text-md mb-6">
+          <li ref={para1}>
+            Worked with established brands like Hindustan Unilever Limited and K9 School
+          </li>
+          <li ref={para2}>
+            Strong focus on concept-driven design
+          </li>
+          <li ref={para3}>
+            Designs with story, structure, and purpose
+          </li>
+          <li ref={para4}>
+            Constantly pushing boundaries to create work that performs
+          </li>
+        </ul>
 
         
+        <ul className="space-y-2 text-sm lg:text-md opacity-90 mb-8">
+          <li ref={para5}>★ 5th year Fine Arts Qualified</li>
+          <li ref={para6}>★ Professionally trained under BRDS Guwahati</li>
+          <li ref={para7}>★ 4+ years of experience</li>
+        </ul>
          
-         
-         </div>
-         </div>    
+         <div className="">
+        <button
+          onClick={() => window.open(resume, "_blank")}
+          className="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-900 hover:text-black transition hover:scale-105 mb-10 lg:mb-0 cursor-pointer"
+        >
+          View Resume
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
          
          
       

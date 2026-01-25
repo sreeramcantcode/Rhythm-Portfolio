@@ -29,6 +29,7 @@ function Uniliver(){
     const logo = useRef()
      const mainimg = useRef()
       const mainimg1 = useRef()
+      const mainimgtab = useRef()
     
 
     useGSAP(()=>{
@@ -51,7 +52,7 @@ function Uniliver(){
         
       }),
 
-      gsap.from(mainimg.current , {
+      gsap.from([mainimg.current , mainimgtab.current] , {
         opacity:0,
         duration:1,
         y:20,
@@ -101,7 +102,7 @@ function Uniliver(){
 
                             {/*TAB*/}
 
-             <div ref={mainimg} className="hidden md:flex lg:hidden  justify-start w-screen gap-6  ">
+             <div ref={mainimgtab} className="hidden md:flex lg:hidden  justify-start w-screen gap-6  ">
 
                     
                 <div  className="grid grid-cols-2 gap-2 relative mb-20 w-3xl lg:px-18 md:p-4 mt-7">

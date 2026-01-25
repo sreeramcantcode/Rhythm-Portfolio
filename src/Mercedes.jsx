@@ -61,7 +61,7 @@ function Mercedes (){
 
     return(
         <>
-        <div className="bg-black min-h-screen  ">
+        <div className="bg-black ">
             <div className="w-50  flex ml-3  justify-center">
                   <div className=" w-10 z-20 relative top-2 bg-black h-2 mt-20">
             
@@ -104,7 +104,7 @@ function Mercedes (){
                         </div>
                           
                           <div className="text-white text-center p-10 text-lg h-fit mr-4 absolute top-1/5">
-                            <h3 className="w-96 hidden lg:block lg:relative ">
+                            <h3 className="w-96 hidden lg:block lg:relative  ">
                                 Developed a magazine-style editorial layout centered on the Mercedes 190E Evo II, highlighting its heritage and engineering legacy. Created original illustrations, custom graphics, and layout compositions to present the car in a collector-style feature format.
                                 
                             </h3>
@@ -153,13 +153,13 @@ function Mercedes (){
                     </div>
                     
                      <div className="flex flex-col items-center pt-3">
-                                <h3 className="w-96 text-white lg:hidden text-center p-2 text-sm ">
+                                <h3 className="w-96 text-white lg:hidden  text-center p-4 text-[13px] md:w-screen md:text-lg ">
                                 Developed a magazine-style editorial layout centered on the Mercedes 190E Evo II, highlighting its heritage and engineering legacy. Created original illustrations, custom graphics, and layout compositions to present the car in a collector-style feature format.
                                 
                             </h3>
        <button
   onClick={() => setOpen(true)}
-  className=" lg:hidden translate-y-3   rounded-lg lg:h-20 lg:text-4xl text-lg mb-15 hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-40 p-3 text-center hover:scale-105"
+  className=" lg:hidden translate-y-3 rounded-lg lg:h-20 lg:text-4xl text-lg mb-15 hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-40 p-3 text-center hover:scale-105"
 >
   View More
 </button>

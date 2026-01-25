@@ -25,15 +25,15 @@ return(
     id="footer"
     className="
     text-gray-300 bg-linear-to-l from-black to-red-950
-    py-10 px-5
+     px-5
     flex flex-col lg:flex-row
     gap-10 lg:gap-0
     overflow-hidden
     "
 >
-    <div className="relative">
+    <div className="relative lg:pb-10">
         <img
-            className="opacity-20 w-40 sm:w-56 lg:w-72 lg:scale-135"
+            className="opacity-20 w-50 sm:w-56 lg:w-72 lg:scale-135"
             src={logo}
             alt=""
         />
@@ -85,22 +85,22 @@ return(
         mt-6 lg:mt-3
         gap-10 sm:gap-16
     ">
-        <div>
+        <div className="lg:pt-4 pb-20">
             <h1 className="text-base sm:text-lg text-gray-300 w-40">
                 Navigation
             </h1>
 
-            <div className="text-lg sm:text-xl">
+            <div className="text-lg sm:text-xl ">
                 <ul className="relative top-3 sm:top-5 space-y-2 sm:space-y-3">
                     <li><Link to="/" className="hover:text-red-500">Home</Link></li>
                     <li><Link to="/All" className="hover:text-red-500">Works</Link></li>
                     <li><Link to="/About" className="hover:text-red-500">About</Link></li>
-                    <li><Link to="/" onClick={handle} className="hover:text-red-500">Contact</Link></li>
+                    <li><Link to="/" onClick={handle} className="hover:text-red-500 ">Contact</Link></li>
                 </ul>
             </div>
         </div>
 
-        <div className="text-lg sm:text-xl">
+        <div className="text-lg sm:text-xl lg:pt-4">
             <h1 className="text-base sm:text-lg text-gray-300">Socials</h1>
             <ul className="relative space-y-2 sm:space-y-3 mt-3 sm:mt-4">
                 <li><a href="#" className="hover:text-red-500">Linkedin</a></li>

@@ -31,7 +31,7 @@ function FolderPopup({ images, onClose }) {
                   rounded-lg
                   hover:scale-105
                   w-full aspect-square
-                  lg:w-32 lg:h-32
+                  lg:w-32 lg:h-32 md:h-28 
                   border
                   object-cover
                   transition
@@ -44,7 +44,7 @@ function FolderPopup({ images, onClose }) {
 
       {activeImage && (
         <div
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+          className="fixed inset-0 bg-black/90 z-50 flex items-center md:p-10 justify-center"
           onClick={() => setActiveImage(null)}
         >
           <img

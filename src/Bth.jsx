@@ -27,6 +27,7 @@ function Bth(){
         const maintext2 = useRef()
         const logosaint = useRef()
         const mainimg = useRef()
+        const mainimg1 = useRef()
 
     useGSAP(()=>{
 
@@ -48,7 +49,7 @@ function Bth(){
         
       }),
 
-      gsap.from(mainimg.current , {
+      gsap.from([mainimg.current ,mainimg1.current] , {
         opacity:0,
         duration:1,
         y:20,
@@ -86,13 +87,13 @@ function Bth(){
 
                       {/*mobile*/}
 
-                      <div className="lg:hidden flex p-2 flex-col w-screen">
+                      <div ref={mainimg1} className="lg:hidden flex p-2 flex-col w-screen">
                                   <img src={bth1} alt="" className="p-2" />
                                   <div className="w-48  md:w-70 flex lg:hidden lg:mt-10 p-2 lg:p-0">
                               <img src={bth3} alt="" />
                                   <div className="flex flex-col gap-1">
                                   <div className="flex justify-center relative  ">
-                                  <h3 className="text-white text-[12px] p-4 leading-relaxed opacity-70 text-left p-2 w-50 md:w-lg md:text-2xl md:p-5 ">
+                                  <h3 className="text-white text-[12px] p-4 leading-relaxed opacity-70 text-left  w-50 md:w-lg md:text-2xl md:p-5 ">
                                  Worked as a graphic designer for BeatTheHeat, a creative club at VIT-AP, responsible for designing event posters, promotional banners, and custom club merchandise. Managed all supporting graphics for both physical events and digital outreach, ensuring consistent visual identity across platforms</h3>
 
                                   
@@ -146,6 +147,7 @@ function Bth(){
     View More
 </button>
 </div>
+
 {/*PC/TAB*/}
 
        

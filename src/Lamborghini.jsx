@@ -69,7 +69,7 @@ function Lamborghini(){
                     <div className="w-3xl  ">
                         <img src={lambo1} alt="" className=""/>
                         <div className="text-white pt-4 text-center ">
-                            <h3 className="lg:text-lg text-[10px] p-2">A hand-sketched Lamborghini artwork acknowledged by the Lamborghini Mumbai. The work received recognition for its execution and visual quality.</h3>
+                            <h3 className="lg:text-lg text-[10px] p-2 md:text-lg">A hand-sketched Lamborghini artwork acknowledged by the Lamborghini Mumbai. The work received recognition for its execution and visual quality.</h3>
                         </div>
                     </div>
 

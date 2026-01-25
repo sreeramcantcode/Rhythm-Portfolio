@@ -72,11 +72,11 @@ function SL(){
                         </div>
               
               <div className="pt-10 p-4  pb-30 flex justify-center lg:gap-5">
-                <div className="lg:w-80 w-30">
+                <div className="lg:w-80 w-30 md:w-64">
                     <img src={sl4} alt="" />
                     <div className=" text-white lg:text-center lg:w-5xl w-screen lg:relative flex flex-col items-center justify-center text-[12px] lg:pt-6 pt-3">
-                        <div className="flex justify-center pt-5 lg">
-                        <h3 className="lg:w-5xl w-72 text-center ">
+                        <div className="flex justify-center  pt-5 lg">
+                        <h3 className="lg:w-5xl w-72 text-center md:w-2xl  ">
                             Silent Artery is an academic ECS hardware project focused on non-invasive
 pulse and oxygen monitoring. As the product designer, I crafted
 the complete
@@ -95,15 +95,17 @@ health-tech innovation.
 
 
           <button
-onClick={()=> window.open(slcert , "_blank")}
-  className=" lg:hidden md:hidden rounded-lg lg:h-20 lg:text-4xl text-lg  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm p-2 hover:scale-105"
+onClick={()=> window.open(slcert,"_blank")}
+  className=" lg:hidden z-20 rounded-lg lg:h-20 lg:text-4xl text-lg hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm p-2 hover:scale-105"
 >
   View Certificate
-</button></div>
+</button>
+    </div>
 
 
 
-                       <div className="hidden lg:flex md:flex md:justify-center md:w-5xl lg:w-screen lg:justify-center  lg:pt-15">
+                       <div className="hidden lg:flex lg:justify-center lg:w-screen lg:pt-15">
+
        <button
 onClick={()=> window.open(slcert , "_blank")}
  className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
@@ -119,7 +121,7 @@ onClick={()=> window.open(slcert , "_blank")}
                 
                 
 
-                <div className="lg:w-80 ">
+                <div className="lg:w-80">
                     <img src={sl3} alt="" />
                      
                      

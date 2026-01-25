@@ -8,13 +8,13 @@ import auto2 from "./assets/auto2.jpg"
 import auto3 from "./assets/auto3.jpg"
 import auto4 from "./assets/auto4.jpg"
 import auto5 from "./assets/auto5.jpg"
-import auto6 from "./assets/auto6.jpg"
 import auto7 from "./assets/auto7.jpg"
 import auto8 from "./assets/auto8.jpg"
 import auto9 from "./assets/auto9.jpg"
+import auto from "./assets/auto.jpeg"
 
 import p1 from "./assets/p1.jpg"
-import p2 from "./assets/p2.jpg"
+import p from "./assets/p.jpeg"
 import p3 from "./assets/p3.jpg"
 import p4 from "./assets/p4.jpg"
 import p5 from "./assets/p5.jpg"
@@ -33,8 +33,8 @@ function Sketches (){
      const [open, setOpen] = useState(false)
      const [open1, setOpen1] = useState(false)
               
-                  const pageAImages = [auto3 ,  auto4, auto9 ,auto6 , auto7 , auto8 ,auto5 , auto1 , auto2 ,  ]
-                  const pageAImages2 = [p5,p4,p6,p1,p2,p3,p7,p8,p9]
+                  const pageAImages = [auto3 ,  auto4, auto9 ,auto , auto7 , auto8 ,auto5 , auto1 , auto2 ,  ]
+                  const pageAImages2 = [p5,p4,p6,p1,p,p3,p7,p8,p9]
 
     return(
     <>

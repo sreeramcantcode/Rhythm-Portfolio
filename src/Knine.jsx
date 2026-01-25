@@ -112,8 +112,9 @@ Contributing to brand visuals, campaigns, and digital design for over six months
                              <div className="w-48 md:w-70 flex lg:hidden lg:mt-10 p-2 lg:p-0">
                          <img src={k2} alt="" className=""/>
                              <div className="flex justify-center relative  ">
-                             <h3  className="text-white text-[13px] leading-relaxed opacity-70 text-left p-2 w-40 md:w-lg md:text-2xl ">Currently working as a graphic designer with K9 School.
+                             <h3  className="text-white text-[13px] leading-relaxed opacity-70 text-left p-2 w-40 md:w-lg md:text-2xl md:p-5 ">Currently working as a graphic designer with K9 School.
 Contributing to brand visuals, campaigns, and digital design for over six months.</h3>
+                         
                          </div>
                        </div>
                          

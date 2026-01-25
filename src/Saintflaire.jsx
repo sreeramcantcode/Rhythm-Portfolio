@@ -39,6 +39,7 @@ function Saintflaire(){
         const mainimg = useRef()
         const saint = useRef()
          const saint1ani = useRef()
+         const mainimgmob = useRef()
 
     useGSAP(()=>{
 
@@ -56,7 +57,7 @@ function Saintflaire(){
 
         gsap.fromTo(saint1ani.current , {
             
-            xPercent:-300,
+            xPercent:-200,
             duration:3,
             scrollTrigger:{
                 trigger:saint1ani.current,
@@ -67,7 +68,7 @@ function Saintflaire(){
             
         },
     {
-                xPercent:-30,
+                xPercent:-15,
                 duration:3
             })
 
@@ -90,6 +91,15 @@ function Saintflaire(){
       }),
 
       gsap.from(mainimg.current , {
+        opacity:0,
+        duration:1,
+        y:20,
+        filter:"blur(20px)",
+        
+        
+      })
+
+      gsap.from(mainimgmob.current , {
         opacity:0,
         duration:1,
         y:20,
@@ -127,11 +137,11 @@ function Saintflaire(){
             
             </div>
             
-           <div className="flex flex-col gap-1 lg:hidden">
-          <img className="w-screen pt-7" src={saint2} alt="" />
+           <div ref={mainimgmob} className="flex flex-col gap-1 lg:hidden">
+          <img className="w-screen pt-7 " src={saint2} alt="" />
           <div className="lg:hidden flex ">
-          <img src={saint3} className=" w-40 " alt="" />
-           <p className="text-white w-screen text-left px-2  text-[11px] py-2 " >Founder and creative director of Saintflaire, an independent clothing brand developed from concept to execution. Led the complete design direction, including brand identity, logo development, garment graphics, and digital visuals. All creative outputs — from packaging to social content and product imagery — were designed in-house to establish a consistent and distinctive brand language. <br />
+          <img src={saint3} className=" w-40 md:w-80 " alt="" />
+           <p className="text-white w-screen text-left px-2 md:w-70 md:text-xl  text-[11px] py-2 " >Founder and creative director of Saintflaire, an independent clothing brand developed from concept to execution. Led the complete design direction, including brand identity, logo development, garment graphics, and digital visuals. All creative outputs — from packaging to social content and product imagery — were designed in-house to establish a consistent and distinctive brand language. <br />
                     <span  onClick={()=> window.open(stpdf , "_blank")} className="italic text-red-500 cursor-pointer "> <br /> Visit Catalogue</span>
                 </p>
                 </div>
@@ -173,7 +183,7 @@ function Saintflaire(){
                     <img className="pt-5" src={saintstreet} alt="" />
                 </div>
 
-             <div ref={saint1ani} onClick={()=> window.open(stpdf1 , "_blank")} className="lg:hidden cursor-pointer bg-linear-to-l from-black to-red-500/50 lg:w-55 w-30 flex justify-center items-center lg:h-20 h-10 rounded-lg ">
+             <div ref={saint1ani} onClick={()=> window.open(stpdf1 , "_blank")} className="lg:hidden cursor-pointer bg-linear-to-l from-black to-red-500/50 md:w-60 md:mb-10 lg:w-55 w-30 flex justify-center items-center lg:h-20 h-10 rounded-lg ">
                     <img className="pt-2" src={saintstreet} alt="" />
                 </div>
 
