@@ -2,7 +2,7 @@ import { useRef } from "react"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import image1 from "./img1.jpg"
-import image2 from "./assets/LB3.jpg"
+import image2 from "./assets/Lb6.jpg"
 import image3 from "./assets/merc2.jpg"
 import image4 from "./assets/saint1.jpg"
 
@@ -45,7 +45,7 @@ export default function Imagescroll() {
           <div key={i} className="flex flex-col items-center gap-4">
             <img
               src={img}
-              className=" lg:w-xl w-60 h-96 object-cover rounded-xl"
+              className=" lg:w-xl w-72 h-96 object-cover rounded-xl"
             />
         
         

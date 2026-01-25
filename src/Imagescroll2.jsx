@@ -2,9 +2,9 @@ import { useRef } from "react"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 
-import image1 from "./img1.jpg"
-import image2 from "./assets/ff1.png"
-import image3 from "./assets/K9img1.jpg"
+import image1 from "./img2.jpg"
+import image2 from "./assets/ff2.webp"
+import image3 from "./assets/saint2.webp"
 import image4 from "./assets/koeniggseg.jpg"
 import { useNavigate } from "react-router-dom"
 

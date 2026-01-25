@@ -1,7 +1,7 @@
 
 import { useRef, useState } from "react"
 import bth from "./assets/bth.png"
-import bth1 from "./assets/bth1.png"
+import bth1 from "./assets/bth1.webp"
 import bth2 from "./assets/bth2.webp"
 import bth3 from "./assets/bth3.webp"
 import bth4 from "./assets/bth4.webp"
