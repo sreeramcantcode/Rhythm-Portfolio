@@ -30,11 +30,11 @@ function All(){
                <Work text="All Works"  ></Work>
                </div>
                <div className="px-4 sm:px-10 md:px-25">
-              <div className="max-w-7xl grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2
+              <div className="max-w-7xl grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2
     gap-x-6 md:gap-x-29
     gap-y-6 sm:gap-y-9
     ml-0 sm:ml-12
-    justify-items-center sm:justify-items-end
+    justify-items-center md:justify-items-center sm:justify-items-end
     mt-8 sm:mt-12
     pb-20
   "

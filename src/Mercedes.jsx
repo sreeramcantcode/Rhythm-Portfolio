@@ -70,7 +70,7 @@ function Mercedes (){
             
                     <div className=" flex gap-3  ">
                     
-                    <div ref={logo}  className="border-r border-white w-30 relative    ">
+                    <div ref={logo}  className="border-r border-white w-30 relative">
                         <img src={img} alt="" className=" w-30" /> </div>
                         
                         <div className="text-white lg:text-xl text-[12px]   items-center flex px-5 pt-5 ">

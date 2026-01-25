@@ -77,10 +77,10 @@ function Knine(){
         
                 <div className=" flex gap-3  ">
                 
-                <div ref={logo} className="border-r z-10 border-white w-30 relative    ">
-                    <img src={k9} alt="" className="absolute inset-0 w-30" /> </div>
+                <div ref={logo} className="border-r border-white w-30 relative    ">
+                    <img src={k9} alt="" className="w-30" /> </div>
                     
-                    <div className="text-white text-xl  items-center flex px-5 pt-5 ">
+                    <div className="text-white lg:text-xl text-[12px] items-center flex px-5 pt-5 ">
                     <ul className="space-y-4">
                         <li  ref={maintext}>Role : <span className="opacity-60">Graphic Designer (Internship)</span></li>
                         <li ref={maintext2} >Project : <span className="opacity-60">Visual Design for Dog Training & Security Programs </span></li>
@@ -90,11 +90,12 @@ function Knine(){
 
             <div ref={mainimg} className=" pt-12  max-w-screen  flex justify-center border-white">
                 <div className="justify-evenly gap-5  flex max-w-7xl">
-                <div className="w-xl">
+                    
+                    <div className="w-xl lg:block hidden">
                     <img src={k2} alt="" />
                 </div>
 
-                <div className="w-4xl">
+                <div className="w-4xl lg:block hidden">
                     <img src={k1} alt="" />
                     <div className="text-white text-center text-md opacity-70 pt-4">
 
@@ -102,26 +103,59 @@ function Knine(){
 Contributing to brand visuals, campaigns, and digital design for over six months.</h3>
 
                 </div>
+                
                 </div>
+
+                 {/*mobile*/}
+                 <div className="lg:hidden flex flex-col w-screen">
+                             <img src={k1} alt="" className="" />
+                             <div className="w-48 md:w-70 flex lg:hidden lg:mt-10 p-2 lg:p-0">
+                         <img src={k2} alt="" className=""/>
+                             <div className="flex justify-center relative  ">
+                             <h3  className="text-white text-[13px] leading-relaxed opacity-70 text-left p-2 w-40 md:w-lg md:text-2xl ">Currently working as a graphic designer with K9 School.
+Contributing to brand visuals, campaigns, and digital design for over six months.</h3>
+                         </div>
+                       </div>
+                         
+                         
+                         </div>
+
+               
+
+                 {/*mobile*/}
 
                 
 
-                <div className="w-xl">
+                <div className="w-xl hidden lg:block">
                     <img src={k3} alt="" />
                 </div>
             </div>
             </div>
 
                    
+{/*mobile*/}
+          <div className="lg:hidden flex justify-end  w-80 -ml-3 ">
 
-      <div className="flex justify-center pb-60 pt-15">
+
+          <button
+  onClick={() => setOpen(true)}
+  className=" lg:hidden md:hidden rounded-lg lg:h-20 lg:text-4xl text-lg mb-15  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-30 p-2 hover:scale-105"
+>
+  View More
+</button></div>
+
+ {/*mobile*/}
+       
+        {/*PC/TAB*/}
+    <div className="hidden lg:flex md:flex md:justify-center md:w-5xl lg:w-screen lg:justify-center lg:pb-60 pb-20 lg:pt-15">
        <button
   onClick={() => setOpen(true)}
-  className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
+ className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
 >
-  View More 
+    View More
 </button>
 </div>
+{/*PC/TAB*/}
 
        
         {open && (

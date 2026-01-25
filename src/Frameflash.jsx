@@ -82,10 +82,10 @@ function Frameflash (){
 
         <div className=" flex gap-3  ">
         
-        <div ref={img} className="border-r z-10 border-white w-30 relative    ">
-            <img src={lb} alt="" className="absolute inset-0 w-30" /> </div>
+        <div ref={img} className="border-r border-white w-30 relative    ">
+            <img src={lb} alt="" className=" w-30" /> </div>
             
-            <div className="text-white text-xl  items-center flex px-5 pt-5 ">
+            <div className="text-white lg:text-xl text-[12px]  items-center flex px-5 pt-5 ">
             <ul className="space-y-4">
                 <li  ref={maintext}>Role : <span className="opacity-60">Lead Graphic Designer </span></li>
                 <li ref={maintext2} >Project : <span className="opacity-60">Complete Visual Identity & Content Design </span></li>
@@ -100,10 +100,11 @@ function Frameflash (){
     <div className="flex justify-center pt-7 ">
     <div ref={car} className=" flex justify-center w-screen  relative">
 
-      <div className="w-82 mt-10">
+      
+      <div className="w-82 hidden lg:block mt-10">
         <img src={Lb2} alt="" />
       </div>
-      <div className="max-w-3xl">
+      <div className="lg:w-3xl hidden lg:block ">
             <img src={Lb1} alt="" className="p-4" />
             <div className="flex justify-center relative bottom-3 ">
             <h3 className="text-white text-md opacity-70 mt-4 text-center w-xl">
@@ -112,16 +113,48 @@ I have been the sole graphic designer at Frameflash Productions, responsible for
         </div>
         
         </div>
+      
+      {/*mobile*/}
+      
+      <div className="lg:hidden flex flex-col w-screen">
+            <img src={Lb1} alt="" className="p-2" />
+            <div className="w-48  md:w-70 flex lg:hidden lg:mt-10 p-2 lg:p-0">
+        <img src={Lb2} alt="" />
+            <div className="flex justify-center relative  ">
+            <h3 className="text-white text-[13px] leading-relaxed opacity-70 text-left p-2 w-40 md:w-lg md:text-2xl md:p-5 ">
+I have been the sole graphic designer at Frameflash Productions, responsible for building and maintaining the studio's entire visual presence. From designing the brand's official logo</h3>
+            
+        </div>
+      </div>
+        
+        
+        </div>
 
-        <div className="w-82 mb-5 mt-10 bottom-2 relative">
+         {/*mobile*/}
+
+        <div className="hidden lg:block w-82 mb-5 mt-10 bottom-2 relative">
         <img src={Lb3} alt="" className="" />
       </div>
          
         </div>
         
         </div>
+
+         {/*mobile*/}
+          <div className="lg:hidden flex justify-end  w-80 -ml-3 ">
+
+
+          <button
+  onClick={() => setOpen(true)}
+  className=" lg:hidden md:hidden rounded-lg lg:h-20 lg:text-4xl text-lg mb-15  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-30 p-2 hover:scale-105"
+>
+  View More
+</button></div>
+
+ {/*mobile*/}
        
-    <div className="flex justify-center pb-60 pt-15">
+        {/*PC/TAB*/}
+    <div className="hidden lg:flex md:flex md:justify-center md:w-5xl lg:w-screen lg:justify-center lg:pb-60 pb-20 lg:pt-15">
        <button
   onClick={() => setOpen(true)}
  className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
@@ -129,6 +162,7 @@ I have been the sole graphic designer at Frameflash Productions, responsible for
     View More
 </button>
 </div>
+{/*PC/TAB*/}
 
        
         {open && (

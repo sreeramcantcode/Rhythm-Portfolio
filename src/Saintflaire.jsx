@@ -38,6 +38,7 @@ function Saintflaire(){
         const logosaint = useRef()
         const mainimg = useRef()
         const saint = useRef()
+         const saint1ani = useRef()
 
     useGSAP(()=>{
 
@@ -47,11 +48,28 @@ function Saintflaire(){
             duration:3,
             scrollTrigger:{
                 trigger:saint.current,
-                start:"top 80%"
+                start:"top 100%"
             }
             
             
         }),
+
+        gsap.fromTo(saint1ani.current , {
+            
+            xPercent:-300,
+            duration:3,
+            scrollTrigger:{
+                trigger:saint1ani.current,
+                start:"top 80%"
+            } 
+            
+            
+            
+        },
+    {
+                xPercent:-30,
+                duration:3
+            })
 
         gsap.from(logosaint.current , {
             opacity:0,
@@ -113,7 +131,7 @@ function Saintflaire(){
           <img className="w-screen pt-7" src={saint2} alt="" />
           <div className="lg:hidden flex ">
           <img src={saint3} className=" w-40 " alt="" />
-           <p className="text-white w-screen text-left px-1 text-[10px] py-1 " >Founder and creative director of Saintflaire, an independent clothing brand developed from concept to execution. Led the complete design direction, including brand identity, logo development, garment graphics, and digital visuals. All creative outputs — from packaging to social content and product imagery — were designed in-house to establish a consistent and distinctive brand language. <br />
+           <p className="text-white w-screen text-left px-2  text-[11px] py-2 " >Founder and creative director of Saintflaire, an independent clothing brand developed from concept to execution. Led the complete design direction, including brand identity, logo development, garment graphics, and digital visuals. All creative outputs — from packaging to social content and product imagery — were designed in-house to establish a consistent and distinctive brand language. <br />
                     <span  onClick={()=> window.open(stpdf , "_blank")} className="italic text-red-500 cursor-pointer "> <br /> Visit Catalogue</span>
                 </p>
                 </div>
@@ -151,13 +169,18 @@ function Saintflaire(){
 
                  
 
-            <div ref={saint} onClick={()=> window.open(stpdf1 , "_blank")} className=" cursor-pointer bg-linear-to-l from-black to-red-500/50 lg:w-55 w-30 flex justify-center  items-center lg:h-20 h-15 absolute  right-0 bottom-2  rounded-lg ">
+            <div ref={saint} onClick={()=> window.open(stpdf1 , "_blank")} className=" cursor-pointer bg-linear-to-l from-black to-red-500/50 lg:w-55 w-30 hidden lg:flex justify-center  items-center lg:h-20 h-15 absolute  right-0 bottom-2  rounded-lg ">
                     <img className="pt-5" src={saintstreet} alt="" />
+                </div>
+
+             <div ref={saint1ani} onClick={()=> window.open(stpdf1 , "_blank")} className="lg:hidden cursor-pointer bg-linear-to-l from-black to-red-500/50 lg:w-55 w-30 flex justify-center items-center lg:h-20 h-10 rounded-lg ">
+                    <img className="pt-2" src={saintstreet} alt="" />
                 </div>
 
 
                 
             </div>
+             
 
 
             
