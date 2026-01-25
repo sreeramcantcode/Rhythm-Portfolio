@@ -1,7 +1,7 @@
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { useRef } from "react"
-import lb from "./assets/frameflash.png"
+
 import comic from "./assets/comic2.webp"
 import Work from "./Work"
 import Footer from "./Footer"

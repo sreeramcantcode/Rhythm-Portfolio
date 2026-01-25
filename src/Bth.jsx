@@ -1,7 +1,7 @@
 
 import { useRef, useState } from "react"
 import bth from "./assets/bth.png"
-
+import bth1 from "./assets/bth1.png"
 import bth2 from "./assets/bth2.webp"
 import bth3 from "./assets/bth3.webp"
 import bth4 from "./assets/bth4.webp"
@@ -83,7 +83,30 @@ function Bth(){
                       </div>
                       </div>
 
-            <div ref={mainimg} className="flex justify-center pt-10">
+
+                      {/*mobile*/}
+
+                      <div className="lg:hidden flex p-2 flex-col w-screen">
+                                  <img src={bth1} alt="" className="p-2" />
+                                  <div className="w-48  md:w-70 flex lg:hidden lg:mt-10 p-2 lg:p-0">
+                              <img src={bth3} alt="" />
+                                  <div className="flex flex-col gap-1">
+                                  <div className="flex justify-center relative  ">
+                                  <h3 className="text-white text-[12px] p-4 leading-relaxed opacity-70 text-left p-2 w-50 md:w-lg md:text-2xl md:p-5 ">
+                                 Worked as a graphic designer for BeatTheHeat, a creative club at VIT-AP, responsible for designing event posters, promotional banners, and custom club merchandise. Managed all supporting graphics for both physical events and digital outreach, ensuring consistent visual identity across platforms</h3>
+
+                                  
+                              </div>
+                              <img src={bth2} className="pt-6" alt="" />
+                              </div>
+                              
+                            </div>
+                              
+                              
+                              </div>
+                      {/*mobile*/}
+
+            <div ref={mainimg} className=" hidden lg:flex justify-center pt-10">
                 <div  className=" flex justify-center w-screen  relative">
             
                   <div className="w-70 ">
@@ -106,14 +129,24 @@ function Bth(){
                     
                     </div>
 
-            <div className="flex justify-center pb-60 pt-15">
+         <div className="lg:hidden flex justify-center  w-96 pt-5 ">
+ 
+
+          <button
+  onClick={() => setOpen(true)}
+  className=" lg:hidden md:hidden rounded-lg lg:h-20 lg:text-4xl text-lg mb-15  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-30 p-2 hover:scale-105"
+>
+  View More
+</button></div>
+<div className="hidden lg:flex md:flex md:justify-center md:w-4xl md:pt-7 lg:w-screen lg:justify-center lg:pb-60 pb-20 lg:pt-15">
        <button
   onClick={() => setOpen(true)}
  className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
 >
-  View More
+    View More
 </button>
 </div>
+{/*PC/TAB*/}
 
        
         {open && (

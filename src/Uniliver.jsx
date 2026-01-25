@@ -101,7 +101,7 @@ function Uniliver(){
 
                             {/*TAB*/}
 
-             <div ref={mainimg} className="hidden md:flex lg:hidden border border-white justify-start w-screen gap-6  ">
+             <div ref={mainimg} className="hidden md:flex lg:hidden  justify-start w-screen gap-6  ">
 
                     
                 <div  className="grid grid-cols-2 gap-2 relative mb-20 w-3xl lg:px-18 md:p-4 mt-7">

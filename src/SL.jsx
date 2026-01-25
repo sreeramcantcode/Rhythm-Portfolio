@@ -60,10 +60,10 @@ function SL(){
                                          
                     </div>
                     <div className=" flex gap-3  ">
-                        <div ref={logo} className="border-r border-white w-35 h-23 relative">
-                        <img src={sil} alt="" className="translate scale-120 w-25 translate-x-6" /> 
+                        <div ref={logo} className="border-r border-white lg:w-35 w-24 h-23 relative">
+                        <img src={sil} alt="" className=" w-25 lg:translate-x-6" /> 
                         </div>
-                        <div className="text-white text-xl  items-center flex px-10 ">
+                        <div className="text-white lg:text-xl text-[11px] items-center flex lg:px-10 ">
                                 <ul className="space-y-4">
                                     <li ref={maintext}>Role : <span className="opacity-60">Product Designer (Club Member)</span></li>
                                     <li ref={maintext2}>Project : <span className="opacity-60">Biomedical device branding & Interface Design</span></li>
@@ -71,11 +71,12 @@ function SL(){
                             </div>
                         </div>
               
-              <div className="pt-10 pb-30 flex justify-center gap-5">
-                <div className="w-80">
+              <div className="pt-10 p-4  pb-30 flex justify-center lg:gap-5">
+                <div className="lg:w-80 w-30">
                     <img src={sl4} alt="" />
-                    <div className=" text-white text-center w-5xl pt-6">
-                        <h3 className="">
+                    <div className=" text-white lg:text-center lg:w-5xl w-screen lg:relative flex flex-col items-center justify-center text-[12px] lg:pt-6 pt-3">
+                        <div className="flex justify-center pt-5 lg">
+                        <h3 className="lg:w-5xl w-72 text-center ">
                             Silent Artery is an academic ECS hardware project focused on non-invasive
 pulse and oxygen monitoring. As the product designer, I crafted
 the complete
@@ -88,36 +89,49 @@ user accessibility, blending functionality with
 a clean aesthetic
 tailored for
 health-tech innovation.
-                        </h3>
-                        <div className="flex justify-center">
-                    <div className="pt-10 ">
-                    <button
-                      onClick={()=> window.open(slcert , "_blank")}
-                     className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
-                   >
-                      View Certificate
-                   </button>
-                                       </div>
-                    
-                  
-                </div>
+                        </h3></div>
+
+                   <div className="lg:hidden flex justify-center pt-7  w-80  ">
+
+
+          <button
+onClick={()=> window.open(slcert , "_blank")}
+  className=" lg:hidden md:hidden rounded-lg lg:h-20 lg:text-4xl text-lg  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm p-2 hover:scale-105"
+>
+  View Certificate
+</button></div>
+
+
+
+                       <div className="hidden lg:flex md:flex md:justify-center md:w-5xl lg:w-screen lg:justify-center  lg:pt-15">
+       <button
+onClick={()=> window.open(slcert , "_blank")}
+ className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
+>
+    View Certificate
+</button>
+</div>
         
                    </div>
                    
+                   
                 </div>
+                
+                
 
-                <div className="w-80 ">
+                <div className="lg:w-80 ">
                     <img src={sl3} alt="" />
                      
                      
                    
                 </div>
 
-                <div className="w-80">
+                <div className="lg:w-80">
                     <img src={sl2} alt="" />
                 </div>
+                
               </div>
-                 
+                  
              
             <div>
 

@@ -84,7 +84,7 @@ function Mercedes (){
                     
                     
                     <div className="flex flex-col relative">
-                    <div ref={mainimg} className="lg:flex flex justify-start lg:justify-evenly relative lg:gap-3 gap-1 lg:pt-10  lg:mb-40">
+                    <div ref={mainimg} className="lg:flex flex justify-start md:flex md:justify-center md:pt-4 lg:justify-evenly relative lg:gap-3 gap-1 lg:pt-10  lg:mb-40">
                         <div className="w-30 flex flex-col gap-3 lg:pt-5 pt-3 lg:ml-5 ml-1">
                             <div>
                                 <img src={img2} alt="" />
