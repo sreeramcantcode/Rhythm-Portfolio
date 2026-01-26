@@ -57,7 +57,7 @@ return(
             <h1 className="text-gray-300 opacity-60">Contact Me</h1>
 
             <div className="text-gray-300 mt-4 sm:mt-5 text-lg sm:text-2xl break-all">
-                <h1>
+                <h1 className="whitespace-nowrap">
                     E-mail :
                     <span>
                         <a href="mailto:rhymexmedia@gmail.com" target="_blank">

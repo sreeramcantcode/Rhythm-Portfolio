@@ -121,7 +121,7 @@ I have been the sole graphic designer at Frameflash Productions, responsible for
             <div className="w-48  md:w-70 flex lg:hidden lg:mt-10 p-2 lg:p-0">
         <img src={Lb2} alt="" />
             <div className="flex justify-center relative  ">
-            <h3 className="text-white text-[14px] leading-relaxed opacity-70 text-left px-3 w-40 md:w-sm md:text-2xl md:p-5 ">
+            <h3 className="text-white text-[14px] leading-relaxed opacity-70 text-left px-3 overflowtext w-40  md:w-sm md:text-2xl md:p-5 ">
 I have been the sole graphic designer at Frameflash Productions, responsible for building and maintaining the studio's entire visual presence. From designing the brand's official logo</h3>
             
         </div>

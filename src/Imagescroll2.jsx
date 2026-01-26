@@ -55,7 +55,7 @@ export default function Imagescroll2() {
         ))}
       </div>
         <div className="lg:h-90  mb-20  mt-12 pt-10 lg:pt-0 flex justify-center items-center">
-      <button onClick={()=> navigate("/All")} className=" rounded-lg lg:h-20 lg:text-4xl text-lg hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-40 p-3 text-center hover:scale-105">Explore Projects</button>
+      <button onClick={()=> navigate("/All")}className=" rounded-lg h-20 text-3xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-70 text-center hover:scale-105  ">Explore Projects</button>
       </div>
     </div>
   )

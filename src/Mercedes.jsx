@@ -112,7 +112,7 @@ function Mercedes (){
                              <div className="flex justify-center pb-60 pt-15">
        <button
   onClick={() => setOpen(true)}
-  className="hidden lg:block rounded-lg lg:h-20 lg:text-4xl text-lg hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-40 p-3 text-center hover:scale-105"
+ className=" rounded-lg h-20 text-3xl hidden hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-70 text-center hover:scale-105  "
 >
   View More
 </button>
@@ -153,16 +153,19 @@ function Mercedes (){
                     </div>
                     
                      <div className="flex flex-col items-center pt-3">
-                                <h3 className="w-96 text-white lg:hidden  text-center p-4 text-[13px] md:w-screen md:text-lg ">
+                                <h3 className="w-96 overflowtext text-white lg:hidden  text-center p-4 text-[13px] md:w-screen md:text-lg ">
                                 Developed a magazine-style editorial layout centered on the Mercedes 190E Evo II, highlighting its heritage and engineering legacy. Created original illustrations, custom graphics, and layout compositions to present the car in a collector-style feature format.
                                 
                             </h3>
-       <button
+       <div className="lg:hidden flex justify-center w-screen  mt-5 ">
+
+
+          <button
   onClick={() => setOpen(true)}
-  className=" lg:hidden translate-y-3 rounded-lg lg:h-20 lg:text-4xl text-lg mb-15 hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-40 p-3 text-center hover:scale-105"
+  className=" lg:hidden md:hidden rounded-lg text-sm px-3 mb-20 hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-black w-30  p-2 hover:scale-105"
 >
   View More
-</button>
+</button></div>
 </div>      
 
                             </div>

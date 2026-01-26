@@ -54,8 +54,8 @@ function Koenigseg(){
 
             <div className=" flex gap-3 pt-25 mr-6">
                     
-                     <div ref={img} className="border-r border-white lg:w-30 w-24 md:w-28 relative     ">
-                        <img src={logo} alt="" className="absolute lg:w-25 w-24 " /> </div>
+                     <div ref={img} className="border-r border-white lg:w-30 w-20 md:w-28 relative     ">
+                        <img src={logo} alt="" className="absolute lg:w-25 w-18" /> </div>
                         
                         <div className="text-white lg:text-xl text-[12px] items-center flex px-5  ">
                         <ul className="space-y-4 pb-3 md:text-2xl pt-2">

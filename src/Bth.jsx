@@ -75,7 +75,7 @@ function Bth(){
                  </div>
                 <div className=" flex gap-3  ">
                 <div ref={logosaint} className="border-r border-white w-35 h-23 md:w-25 relative">
-                  <img src={bth} alt="" className="translate scale-120 w-25 lg:translate-x-6" /> </div>
+                  <img src={bth} alt="" className="translate scale-120 w-25" /> </div>
                   <div className="text-white lg:text-xl text-[12px] md:text-xl items-center flex lg:px-10 px-3 ">
                       <ul className="space-y-4">
                           <li  ref={maintext} >Role : <span className="opacity-60">Graphic Designer (Club Member)</span></li>
@@ -94,7 +94,7 @@ function Bth(){
                               
                                   
                                   <div className="flex relative ">
-                                  <h3 className="text-white text-[12px] p-4 leading-relaxed opacity-70 text-left w-42 md:w-md md:text-2xl md:p-5  ">
+                                  <h3 className="text-white overflowtext1 text-[12px] p-4 leading-relaxed opacity-70 text-left w-42 md:w-md md:text-2xl md:p-5  ">
                                  Worked as a graphic designer for BeatTheHeat, a creative club at VIT-AP, responsible for designing event posters, promotional banners, and custom club merchandise. Managed all supporting graphics for both physical events and digital outreach, ensuring consistent visual identity across platforms</h3>
 
                                   
@@ -145,8 +145,7 @@ function Bth(){
 <div className="hidden lg:flex md:flex md:justify-center md:w-screen md:pt-12 md:mb-10 lg:w-screen lg:justify-center lg:pb-20 pb-20 lg:pt-15">
        <button
   onClick={() => setOpen(true)}
- className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
->
+className=" rounded-lg h-20 text-3xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-70 text-center hover:scale-105  ">
     View More
 </button>
 </div>

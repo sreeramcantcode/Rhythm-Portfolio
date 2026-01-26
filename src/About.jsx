@@ -101,9 +101,16 @@ function About (){
 
         <h1
           ref={textref}
-          className="text-4xl lg:text-6xl u mb-6"
+          className="text-4xl lg:block hidden lg:text-6xl u mb-6"
         >
           Hi, I’m Rhythm Nandi
+        </h1>
+
+         <h1
+          ref={textref}
+          className="text-4xl lg:text-6xl u mb-6 lg:hidden no-nowrap-mobile"
+        >
+          Hi, <br /><span className="whitespace-nowrap no-nowrap-mobile ">I’m Rhythm Nandi</span>
         </h1>
 
         <p
@@ -139,7 +146,17 @@ function About (){
           <li ref={para7}>★ 4+ years of experience</li>
         </ul>
          
-         <div className="">
+         <div className="lg:block hidden">
+        <button
+          onClick={() => window.open(resume, "_blank")}
+          className="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-900 hover:text-black transition hover:scale-105 mb-10 lg:mb-0 cursor-pointer"
+        >
+          View Resume
+        </button>
+        </div>
+
+
+        <div className="flex justify-center pt-3">
         <button
           onClick={() => window.open(resume, "_blank")}
           className="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-900 hover:text-black transition hover:scale-105 mb-10 lg:mb-0 cursor-pointer"

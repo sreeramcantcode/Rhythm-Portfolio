@@ -16,6 +16,8 @@ import { useEffect } from "react"
 import { cacheImages } from "./imagecache"
 import { ALL_IMAGES } from "./allimages"
 
+import { Link } from "react-router-dom"
+
 
 function Home(){
 
@@ -47,7 +49,7 @@ const anref = useRef()
 
           <div className="w-screen pt-20 relative text-white ">
             <div className="flex justify-center relative pb-7 -top-10 lg:top-10">
-            <div className="lg:flex lg:text-[220px] lg:gap-24 text-[135px] lg:pt-20  sm:*: absolute justify-center  hover:text-red-500 hover:text-[230px] cursor-pointer duration-300">
+            <div className="lg:flex lg:text-[220px] lg:gap-24 text-[135px] lg:pt-20  sm:*: absolute justify-center  hover:text-red-500 hover:scale-105 cursor-pointer duration-300">
             <h3 className="hindi text-[200px] lg:text-[220px] text-center translate-x-2 tracking-wide flex py-0 lg:tracking-tight">
                 कला
             </h3>
@@ -61,21 +63,41 @@ const anref = useRef()
             <img src={img} className="w-2xl z-20" alt="" />
             </div>
         
-             <div className="lg:flex justify-evenly grid  grid-cols-4 w-screen  ">
+             <div className="lg:flex hidden  justify-evenly w-screen  ">
               
               
-              <img src={frame} className="lg:w-20 w-40  h-20 object-contain relative lg:scale-190 z-20 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
-                <img src={saint} className="w-20 h-20 object-contain relative  z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
-                <img src={k} className="w-20  h-20 object-contain relative  z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
-                <img src={mer} className="w-20 h-20 transform  object-contain relative z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
+             <Link to="/frameflash"><img src={frame} className="lg:w-20 w-40  h-20 object-contain relative lg:scale-190 z-20 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+              <Link to="/saint"><img src={saint} className="w-20 h-20 object-contain relative  z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+              <Link to="/k9">  <img src={k} className="w-20  h-20 object-contain relative  z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+              <Link to="/uniliver"><img src={uni} className="w-20 h-20 transform  object-contain relative z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
                 
                
    
                 <div className="flex justify-evenly lg:gap-24 w-screen  lg:pl-0 lg:w-xl lg:pt-0">
-                 <img src={uni} className="w-20 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
-                <img src={lb} className="w-20 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
-                <img src={sil} className="w-20 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
-                <img src={bth} className="w-20  h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" />
+                <Link to="/mercedes"> <img src={mer} className="w-20 h-20 object-contain lg:scale-215 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+                <Link to="/lb"><img src={lb} className="w-20 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+                <Link to="/silent"><img src={sil} className="w-20 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+                <Link to="/bth"><img src={bth} className="w-20  h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+                </div>
+                </div>
+
+
+
+                <div className="lg:hidden  justify-evenly grid  grid-cols-4 w-screen  ">
+              
+              
+               <Link to="/uniliver"><img src={uni} className="lg:w-20 w-40  h-20 object-contain relative lg:scale-190 z-20 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+                <Link to="/k9"> <img src={k} className="w-20 h-20 object-contain relative  z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+                <Link to="/saint"><img src={saint} className="w-20  h-20 object-contain relative  z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+                 <Link to="/silent"><img src={sil} className="w-20 h-20 transform  object-contain relative z-20 lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+                
+               
+   
+                <div className="flex justify-evenly lg:gap-24 w-screen  lg:pl-0 lg:w-xl lg:pt-0">
+                 <Link to="/frameflash"><img src={frame} className="w-20 h-20 object-contain lg:scale-215 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+                 <Link to="/lb"><img src={lb} className="w-20 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+                <Link to="/mercedes"><img src={mer} className="w-20 h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
+                <Link to="/bth"><img src={bth} className="w-20  h-20 object-contain lg:scale-190 hover:scale-240 duration-300 cursor-pointer" alt="frame" /></Link>
                 </div>
                 </div>
              </div>

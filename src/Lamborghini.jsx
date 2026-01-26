@@ -1,5 +1,5 @@
 import lambo1 from "./assets/lambo1.webp"
-import lambo2 from "./assets/lambo21.webp"
+import lambo2 from "./assets/lambo21.jpg"
 import logo from "./assets/lambologo.webp"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
@@ -66,33 +66,41 @@ function Lamborghini(){
                     </div>
                     </div>
 
-                    <div ref={car1} className="flex flex-col gap-1 lg:hidden relative mb-40 md:mb-96 p-2">
-                              <img className="w-screen pt-7 " src={lambo1} alt="" />
-                              <div className="lg:hidden flex ">
-                              <img src={lambo2} className=" w-28 md:w-50 absolute top-60 md:top-96 md:mt-36   " alt="" />
-                               
-                               
-                                    </div>
+                    <div ref={car1} className="flex flex-col gap-1 lg:hidden relative  md:mb-10 md:pt-10 p-2">
+                                
+                              <div className="relative">
+                            <div className="lg:w-96 w-48 absolute top-0 p-auto p-2  ">
+                        <img src={lambo2} alt="" />
+                    </div>
+                        <img src={lambo1} alt="" className=""/>
+                        
+                        </div>
+                              
 
-                                <div className="text-white pt-4 text-center relative ">
-                            <h3 className="lg:text-lg text-[10px] px-5  absolute w-64 right-0 text-left md:left-1/4 md:w-96 md:text-xl md:leading-relaxed md:p-6 top-0 ">A hand-sketched Lamborghini artwork acknowledged by the Lamborghini Mumbai. The work received recognition for its execution and visual quality.</h3>
-                        </div>     
+                            <div className="text-white pt-4 text-center mb-10 ">
+
+                            <h3 className="lg:text-lg text-[10px] p-2 md:text-lg">A hand-sketched Lamborghini artwork acknowledged by the Lamborghini Mumbai. The work received recognition for its execution and visual quality.</h3>
+                        </div>   
                      </div>
                      
 
                   
-                 <div ref={car} className="lg:flex hidden pb-25 lg:pt-0 pt-10  justify-center border relative w-screen ">
+                 <div ref={car} className="lg:flex hidden pb-25 lg:pt-0 pt-10  justify-center border w-screen ">
                     <div className="w-3xl  ">
+                        <div className="relative">
+                            <div className="lg:w-96 w-24 absolute bottom-0 p-3  ">
+                        <img src={lambo2} alt="" />
+                    </div>
                         <img src={lambo1} alt="" className=""/>
+                        
+                        </div>
                      
                         <div className="text-white pt-4 text-center ">
                             <h3 className="lg:text-lg text-[10px] p-2 md:text-lg">A hand-sketched Lamborghini artwork acknowledged by the Lamborghini Mumbai. The work received recognition for its execution and visual quality.</h3>
                         </div>
                     </div>
 
-                    <div className="lg:w-45 w-24 border absolute right-0 lg:right-1/6 top-4 border-yellow-300">
-                        <img src={lambo2} alt="" />
-                    </div>
+                    
                     </div>  
 
                   

@@ -107,15 +107,18 @@ Contributing to brand visuals, campaigns, and digital design for over six months
                 </div>
 
                  {/*mobile*/}
-                 <div className="lg:hidden flex flex-col w-screen">
+                 <div className="lg:hidden flex flex-col w-full max-w-full ">
                              <img src={k1} alt="" className="" />
                              <div className="w-48 md:w-70 flex lg:hidden lg:mt-10 p-2 lg:p-0">
+                                
                          <img src={k2} alt="" className=""/>
-                             <div className="flex justify-center relative  ">
-                             <h3  className="text-white text-[13px] leading-relaxed opacity-70 text-left p-2 w-40 md:w-lg md:text-2xl md:p-5 ">Currently working as a graphic designer with K9 School.
-Contributing to brand visuals, campaigns, and digital design for over six months.</h3>
-                         
-                         </div>
+                             <div className="flex justify-center relative">
+  <h3 className="text-white text-[clamp(1rem,4vi,1.6rem)] leading-relaxed opacity-70 text-left p-2 w-36">
+    Currently working as a graphic designer with K9 School.
+    Contributing to brand visuals, campaigns, and digital design for over six months.
+  </h3>
+</div>
+
                        </div>
                          
                          
@@ -151,7 +154,7 @@ Contributing to brand visuals, campaigns, and digital design for over six months
     <div className="hidden lg:flex md:flex md:justify-center md:w-5xl lg:w-screen lg:justify-center lg:pb-60 pb-20 lg:pt-15">
        <button
   onClick={() => setOpen(true)}
- className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
+ className=" rounded-lg h-20 text-3xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-70 text-center hover:scale-105  "
 >
     View More
 </button>
