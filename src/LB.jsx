@@ -77,7 +77,7 @@ function LB (){
         <div ref={img} className="border-r z-10 border-white lg:w-30 w-20 relative    ">
             <img src={lb} alt="" className=" lg:w-30 " /> </div>
             
-            <div className="text-white lg:text-xl text-[12px] items-center flex lg:px-5 lg:pt-5 ">
+            <div className="text-white lg:text-xl text-[12px] md:text-xl items-center flex lg:px-5 lg:pt-5 ">
             <ul className="space-y-4">
                 <li  ref={maintext}>Role : <span className="opacity-60">Automotive  Digital Artist </span></li>
                 <li ref={maintext2} >Project : <span className="opacity-60">LBWK R35 GTR Graphic Artwork </span></li>
@@ -86,7 +86,7 @@ function LB (){
         </div>
 
     
-      <div ref={car1} className="p-4 lg:hidden ">
+      <div ref={car1} className="p-4 md:pt-6 lg:hidden ">
       <div className="flex justify-center pt-7">
         <img src={Lb3} alt="" className="" />
       </div>
@@ -96,7 +96,7 @@ function LB (){
         <img src={Lb1} alt="" className="w-30" />
         </div>
         <div className="flex justify-center items-center relative bottom-3 p-6 ">
-            <h3 className="text-white w-32 md:w-70 text-[11px] md:text-lg opacity-70 text-center">Officially recognised by Liberty Walk An independent automotive graphic design developed as a personal project <span>focused </span>on visual identity and form.</h3>
+            <h3 className="text-white w-32 md:w-70  text-[11px] md:text-lg opacity-70 text-center">Officially recognised by Liberty Walk An independent automotive graphic design developed as a personal project <span>focused </span>on visual identity and form.</h3>
             
         </div>
 
@@ -113,7 +113,7 @@ function LB (){
 
           <button
   onClick={() => setOpen(true)}
-  className=" lg:hidden md:w-60 rounded-lg md:text-2xl text-sm px-3  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-30  p-2 hover:scale-105"
+  className=" lg:hidden md:w-60 rounded-lg md:text-2xl border  text-sm px-3  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer  w-30  p-2 hover:scale-105"
 >
   View More
 </button></div>

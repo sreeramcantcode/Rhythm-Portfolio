@@ -85,7 +85,7 @@ function Frameflash (){
         <div ref={img} className="border-r border-white w-30 relative    ">
             <img src={lb} alt="" className=" w-30" /> </div>
             
-            <div className="text-white lg:text-xl text-[12px]  items-center flex px-5 pt-5 ">
+            <div className="text-white lg:text-xl text-[12px] md:text-2xl  items-center flex px-5 pt-5 ">
             <ul className="space-y-4">
                 <li  ref={maintext}>Role : <span className="opacity-60">Lead Graphic Designer </span></li>
                 <li ref={maintext2} >Project : <span className="opacity-60">Complete Visual Identity & Content Design </span></li>
@@ -121,7 +121,7 @@ I have been the sole graphic designer at Frameflash Productions, responsible for
             <div className="w-48  md:w-70 flex lg:hidden lg:mt-10 p-2 lg:p-0">
         <img src={Lb2} alt="" />
             <div className="flex justify-center relative  ">
-            <h3 className="text-white text-[13px] leading-relaxed opacity-70 text-left p-2 w-40 md:w-lg md:text-2xl md:p-5 ">
+            <h3 className="text-white text-[14px] leading-relaxed opacity-70 text-left px-3 w-40 md:w-sm md:text-2xl md:p-5 ">
 I have been the sole graphic designer at Frameflash Productions, responsible for building and maintaining the studio's entire visual presence. From designing the brand's official logo</h3>
             
         </div>
@@ -141,12 +141,12 @@ I have been the sole graphic designer at Frameflash Productions, responsible for
         </div>
 
          {/*mobile*/}
-          <div className="lg:hidden flex justify-end  w-80 -ml-3 ">
+         <div className="lg:hidden flex justify-center w-screen pt-10 mb-14 ">
 
 
           <button
   onClick={() => setOpen(true)}
-  className=" lg:hidden md:hidden rounded-lg lg:h-20 lg:text-4xl text-lg mb-15  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-30 p-2 hover:scale-105"
+  className=" lg:hidden md:hidden rounded-lg md:text-2xl border  text-sm px-3  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer  w-30  p-2 hover:scale-105"
 >
   View More
 </button></div>
@@ -154,7 +154,7 @@ I have been the sole graphic designer at Frameflash Productions, responsible for
  {/*mobile*/}
        
         {/*PC/TAB*/}
-    <div className="hidden lg:flex md:flex md:justify-center md:w-5xl lg:w-screen lg:justify-center lg:pb-60 pb-20 lg:pt-15">
+    <div className="hidden lg:flex md:flex md:justify-center md:w-screen lg:w-screen lg:justify-center lg:pb-60 pb-20 lg:pt-15">
        <button
   onClick={() => setOpen(true)}
  className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "

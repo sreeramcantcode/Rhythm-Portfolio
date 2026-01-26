@@ -74,9 +74,9 @@ function Bth(){
                  
                  </div>
                 <div className=" flex gap-3  ">
-                <div ref={logosaint} className="border-r border-white w-35 h-23 relative">
+                <div ref={logosaint} className="border-r border-white w-35 h-23 md:w-25 relative">
                   <img src={bth} alt="" className="translate scale-120 w-25 lg:translate-x-6" /> </div>
-                  <div className="text-white lg:text-xl text-[12px] items-center flex lg:px-10 px-3 ">
+                  <div className="text-white lg:text-xl text-[12px] md:text-xl items-center flex lg:px-10 px-3 ">
                       <ul className="space-y-4">
                           <li  ref={maintext} >Role : <span className="opacity-60">Graphic Designer (Club Member)</span></li>
                           <li ref={maintext2} >Project : <span className="opacity-60">Visual Content and Merch Designer for club events</span></li>
@@ -87,19 +87,20 @@ function Bth(){
 
                       {/*mobile*/}
 
-                      <div ref={mainimg1} className="lg:hidden flex p-2 flex-col w-screen">
+                      <div ref={mainimg1} className="lg:hidden flex p-2 md:py-10 flex-col w-screen">
                                   <img src={bth1} alt="" className="p-2" />
-                                  <div className="w-48  md:w-70 flex lg:hidden lg:mt-10 p-2 lg:p-0">
+                                  <div className="w-50  md:w-70 flex lg:hidden lg:mt-10 p-2 lg:p-0">
                               <img src={bth3} alt="" />
-                                  <div className="flex flex-col gap-1">
-                                  <div className="flex justify-center relative  ">
-                                  <h3 className="text-white text-[12px] p-4 leading-relaxed opacity-70 text-left  w-50 md:w-lg md:text-2xl md:p-5 ">
+                              
+                                  
+                                  <div className="flex relative ">
+                                  <h3 className="text-white text-[12px] p-4 leading-relaxed opacity-70 text-left w-42 md:w-md md:text-2xl md:p-5  ">
                                  Worked as a graphic designer for BeatTheHeat, a creative club at VIT-AP, responsible for designing event posters, promotional banners, and custom club merchandise. Managed all supporting graphics for both physical events and digital outreach, ensuring consistent visual identity across platforms</h3>
 
                                   
                               </div>
-                              <img src={bth2} className="pt-6" alt="" />
-                              </div>
+                              
+                              
                               
                             </div>
                               
@@ -130,16 +131,18 @@ function Bth(){
                     
                     </div>
 
-         <div className="lg:hidden flex justify-center  w-96 pt-5 ">
- 
+         <div className="lg:hidden flex justify-center w-screen pt-10 mb-14 ">
+
 
           <button
   onClick={() => setOpen(true)}
-  className=" lg:hidden md:hidden rounded-lg lg:h-20 lg:text-4xl text-lg mb-15  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-30 p-2 hover:scale-105"
+  className=" lg:hidden md:hidden rounded-lg md:text-2xl border  text-sm px-3  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer  w-30  p-2 hover:scale-105"
 >
   View More
 </button></div>
-<div className="hidden lg:flex md:flex md:justify-center md:w-4xl md:pt-7 lg:w-screen lg:justify-center lg:pb-60 pb-20 lg:pt-15">
+
+
+<div className="hidden lg:flex md:flex md:justify-center md:w-screen md:pt-12 md:mb-10 lg:w-screen lg:justify-center lg:pb-20 pb-20 lg:pt-15">
        <button
   onClick={() => setOpen(true)}
  className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "

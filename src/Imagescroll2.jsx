@@ -6,11 +6,16 @@ import image1 from "./img2.jpg"
 import image2 from "./assets/ff2.webp"
 import image3 from "./assets/saint2.webp"
 import image4 from "./assets/koeniggseg.jpg"
+import image5 from "./assets/p5.jpg"
+import image7 from "./assets/merc5.webp"
+import image6 from "./assets/p6.jpg"
+import image8 from "./assets/merc4.webp"
+import image9 from "./assets/koeniggseg.jpg"
 import { useNavigate } from "react-router-dom"
 
 gsap.registerPlugin(useGSAP)
 
-const images = [image1, image2, image3, image4]
+const images = [image1, image2, image3, image4 , image5,image6,image7,image8,image9]
 
 export default function Imagescroll2() {
     const navigate = useNavigate()
@@ -44,12 +49,12 @@ export default function Imagescroll2() {
           <div key={i} className="flex flex-col items-center gap-4">
             <img
               src={img}
-              className=" rounded-xl lg:w-xl w-72 h-96 object-cover "
+              className=" rounded-xl lg:w-xl lg:h-96 w-50 h-50 object-cover "
             />
           </div>
         ))}
       </div>
-        <div className="h-90 flex justify-center items-center">
+        <div className="lg:h-90  mb-20  mt-12 pt-10 lg:pt-0 flex justify-center items-center">
       <button onClick={()=> navigate("/All")} className=" rounded-lg lg:h-20 lg:text-4xl text-lg hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-40 p-3 text-center hover:scale-105">Explore Projects</button>
       </div>
     </div>

@@ -127,8 +127,8 @@ function Saintflaire(){
       <div className=" flex gap-3  relative  ">
       <div ref={logosaint} className="border-r border-white lg:w-35 h-23  relative">
         <img src={saint1} alt="" className=" lg:scale-120 w-25 lg:translate-x-6" /> </div>
-        <div className="text-white lg:text-xl text-[12px]   items-center flex lg:px-5 ">
-            <ul className="space-y-4">
+        <div className="text-white lg:text-xl text-[12px]    items-center flex lg:px-5 ">
+            <ul className="space-y-4 ">
                 <li  ref={maintext} >Role : <span className="opacity-60">Founder & Sole Graphic Designer</span></li>
                 <li ref={maintext2} >Project : <span className="opacity-60">Complete Brand & Apparel Design</span></li>
             </ul>
@@ -146,6 +146,8 @@ function Saintflaire(){
                 </p>
                 </div>
           </div>
+
+
         <div ref={mainimg} className="flex justify-end gap-3 px-4 pt-9 mr-7 lg:pb-30 pb-10 ">
 
             <div className="lg:w-md relative ">
@@ -183,7 +185,7 @@ function Saintflaire(){
                     <img className="pt-5" src={saintstreet} alt="" />
                 </div>
 
-             <div ref={saint1ani} onClick={()=> window.open(stpdf1 , "_blank")} className="lg:hidden cursor-pointer bg-linear-to-l from-black to-red-500/50 md:w-60 md:mb-10 lg:w-55 w-30 flex justify-center items-center lg:h-20 h-10 rounded-lg ">
+             <div ref={saint1ani} onClick={()=> window.open(stpdf1 , "_blank")} className="lg:hidden cursor-pointer bg-linear-to-l from-red-500/50 to-black md:w-60 md:mb-10 lg:w-55 w-30 flex justify-center items-center lg:h-20 h-10 rounded-lg ">
                     <img className="pt-2" src={saintstreet} alt="" />
                 </div>
 

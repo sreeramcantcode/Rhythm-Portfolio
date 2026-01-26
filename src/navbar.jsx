@@ -99,7 +99,7 @@ function Sample (){
               md:hidden 
               absolute top-20 left-0
               bg-linear-to-l from-black to-red-950 
-              h-screen w-40 flex pt-20 text-right p-5 opacity-75 flex-col gap-10
+              h-screen w-40 flex pt-20 text-center p-5 opacity-75 flex-col gap-10
               rounded-lg
               
               space-y-4

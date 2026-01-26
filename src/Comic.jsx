@@ -117,8 +117,9 @@ function Comic() {
             <div className="flex justify-center mt-6 lg:hidden">
               <button
                 onClick={() => window.open(comicpdf, "_blank")}
-                className="rounded-lg text-lg hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-30 p-2 hover:scale-105"
-              >
+                className=" lg:hidden md:hidden rounded-lg md:text-2xl border  text-sm px-3  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer  w-30  p-2 hover:scale-105"
+>
+              
                 View Comic
               </button>
             </div>

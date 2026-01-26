@@ -165,10 +165,10 @@ function Uniliver(){
 
                             
                             {/* Mobile*/}
-                            <div className="md:hidden lg:hidden w-screen p-4   ">
+                            <div className="md:hidden lg:hidden w-screen   ">
 
                     
-                <div ref={mainimg1}  className="pt-6 grid-cols-2 gap-2 grid">
+                <div ref={mainimg1}  className="pt-6 p-4 grid-cols-2 gap-2 grid">
 
                     <div className=" flex-col flex gap-2">
                         <img src={image2} alt="" />
@@ -199,13 +199,13 @@ function Uniliver(){
                         </h3>
 
                {/*mobile*/}
-          <div className="lg:hidden flex justify-center mt-10  -ml-3 ">
+          <div className="lg:hidden flex  w-screen justify-center  mt-10 mb-10 ">
 
 
           <button
   onClick={() => setOpen(true)}
-  className=" lg:hidden md:hidden rounded-lg lg:h-20 lg:text-4xl text-lg mb-15  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-30 p-2 hover:scale-105"
->
+  className=" lg:hidden md:hidden rounded-lg md:text-2xl    text-sm px-3  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-black w-30  p-2 hover:scale-105"
+> 
   View More
 </button></div>
 

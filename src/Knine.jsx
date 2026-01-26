@@ -135,12 +135,12 @@ Contributing to brand visuals, campaigns, and digital design for over six months
 
                    
 {/*mobile*/}
-          <div className="lg:hidden flex justify-end  w-80 -ml-3 ">
+          <div className="lg:hidden flex justify-center w-screen  mt-5 ">
 
 
           <button
   onClick={() => setOpen(true)}
-  className=" lg:hidden md:hidden rounded-lg lg:h-20 lg:text-4xl text-lg mb-15  hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white lg:w-sm w-30 p-2 hover:scale-105"
+  className=" lg:hidden md:hidden rounded-lg text-sm px-3 mb-20 hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-black w-30  p-2 hover:scale-105"
 >
   View More
 </button></div>

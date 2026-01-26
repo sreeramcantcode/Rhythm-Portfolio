@@ -51,14 +51,14 @@ const anref = useRef()
             <h3 className="hindi text-[200px] lg:text-[220px] text-center translate-x-2 tracking-wide flex py-0 lg:tracking-tight">
                 कला
             </h3>
-            <h3 className="text z-10  text-center lg:translate-x-28 relative bottom-30 lg:bottom-0">
+            <h3 className="text z-10  text-center lg:translate-x-28 relative bottom-32 lg:bottom-0">
               CREATE
             </h3>
             </div>
             </div>
           
             <div className=" flex justify-center">
-            <img src={img} className="w-2xl z-20 opacity-95 " alt="" />
+            <img src={img} className="w-2xl z-20" alt="" />
             </div>
         
              <div className="lg:flex justify-evenly grid  grid-cols-4 w-screen  ">

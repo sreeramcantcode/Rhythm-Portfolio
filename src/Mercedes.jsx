@@ -73,7 +73,7 @@ function Mercedes (){
                     <div ref={logo}  className="border-r border-white w-30 relative">
                         <img src={img} alt="" className=" w-30" /> </div>
                         
-                        <div className="text-white lg:text-xl text-[12px]   items-center flex px-5 pt-5 ">
+                        <div className="text-white lg:text-xl text-[12px] md:text-xl items-center flex px-5 pt-5 ">
                         <ul className="space-y-4">
                             <li ref={maintext}>Role : <span className="opacity-60"> Automotive Design Researcher & Visual Artist</span></li>
                             <li ref={maintext2}>Project : <span className="opacity-60">Academic Magazine-style Automotive feature</span></li>
@@ -83,7 +83,7 @@ function Mercedes (){
                     
                     
                     
-                    <div className="flex flex-col relative">
+                    <div className="flex flex-col relative md:pt-4 p-1">
                     <div ref={mainimg} className="lg:flex flex justify-start md:flex md:justify-center md:pt-4 lg:justify-evenly relative lg:gap-3 gap-1 lg:pt-10  lg:mb-40">
                         <div className="w-30 flex flex-col gap-3 lg:pt-5 pt-3 lg:ml-5 ml-1">
                             <div>
@@ -99,7 +99,7 @@ function Mercedes (){
                             </div>
                         </div>
 
-                        <div className="pt-3 w-sm">
+                        <div className="pt-3  w-sm">
                             <img src={img3} alt="" />
                         </div>
                           
