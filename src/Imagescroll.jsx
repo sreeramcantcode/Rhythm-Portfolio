@@ -40,7 +40,7 @@ export default function Imagescroll() {
 
       gsap.to(track, {
         x: -width,
-        duration: 20,
+        duration: 35,
         ease: "linear",
         repeat: -1,
       })

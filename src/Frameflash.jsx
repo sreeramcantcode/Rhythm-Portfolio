@@ -154,10 +154,10 @@ I have been the sole graphic designer at Frameflash Productions, responsible for
  {/*mobile*/}
        
         {/*PC/TAB*/}
-    <div className="hidden lg:flex md:flex md:justify-center md:w-screen lg:w-screen lg:justify-center lg:pb-60 pb-20 lg:pt-15">
+    <div className="hidden lg:flex md:flex md:justify-center md:w-screen lg:w-screen lg:justify-center lg:pb-40 pb-20 lg:pt-15">
        <button
   onClick={() => setOpen(true)}
- className=" rounded-lg h-20 text-4xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-sm text-center hover:scale-105  "
+ className=" rounded-lg h-20 text-3xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-70 text-center hover:scale-105  "
 >
     View More
 </button>

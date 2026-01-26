@@ -156,7 +156,7 @@ function About (){
         </div>
 
 
-        <div className="flex justify-center pt-3">
+        <div className="flex lg:hidden justify-center pt-3">
         <button
           onClick={() => window.open(resume, "_blank")}
           className="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-900 hover:text-black transition hover:scale-105 mb-10 lg:mb-0 cursor-pointer"

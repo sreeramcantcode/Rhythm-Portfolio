@@ -74,7 +74,7 @@ function Koenigseg(){
                         </div>
                     </div>
 
-                    <div className="lg:w-50 w-24 right-0  border absolute lg:right-1/12 top-3 border-yellow-300 ">
+                    <div className="lg:w-50 w-24 right-0 absolute lg:right-1/12 top-3">
                         <img src={koe1} alt="" />
                     </div>
                     </div>  
