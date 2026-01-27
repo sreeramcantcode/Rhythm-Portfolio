@@ -1,4 +1,4 @@
-import img from "./assets/Chipmunk.png"
+import img from "./assets/Rhythmhero.webp"
 
 import saint from "./assets/saint.png"
 import frame from "./assets/frameflash.png"

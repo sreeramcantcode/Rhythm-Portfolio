@@ -1,5 +1,5 @@
 import Work from "./Work"    
-import hul from "./assets/hul.jpg"
+import hul from "./assets/hul1.webp"
 import image1 from "./img1.jpg"
 import image2 from "./img2.jpg"
 import image3 from "./img3.jpg"
