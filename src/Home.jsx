@@ -48,19 +48,20 @@ const anref = useRef()
         <div ref={anref} className="bg-black  ">
 
           <div className="w-screen pt-20 relative text-white ">
-            <div className="flex justify-center relative pb-7 -top-10 lg:top-10">
-            <div className="lg:flex lg:text-[220px] lg:gap-24 text-[135px] lg:pt-20  sm:*: absolute justify-center  hover:text-red-500 hover:scale-105 cursor-pointer duration-300">
-            <h3 className="hindi text-[200px] lg:text-[220px] text-center translate-x-2 tracking-wide flex py-0 lg:tracking-tight">
+            <div className="flex justify-center relative pb-7 -top-10  ">
+            <div className="lg:text-[275px] text-[135px] sm:*: absolute group justify-center cursor-pointer">
+              <div className="lg:flex justify-center lg:pt-3 relative  ">
+            <h3 className="hindi text-[200px] lg:text-[275px] group-hover:text-red-500 group-hover:scale-130  duration-300  lg:scale-125 z-20 text-center translate-x-2 tracking-wide flex py-0 lg:tracking-wider">
                 कला
-            </h3>
-            <h3 className="text z-10  text-center lg:translate-x-28 relative bottom-32 lg:bottom-0">
+            </h3></div>
+            <h3 className="text group-hover:text-red-500 group-hover:scale-102  duration-300  text-center lg relative bottom-32 lg:tracking-tight lg:bottom-44 ">
               CREATE
             </h3>
             </div>
             </div>
           
-            <div className=" flex justify-center">
-            <img src={img} className="w-2xl z-20" alt="" />
+            <div className=" flex justify-center lg:pt-4">
+            <img src={img} className="w-2xl lg:w-[590px] z-20" alt="" />
             </div>
         
              <div className="lg:flex hidden  justify-evenly w-screen  ">
