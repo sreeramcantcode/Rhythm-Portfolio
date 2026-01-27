@@ -53,8 +53,11 @@ function End(){
         </div>
 
         
+      <div className="-mt-24">
+  <Work text="Let's Connect" />
+</div>
 
-        <Work text="Let's Connect"></Work>
+        
       <Footer />
 
         

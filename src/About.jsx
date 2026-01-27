@@ -80,7 +80,7 @@ function About (){
 
     return(
         <>
-        <div className="min-h-screen w-full bg-black text-white px-4 lg:px-0 lg:pb-40 flex justify-center pt-24">
+        <div className="min-h-screen w-full bg-black text-white px-4 lg:px-0 lg:pb-40 flex justify-center pt-24 pb-20">
   <div className="w-full max-w-7xl bg-linear-to-r from-black to-red-500/30 rounded-2xl overflow-hidden">
 
     

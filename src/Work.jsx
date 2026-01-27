@@ -16,7 +16,7 @@ function Work(props){
       duration: 2,
       scrollTrigger:{
         trigger: work.current,
-        start: "top 80%"
+        start: "top 100%"
       }
     })
   })

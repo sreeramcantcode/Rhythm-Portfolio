@@ -109,7 +109,7 @@ function Mercedes (){
                                 
                             </h3>
                            
-                             <div className="flex justify-center pb-60 pt-15">
+                             <div className="flex justify-center pb-60 pt-24">
        <button
   onClick={() => setOpen(true)}
  className=" rounded-lg lg:block h-20 text-3xl hidden hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-70 text-center hover:scale-105  "

@@ -15,6 +15,7 @@ function Lamborghini(){
     const maintext = useRef()
     const maintext2 = useRef()
     const img = useRef()
+    const ss = useRef()
    
 
     useGSAP(()=>{
@@ -35,6 +36,17 @@ function Lamborghini(){
         
         
       }),
+
+      gsap.from([ss.current] , {
+         
+         xPercent:"-20",
+         opacity:0,
+         filter:"blur(20px)",
+         duration:3,
+         
+        
+        
+      })
 
       
 
@@ -69,7 +81,7 @@ function Lamborghini(){
                     <div ref={car1} className="flex flex-col gap-1 lg:hidden relative  md:mb-10 md:pt-10 p-2">
                                 
                               <div className="relative">
-                            <div className="lg:w-96 w-48 absolute top-0  p-2  ">
+                            <div  className="lg:w-96 w-48 absolute top-0  p-2  ">
                         <img src={lambo2} alt="" />
                     </div>
                         <img src={lambo1} alt="" className=""/>
@@ -88,8 +100,8 @@ function Lamborghini(){
                  <div ref={car} className="lg:flex hidden pb-25 lg:pt-0 pt-10  justify-center border w-screen ">
                     <div className="w-3xl  ">
                         <div className="relative">
-                            <div className="lg:w-96 w-24 absolute top-0 p-3  ">
-                        <img src={lambo2} alt="" />
+                            <div ref={ss} className="lg:w-96 w-24 absolute  top-0 p-3  ">
+                        <img src={lambo2} className="rounded-lg border-gray-500 border " alt="" />
                     </div>
                         <img src={lambo1} alt="" className=""/>
                         

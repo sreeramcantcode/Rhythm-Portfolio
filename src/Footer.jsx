@@ -105,7 +105,7 @@ return(
             <ul className="relative space-y-2 sm:space-y-3 mt-3 sm:mt-4">
                 <li><a href="#" className="hover:text-red-500">Linkedin</a></li>
                 <li><a href="https://www.behance.net/rhythmnandi1" target="_blank" className="hover:text-red-500">Behance</a></li>
-                <li><a href="https://www.instagram.com/sreeram_xo?igsh=czAwcWIzd3diaWd2" target="_blank" className="hover:text-red-500">Instagram</a></li>
+                <li><a href="#" target="_blank" className="hover:text-red-500">Instagram</a></li>
             </ul>
         </div>
     </div>

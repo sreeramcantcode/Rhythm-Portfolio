@@ -49,7 +49,7 @@ function Saintflaire(){
             duration:3,
             scrollTrigger:{
                 trigger:saint.current,
-                start:"top 100%"
+                start:"top 105%"
             }
             
             

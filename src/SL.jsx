@@ -18,6 +18,7 @@ function SL(){
             const maintext2 = useRef()
             const logo = useRef()
             const mainimg = useRef()
+            const pc = useRef()
 
     useGSAP(()=>{
         
@@ -39,7 +40,7 @@ function SL(){
         
       }),
 
-      gsap.from(mainimg.current , {
+      gsap.from([mainimg.current ,pc.current] , {
         opacity:0,
         duration:1,
         y:20,
@@ -71,7 +72,7 @@ function SL(){
                             </div>
                         </div>
 
-                        <div className="lg:hidden pt-5">
+                        <div ref={pc} className="lg:hidden pt-5">
                             <img src={sl} alt="" />
                             <div className="flex w-screen justify-center  lg:pt-5">
                         <h3 className=" p-6 text-white text-[13px] lg:pt-5 text-center md:w-2xl  ">
@@ -110,12 +111,12 @@ health-tech innovation.
 
                         </div>
               
-              <div className="pt-10 lg:pb-30 pb-10 hidden  lg:flex justify-center lg:gap-5">
+              <div ref={mainimg} className="pt-10 lg:pb-30 pb-10 hidden  lg:flex justify-center lg:gap-5">
                 <div className="lg:w-80 w-32  md:w-64  ">
                     <img src={sl4} alt="" className="p-2" />
                     <div className=" text-white lg:text-center lg:w-5xl w-screen lg:relative flex flex-col items-center justify-center text-[12px] lg:pt-6 pt-3">
                         <div className=" lg:pt-5">
-                        <h3 className=" p-4 lg:pt-5 text-center md:w-2xl  ">
+                        <h3 className=" p-4 lg:pt-5 lg:text-[15px] leading-relaxed opacity-70 text-center md:w-2xl  ">
                             Silent Artery is an academic ECS hardware project focused on non-invasive
 pulse and oxygen monitoring. As the product designer, I crafted
 the complete

@@ -1,10 +1,10 @@
 import Work from "./Work"    
+import hul from "./assets/hul.jpg"
 import image1 from "./img1.jpg"
 import image2 from "./img2.jpg"
 import image3 from "./img3.jpg"
 import image7 from "./assets/uimg3.jpg"
 import image4 from "./assets/uimg4.jpg"
-import image5 from "./assets/uimg5.jpg"
 import image6 from "./assets/uimg6.jpg"
 import image8 from "./assets/uimg7.jpg"
 import image9 from "./assets/uimg8.jpg"
@@ -222,51 +222,31 @@ function Uniliver(){
 
                              {/*PC*/}
 
-                 <div ref={mainimg} className="hidden lg:flex justify-start w-screen gap-6  ">
+                 <div ref={mainimg} className="hidden lg:block w-full max-w-full ">
 
-                    
-                <div  className="grid grid-cols-2 relative mb-20  w-3xl px-18  mt-7">
-
-                    <div className="w-80">
-                        <img src={image2} alt="" />
+                    <div className="flex justify-center p-10">
+                        <img src={hul} alt="" />
                     </div>
 
-                    
-                     
-                     
-                    
-
-                     <div className="w-96 px-3  ml-3">
-                        <img src={image5} alt=""  />
-                    </div>
-                     
-                     <div className="w-96 absolute right-3 top-1/4 p-3 py-11 ">
-                        <img src={image4} alt="" className="ml-6 mt-2" />
-                    </div>
-                    
-                    </div>
-
-                   <div className="text-white w-2xl text-center relative text-md p-4 mt-7  ">
+                    <div className="text-white flex justify-center w-full max-w-full  text-center relative text-md px-10  ">
                         <h3>
                         Selected by Hindustan Unilever to design the official logo, T-shirt, and cap for Team Northeast at the Eastern India branch conference. The designs reflected the team’s identity and were well received for their visual consistency, becoming key elements of the event’s branding.
                         </h3>
-                      <div className="flex justify-center pb-60 pt-15">
+                      
+                       
+
+                    </div>
+
+                    <div className="flex justify-center pb-30 pt-15">
        <button
   onClick={() => setOpen(true)}
   className=" rounded-lg h-20 text-3xl hover:bg-red-900 button hover:text-black duration-200 bg-white font-semibold text-black cursor-pointer border-white w-70 text-center hover:scale-105  "
 >
   View More
 </button>
-</div>        
-                       
-
-                    </div>
+</div> 
                     
-
-               
-                     
-
-                </div>
+                    </div>
                  {/*mobile*/}
 
         
