@@ -5,12 +5,13 @@ import { useRef } from "react"
 import { ScrollTrigger } from "gsap/all"
 import Footer from "./Footer";
 import Work from "./Work";
-import resume from "./assets/Rhythm_Nandi_Graphic_Designer_Resume.pdf"
+
 gsap.registerPlugin(ScrollTrigger)
 function About (){
    const img = useRef()
    
-    
+    const resume = "/Rhythmresume.pdf";
+
     const designer = useRef()
     const para1 = useRef()
     const para2 = useRef()
