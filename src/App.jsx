@@ -13,6 +13,7 @@ import Imagescroll from "./Imagescroll"
 
 
 import About from "./About"
+import Pricing from "./Pricing"
 import All from "./All"   
 import Top from "./top"   
 
@@ -32,6 +33,8 @@ import Koenigseg from "./Koenigseg"
 import Lamborghini from "./Lamborghini"
 import Comic from "./Comic"
 import Sketches from "./Sketches"
+
+
 
 
 function App() {
@@ -76,6 +79,7 @@ function App() {
          <Route path="/lambo" element={<Lamborghini></Lamborghini>} />
          <Route path="/comic" element={<Comic></Comic>} />
          <Route path="/sketches" element={<Sketches></Sketches>} />
+         <Route path="/pricing" element={<Pricing></Pricing>} />
         
 
       </Routes>

@@ -80,7 +80,9 @@ function Sample (){
             <Link to="/" className="hover:text-red-400 hover:scale-130 duration-300">Home</Link>
             <Link to="/All" className="hover:text-red-400 hover:scale-130 duration-300">Works</Link>
             <Link to="/About" className="hover:text-red-400 hover:scale-130 duration-300">About</Link>
+            <Link to="/pricing" className="hover:text-red-400 hover:scale-130 duration-300">Pricing</Link>
             <Link to="#" onClick={handle} className="hover:text-red-400 hover:scale-130 duration-300">Contact</Link>
+            
           </div>
 
           
@@ -112,7 +114,7 @@ function Sample (){
               <Link onClick={() => setOpen(false)} to="/All" className="block opacity-70 hover:text-red-400">Works</Link>
               <Link onClick={() => setOpen(false)} to="/About" className="block opacity-70 hover:text-red-400">About</Link>
               <Link to="#" onClick={handle} className="block opacity-70 hover:text-red-400">Contact</Link>
-              
+               <Link onClick={() => setOpen(false)} to="/pricing" className="block opacity-70 hover:text-red-400">Pricing</Link>
             </div>
           )}
 
