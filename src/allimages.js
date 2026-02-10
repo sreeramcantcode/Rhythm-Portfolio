@@ -98,6 +98,8 @@ import image6 from "./assets/uimg6.jpg"
 import image8 from "./assets/uimg7.jpg"
 import image9 from "./assets/uimg8.jpg"
 import i from "./assets/Uni.png"
+import price1 from "./assets/pricing1.webp"
+import price2 from "./assets/pricing.webp"
 
 export const ALL_IMAGES = [
 
@@ -195,7 +197,9 @@ image7,
 image8,
 image9,
 i,
-im
+im,
+price1,
+price2
 
 
 
