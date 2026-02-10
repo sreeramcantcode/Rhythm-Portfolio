@@ -43,12 +43,12 @@ function Pricing(){
 
             <div ref={price} className="lg:flex grid grid-cols-1 justify-center pt-5  ">
                 
-                <div className="w-full max-w-lg ">
+                <div className="w-full max-w-lg hover:scale-105 duration-300">
                     <img src={price1} alt="" className="w-full h-auto object-contain"/>
                     
                 </div>
 
-               <div className="w-full max-w-lg ">
+               <div className="w-full max-w-lg hover:scale-105 duration-300   ">
                     <img src={price2} alt="" className="w-full h-auto object-contain"/>
                     
                 </div>
