@@ -1,7 +1,10 @@
-import img from "./assets/saint.png"
+import img from "./assets/homelogo.webp"
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap"
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import navmenu from "./assets/navmenu.png"
+
+
 
 gsap.registerPlugin(ScrollToPlugin)
 
@@ -67,13 +70,13 @@ function Sample (){
         <div className="bg-black py-3 h-20 text-white relative border-b border-green-400 lg:opacity-72">
 
           {/* logo */}
-          <a href="#">
+          <Link to="/" >
             <img
               src={img}
-              className="w-20 absolute top-0 md:left-4 lg:left-4 right-0 hover:scale-110 duration-300"
+              className="w-12 absolute lg:top-3 md:left-4 lg:left-4 right-2 hover:scale-110 duration-300"
               alt=""
-            />
-          </a>
+            /></Link>
+          
 
           {/* desktop nav */}
           <div className="hidden md:flex max-w-8xl text-md justify-end gap-16 mx-auto p-4 px-14 items-center">
@@ -91,7 +94,7 @@ function Sample (){
               onClick={() => setOpen(!open)}
               className="text-2xl focus:outline-none cursor-pointer"
             >
-              ☰
+              <img src={navmenu} alt="" className="max-w-full w-8" />
             </button>
           </div>
 
