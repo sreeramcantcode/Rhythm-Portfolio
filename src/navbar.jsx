@@ -117,7 +117,7 @@ function Sample (){
               <Link onClick={() => setOpen(false)} to="/All" className="block opacity-70 hover:text-red-400">Works</Link>
               <Link onClick={() => setOpen(false)} to="/About" className="block opacity-70 hover:text-red-400">About</Link>
               <Link to="#" onClick={handle} className="block opacity-70 hover:text-red-400">Contact</Link>
-               <Link onClick={() => setOpen(false)} to="/pricing" className="block opacity-70 hidden hover:text-red-400">Pricing</Link>
+               <Link onClick={() => setOpen(false)} to="/pricing" className=" opacity-70 hidden hover:text-red-400">Pricing</Link>
             </div>
           )}
 
