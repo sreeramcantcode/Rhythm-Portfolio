@@ -103,7 +103,7 @@ return(
         <div className="text-lg sm:text-xl lg:pt-4">
             <h1 className="text-base sm:text-lg text-gray-300">Socials</h1>
             <ul className="relative space-y-2 sm:space-y-3 mt-3 sm:mt-4">
-                <li><a href="#" className="hover:text-red-500">Linkedin</a></li>
+                <li><a href="https://www.linkedin.com/in/rhythm-nandi-277869270/" target="_blank"  className="hover:text-red-500">Linkedin</a></li>
                 <li><a href="https://www.behance.net/rhythmnandi1" target="_blank" className="hover:text-red-500">Behance</a></li>
                 <li><a href="#" target="_blank" className="hover:text-red-500 hidden">Instagram</a></li>
             </ul>
