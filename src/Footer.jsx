@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import logo from "./assets/saint.png"
+import logo from  "./assets/homelogo.webp"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { ScrollToPlugin } from "gsap/ScrollToPlugin"
@@ -33,7 +33,7 @@ return(
 >
     <div className="relative lg:pb-10">
         <img
-            className="opacity-20 w-50 sm:w-56 lg:w-72 lg:scale-135"
+            className="opacity-20 w-40 p-4 sm:w-56 lg:w-72 "
             src={logo}
             alt=""
         />
@@ -105,7 +105,7 @@ return(
             <ul className="relative space-y-2 sm:space-y-3 mt-3 sm:mt-4">
                 <li><a href="#" className="hover:text-red-500">Linkedin</a></li>
                 <li><a href="https://www.behance.net/rhythmnandi1" target="_blank" className="hover:text-red-500">Behance</a></li>
-                <li><a href="#" target="_blank" className="hover:text-red-500">Instagram</a></li>
+                <li><a href="#" target="_blank" className="hover:text-red-500 hidden">Instagram</a></li>
             </ul>
         </div>
     </div>
