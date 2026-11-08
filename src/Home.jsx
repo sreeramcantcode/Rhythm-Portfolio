@@ -1,4 +1,4 @@
-import img from "./assets/Rhythmhero.webp"
+import heroImage from "../img/Group 60.png"
 
 import saint from "./assets/saint.png"
 import frame from "./assets/frameflash.png"
@@ -47,22 +47,12 @@ const anref = useRef()
         <>
         <div ref={anref} className="bg-black  ">
 
-          <div className="w-screen pt-20 relative text-white ">
-            <div className="flex justify-center relative pb-7 -top-10  ">
-            <div className="lg:text-[275px] text-[135px] sm:*: absolute group justify-center cursor-pointer">
-              <div className="lg:flex justify-center lg:pt-3 relative  ">
-            <h3 className="hindi text-[200px] lg:text-[275px] group-hover:text-red-500 group-hover:scale-130  duration-300  lg:scale-125 z-20 text-center translate-x-2 tracking-wide flex py-0 lg:tracking-wider">
-                कला
-            </h3></div>
-            <h3 className="text group-hover:text-red-500 group-hover:scale-102  duration-300  text-center lg relative bottom-32 lg:tracking-tight lg:bottom-44 ">
-              CREATE
-            </h3>
-            </div>
-            </div>
-          
-            <div className=" flex justify-center lg:pt-4">
-            <img src={img} className="w-2xl lg:w-[590px] z-20" alt="" />
-            </div>
+          <div className="w-full pt-24 px-4 sm:px-6 lg:px-10 relative text-white">
+            <img
+              src={heroImage}
+              className="w-full h-auto mx-auto"
+              alt="Rhythm Nandi graphic design portfolio"
+            />
         
              <div className="lg:flex hidden  justify-evenly w-screen  ">
               

@@ -67,7 +67,7 @@ function Sample (){
   return (
     <>
       <div className="backdrop-blur-2xl fixed z-30 w-full">
-        <div className="bg-black py-3 h-20 text-white relative border-b border-green-400 lg:opacity-72">
+        <div className="bg-black py-3 h-20 text-white relative lg:opacity-72">
 
           {/* logo */}
           <Link to="/" >
@@ -79,7 +79,7 @@ function Sample (){
           
 
           {/* desktop nav */}
-          <div className="hidden md:flex max-w-8xl text-md justify-end gap-16 mx-auto p-4 px-14 items-center">
+          <div className="hidden md:flex max-w-8xl text-md justify-center gap-16 mx-auto p-4 px-14 items-center">
             <Link to="/" className="hover:text-red-400 hover:scale-130 duration-300">Home</Link>
             <Link to="/All" className="hover:text-red-400 hover:scale-130 duration-300">Works</Link>
             <Link to="/About" className="hover:text-red-400 hover:scale-130 duration-300">About</Link>
